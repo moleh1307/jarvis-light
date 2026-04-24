@@ -19,6 +19,7 @@ JARVIS Light is a local, markdown-first operating mode for Codex. Treat the vaul
 - Keep canonical generated artifacts inside the project repo/workspace output directory.
 - Treat `Downloads` and Desktop copies as temporary or delivery copies unless explicitly declared canonical.
 - Use clickable absolute markdown links when referencing local artifacts in user-facing responses.
+- Learn from repeated friction through `system/learning-log.md`, but do not silently rewrite core rules from one-off events.
 
 ## Retrieve Context First
 
@@ -45,6 +46,7 @@ After meaningful work, run a small memory check:
 - Did a stable user preference or working rule appear?
 - Is there unfinished work, a blocker, or an exact next step?
 - Has this chat become long, compacted, token-expensive, or likely to continue elsewhere?
+- Did this reveal a reusable lesson, repeated friction, or a failure pattern worth logging?
 
 If the answer matters, update the smallest set of notes needed. If nothing durable changed, leave the vault alone.
 
@@ -72,6 +74,16 @@ When writing memory for generated artifacts, prefer compact operational bullets:
 - validation result
 - known caveat
 - next step
+
+## Governed Self-Improvement
+
+Use `system/learning-log.md` for lessons from real work. Lessons are candidates, not rules, unless repeated evidence appears, the lesson prevents a high-impact failure, or the user explicitly approves it.
+
+Use `system/failure-patterns.md` for stable recurring failure modes and `system/proposals/` for consequential workflow changes that should be reviewed before adoption.
+
+Promotion statuses are: `candidate`, `repeated`, `promoted`, `rejected`, and `superseded`.
+
+Do not create learning entries for tiny tasks or one-off preferences. Do not let self-improvement become ceremony.
 
 ## Choose The Right Note
 

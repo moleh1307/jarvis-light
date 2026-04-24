@@ -19,6 +19,7 @@ JARVIS Light is a local continuity workflow for Codex. It uses markdown files as
 - Treat `Downloads` and Desktop copies as temporary or delivery copies unless explicitly declared canonical.
 - Use clickable absolute markdown links when referencing local artifacts.
 - Verify exact artifacts before saying they are ready.
+- Learn from repeated friction, but do not silently rewrite core rules from one-off events.
 
 ## Retrieval Order
 
@@ -92,6 +93,32 @@ Project notes should stay quick to scan. If a project note becomes a long chrono
 - `memory/projects/<project>/decisions.md` if project-local decisions need a home
 
 Do not split preemptively. Split only when retrieval is getting worse, and leave a clear pointer from the old project note.
+
+## Governed Self-Improvement
+
+JARVIS Light can improve through evidence, not impulse.
+
+After meaningful work, an agent may record a lesson in `system/learning-log.md` when a session reveals:
+
+- recurring friction,
+- a mistake or near-miss,
+- a repeated ambiguity,
+- a better reusable workflow,
+- a failure pattern that future agents should avoid.
+
+Lessons are not rules by default. Use promotion statuses:
+
+- `candidate`
+- `repeated`
+- `promoted`
+- `rejected`
+- `superseded`
+
+A lesson may become a standing rule only when repeated evidence appears, the lesson prevents a high-impact failure, or the user explicitly approves it.
+
+Use `system/failure-patterns.md` for stable recurring failure modes. Use `system/proposals/` for improvements that are consequential enough to need approval before changing core workflow.
+
+Do not turn self-improvement into ceremony. Tiny tasks do not need retrospectives, learning-log entries, or proposals.
 
 ## Handoffs
 

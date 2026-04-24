@@ -59,7 +59,18 @@ What should the next session do first?
 - Fresh-chat handoff needed:
 - Generated artifact verified:
 - Canonical output stored in project workspace:
+- Reusable lesson/failure pattern found:
 - Notes updated:
+
+## Retrospective
+
+Use only for substantial sessions where the workflow can improve.
+
+- What worked:
+- What was confusing:
+- Improvement candidate:
+- Should this update `system/learning-log.md`: yes/no
+- Should this become a proposal or rule: no / proposal / rule after approval
 
 ## References
 

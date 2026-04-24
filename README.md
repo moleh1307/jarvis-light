@@ -110,6 +110,18 @@ Keep project notes flat while they remain easy to scan. If a project note become
 
 Do not split preemptively. Split when retrieval is getting worse.
 
+### 8. Governed Self-Improvement
+
+JARVIS Light can learn from real work, but rule changes should be governed.
+
+Use:
+
+- `system/learning-log.md` for candidate lessons,
+- `system/failure-patterns.md` for recurring problems,
+- `system/proposals/` for consequential workflow changes that need review.
+
+A lesson becomes a standing rule only after repeated evidence, high-impact risk, or explicit user approval.
+
 ## Folder Structure
 
 ```text
@@ -131,6 +143,9 @@ Do not split preemptively. Split when retrieval is getting worse.
 ├── sessions/
 │   └── README.md
 ├── system/
+│   ├── failure-patterns.md
+│   ├── learning-log.md
+│   ├── proposals/
 │   ├── upgrade-roadmap.md
 │   └── vault-map.md
 └── templates/
@@ -184,6 +199,7 @@ Before finishing meaningful work, ask:
 - Is there unfinished work, a blocker, or an exact next step?
 - Has the chat become long, compacted, or likely to continue elsewhere?
 - Was any generated artifact verified and stored in the canonical project workspace?
+- Did this reveal a reusable lesson or failure pattern worth logging?
 
 If none of these matter, leave the vault alone.
 

@@ -11,6 +11,7 @@ JARVIS Light should stay small until real usage proves the need for more.
 - Source-aware memory labels
 - Artifact hygiene and verification
 - Large project note scaling guidance
+- Governed self-improvement through learning log, failure patterns, and proposals
 
 ## Consider Later Only If Needed
 

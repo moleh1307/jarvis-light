@@ -34,6 +34,14 @@ Durable decisions.
 
 Reusable note templates.
 
+### `system/`
+
+System-level notes for the workflow itself:
+
+- `system/learning-log.md` captures candidate lessons and promotion status.
+- `system/failure-patterns.md` tracks stable recurring failure modes and prevention rules.
+- `system/proposals/` stores consequential workflow changes that should be reviewed before adoption.
+
 ## Canonical Homes
 
 - Stable user preference -> `memory/personal/preferences.md`
@@ -42,3 +50,6 @@ Reusable note templates.
 - Durable decision -> `logs/decisions.md`
 - Meaningful session -> `sessions/`
 - Active continuation -> `handoffs/`
+- Candidate self-improvement lesson -> `system/learning-log.md`
+- Recurring failure pattern -> `system/failure-patterns.md`
+- Consequential proposed workflow change -> `system/proposals/`

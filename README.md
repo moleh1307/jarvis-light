@@ -2,9 +2,9 @@
 
 **A local-first operating system for Codex continuity.**
 
-Current version: `0.0.19`
+Current version: `0.0.20`
 
-Latest update: Company Mode v0.6.1 tightens approval carry-forward, safe QA cleanup, standard toolchain installs, and first GitHub baseline pushes.
+Latest update: Company Mode v0.6.2 makes internal milestone acceptance the default and removes routine user-review stop gates.
 
 JARVIS Light turns a folder of markdown files into durable assistant memory.  
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -74,6 +74,8 @@ Follow the latest workflow rules from now on, especially:
 - roles should critique weak orders and propose better paths
 - version changes must update visible docs
 - reusable workflow friction should become a feedback candidate
+- internal role review is the default; do not ask me for routine comments/review/approval when the team can decide
+- internally accept milestones after role review and QA, then continue to the next useful task
 - after adoption audit and baseline preservation, takeover means the company owns the project outcome
 - if a role identifies necessary follow-up work, it must create/assign/start the work order unless blocked
 - if I approve a listed set of safe actions, execute the whole approved set instead of asking again item by item
@@ -87,7 +89,7 @@ Follow the latest workflow rules from now on, especially:
   - Next task:
   - Blocked:
   - Decision needed:
-  - Ready for review:
+  - User review requested:
 ```
 
 For long or messy threads, use a fresh-chat handoff instead of trying to keep the old chat alive.
@@ -228,7 +230,7 @@ Jarvis, use JARVIS and JARVIS Company Mode.
 
 Run release readiness for this project.
 Check verification, version metadata, README/changelog visibility, git status, and whether a PR or tag is needed.
-Do not mark final acceptance without my approval.
+Do not publish a release or stop the company without my approval.
 ```
 
 ## What Is Inside
@@ -269,7 +271,7 @@ The optional serious-project layer:
 - team roster for canonical role identity
 - GitHub autonomy rules for role/task branches
 - explicit next-action language
-- tool-aware QA before user review
+- tool-aware QA before internal acceptance or external escalation
 - autonomous internal PR/merge behavior
 - repo readiness gate with README requirement
 - Adoption Takeover Authority
@@ -460,7 +462,8 @@ Roles should:
 - identify weak parts before the user has to
 - create improvement work orders when obvious gaps exist
 - visually/materially verify user-facing artifacts
-- wait for user approval before final acceptance
+- internally accept normal milestones and keep moving
+- ask the user only for final stop/closure, public release, credentials/cost/destructive actions, strategic direction changes, or explicitly requested user review
 
 Founder and Chief of Staff can evolve the team as the project changes: hire new roles, merge redundant roles, retire completed roles, or add temporary specialists. Each role may also keep a short name alongside its title, such as:
 
@@ -487,14 +490,14 @@ For normal autonomous Company Mode projects, PRs are internal review artifacts. 
 
 Before a GitHub repo is treated as shipped or handoff-ready, it needs a `README.md`. For coding projects, README should explain what the project is, current status, setup/run/build/test instructions, known limitations, and where Company Mode state lives if relevant.
 
-For user-facing work, the company should use available tools for internal QA before asking the user. Use Computer Use, browser testing, screenshots, renderers, test scripts, package launch commands, or file inspection where relevant. `Ready for review` is for subjective/product judgment after internal QA, not for catching basic issues like blank screens, broken flows, missing README files, unverified persistence, stale packages, or agent-created QA/demo records left in the review artifact.
+For user-facing work, the company should use available tools for internal QA and internal role review before escalating to the user. Use Computer Use, browser testing, screenshots, renderers, test scripts, package launch commands, or file inspection where relevant. User review is not a routine milestone gate; it is for explicitly requested review or unavoidable owner-level judgment after internal QA.
 
 Completion reports should use explicit next-action language:
 
 - `Next task:` for unblocked continuation
 - `Blocked:` for concrete blockers
 - `Decision needed:` for consequential user choices
-- `Ready for review:` for artifacts awaiting user review
+- `User review requested:` only when the user explicitly asked to review or progress genuinely depends on owner judgment
 
 If a role identifies the next necessary task, it should create, assign, or start that work order before ending the turn. Do not finish with vague handoffs such as "Founder should define..." or "Product Designer should consider..." unless the report also creates the actual work order or marks a concrete blocker/decision.
 
@@ -610,7 +613,7 @@ In Company Mode:
 3. The assigned role executes.
 4. The role runs verification and an out-of-box pass.
 5. The company updates task board, role memory, and integration log.
-6. Work continues until user approval, a real blocker, or a deliberate pause.
+6. Work continues through internal milestone acceptance until a real blocker, escalation decision, public release/final stop gate, or deliberate pause.
 
 ## End-of-Task Memory Check
 

@@ -10,7 +10,7 @@
 - Executing role:
 - Active task:
 - Interrupted / parent task:
-- Review state: active / review / ready-for-user-review / waiting-user-approval / paused
+- Review state: active / review / internally-accepted / waiting-user-decision / paused
 - Blockers:
 - Next likely task:
 - Last updated:
@@ -62,7 +62,7 @@ What has been accepted into project state recently?
 - Next quality improvement:
 - Best out-of-box opportunity:
 - Verification gaps:
-- User approval needed:
+- User decision needed:
 
 ## Workflow Feedback
 

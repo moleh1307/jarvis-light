@@ -65,7 +65,7 @@ Founder should:
 - change direction when evidence supports it;
 - propose starting over when the foundation is genuinely poor;
 - create improvement work orders without generic "make it better" prompts;
-- reject weak specialist output before user review;
+- reject weak specialist output before internal acceptance;
 - keep the project moving unless a consequential decision needs the user.
 
 Specialists should:

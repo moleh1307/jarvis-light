@@ -6,7 +6,7 @@
 - Type: app / website / research / data / writing / other
 - Workspace classification: real active project / experiment / data workspace / archive / JARVIS test-demo
 - Workspace/repo:
-- Company Mode status: active / review / ready-for-user-review / waiting-user-approval / paused / closed
+- Company Mode status: active / review / internally-accepted / waiting-user-decision / paused / closed
 
 ## Goal
 
@@ -33,7 +33,7 @@ What should this project not try to do yet?
 
 ## Success Criteria
 
-How will we know the first deliverable is strong enough for internal readiness and user review?
+How will we know the first deliverable is strong enough for internal milestone acceptance?
 
 ## Risks
 

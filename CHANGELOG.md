@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.20 - 2026-04-28
+
+- Added Company Mode v0.6.2 internal acceptance model.
+- Internal role review is now the default; agents should not ask users for routine comments, review, or approval when the team can decide.
+- Normal milestones can be internally accepted after role review, QA, cleanup, and critique, then the company continues to the next useful task.
+- User review is reserved for explicitly requested review, final stop/closure, public release, credentials/cost/destructive actions, strategic direction changes, or unavoidable owner-level judgment.
+- Updated Company Mode templates to use `internally-accepted` and `waiting-user-decision` instead of routine `ready-for-user-review` states.
+
 ## 0.0.19 - 2026-04-28
 
 - Added Company Mode v0.6.1 approval/autonomy tightening.

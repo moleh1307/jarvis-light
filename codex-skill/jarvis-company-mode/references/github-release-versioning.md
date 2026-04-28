@@ -26,9 +26,9 @@ Do not change global git identity for each role. Prefer per-commit `--author` or
 - After internal acceptance, merge the role/task branch to `main` and push `main` when project policy allows and no protected-branch/destructive/sensitive risk exists.
 - Ask before creating/changing a remote, pushing directly to a protected/default branch when policy is unknown, publishing a release/tag/package, changing repo visibility/settings, force-pushing, deleting branches, or pushing secrets/private memory.
 
-If a project is already explicitly waiting for user review, do not use "needs approval" as a generic stop sign. State the exact decision needed: app review, merge approval, release approval, scope choice, or permission to publish.
+If a project is already explicitly waiting for the user because an escalation rule applies, do not use "needs approval" as a generic stop sign. State the exact decision needed: release approval, credential/cost approval, destructive action approval, scope choice, or explicitly requested user review.
 
-Do not confuse public repo baseline with final product acceptance. A verified baseline can be pushed to `main` while the app remains `ready-for-user-review`, as long as README/status/limitations are honest and private Company Mode memory is not pushed.
+Do not confuse public repo baseline with final product acceptance. A verified baseline can be pushed to `main` while the app remains internally active or internally accepted, as long as README/status/limitations are honest and private Company Mode memory is not pushed.
 
 ## PR Body
 

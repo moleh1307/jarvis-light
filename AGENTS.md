@@ -132,7 +132,7 @@ For existing projects, Founder acts as Organizational Auditor:
 4. infer roles from actual project structure,
 5. avoid reorganizing or rewriting before explicit work orders.
 
-Company Mode should not stop at "it works." User-facing products need design/visual QA and user approval before final acceptance.
+Company Mode should not stop at "it works." User-facing products need design/visual QA and internal role review. Do not ask the user for routine comments/review/approval when the team can decide internally. Ask only for final stop/closure, public release, credentials/cost/destructive actions, strategic direction changes, or explicitly requested user review.
 
 If Company Mode itself fails or reveals a reusable improvement, create a compact feedback candidate. A maintainer/R&D project should triage feedback as reject, document-only, patch-skill, update-template, add-eval-scenario, or public-release before it becomes a rule.
 

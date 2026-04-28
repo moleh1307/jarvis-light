@@ -4,7 +4,7 @@
 
 - ID:
 - Owner role:
-- Status: todo / active / blocked / review / ready-for-user-review / done / superseded
+- Status: todo / active / blocked / review / internally-accepted / waiting-user-decision / done / superseded
 - Priority:
 - Created:
 - Depends on:

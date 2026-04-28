@@ -7,9 +7,9 @@ Use this file for work accepted into the project state. Do not log every attempt
 | Date | Task | Owner | Accepted By | Artifact/Commit/PR | Version | Verification | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 
-## Ready For User Review
+## User Decisions / Escalations
 
-| Date | Milestone | Prepared By | Evidence/PR | Version | Residual Risks | User Decision |
+| Date | Decision | Requested By | Evidence/PR | Version | Residual Risks | Outcome |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Superseded Work

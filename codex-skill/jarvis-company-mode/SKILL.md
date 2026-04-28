@@ -5,7 +5,7 @@ description: "Role-based project workflow for JARVIS Light. Use when Codex shoul
 
 # JARVIS Company Mode
 
-Company Mode v0.6.1 is an optional JARVIS Light layer for serious projects that benefit from specialist perspectives. It does not create true background agents. It makes one Codex agent operate through durable role contracts, queues, memories, review gates, a team roster, and feedback loops stored in markdown.
+Company Mode v0.6.2 is an optional JARVIS Light layer for serious projects that benefit from specialist perspectives. It does not create true background agents. It makes one Codex agent operate through durable role contracts, queues, memories, review gates, a team roster, and feedback loops stored in markdown.
 
 Use when the user asks for:
 
@@ -72,7 +72,7 @@ Use the JARVIS Light `templates/company-mode/` files when creating these files.
 - Roles are responsible operators, not order-taking personas; they critique weak plans and propose better paths.
 - User-facing products need design/product quality ownership and visual/material QA responsibility.
 - Do not call artifacts ready until the actual artifact is verified when tools are available.
-- User review is for subjective/product judgment after internal QA, not basic bug discovery.
+- Internal review is the default. Do not ask the user for routine comments, review, or approval when the team can judge the work itself.
 - Short replies such as `ok`, `yes`, `go`, `next`, and `?` continue the next unblocked task unless blocked or waiting for a real user decision.
 - If a role identifies necessary follow-up work, it creates, assigns, or starts the work order unless blocked.
 - Do not end with vague handoffs such as "Founder should..." or "Product Designer should..." when a concrete task can be created.
@@ -84,11 +84,11 @@ Use the JARVIS Light `templates/company-mode/` files when creating these files.
 - When a GitHub repo is provided for a coding project, push a verified README-backed baseline after internal QA unless there is a concrete sensitive-data, protected-branch, release, or policy blocker.
 - Version changes must update visible project docs in the same task or commit.
 - Workflow friction can become feedback, but feedback is not a standing rule until triaged and promoted.
-- Final project/milestone acceptance requires user approval or an explicit instruction to stop.
+- Internal milestones can be accepted by the company after role review and QA. Ask the user only for final stop/closure, public release, credentials/cost/destructive actions, strategic direction changes, or explicitly requested user review.
 
 ## Current Boundary
 
-Company Mode v0.6.1 provides:
+Company Mode v0.6.2 provides:
 
 - Greenfield project initialization.
 - Existing-project Adoption Mode and Takeover Authority.
@@ -105,6 +105,7 @@ Company Mode v0.6.1 provides:
 - Next-Task Ownership.
 - GitHub/versioning conventions for coding projects.
 - Approval carry-forward, QA-data cleanup autonomy, standard toolchain install autonomy, and first-baseline push guidance.
+- Internal milestone acceptance without routine user review gates.
 
 Company Mode does not provide:
 
@@ -131,8 +132,8 @@ Use exact next-action labels:
 
 - `Next task:` when the company can continue without user input.
 - `Blocked:` when work cannot continue until a concrete blocker is removed.
-- `Decision needed:` when the user must choose between consequential options.
-- `Ready for review:` when a verified artifact/milestone needs the user's judgment.
+- `Decision needed:` when the user must choose between consequential options under escalation rules.
+- `User review requested:` only when the user explicitly asked to review, or when unavoidable subjective owner judgment blocks progress.
 
 Avoid `next likely task` unless there is genuine uncertainty and no role can responsibly choose. If uncertainty is real, create a planning work order or ask the minimum consequential question.
 

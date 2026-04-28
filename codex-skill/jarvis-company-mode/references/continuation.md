@@ -24,15 +24,15 @@ When the user says `continue`:
 
 Treat short replies as commands when Company Mode is active:
 
-- `continue`, `go`, `next`, `do it`, `yep`, `yes`, `ok`, `okay`: continue the next unblocked task unless blocked, waiting for user review, or clearly answering a question.
+- `continue`, `go`, `next`, `do it`, `yep`, `yes`, `ok`, `okay`: continue the next unblocked task unless blocked, waiting for a real escalation decision, or clearly answering a question.
 - `?`, `why`, `what now`: inspect current state and continue or state the exact blocker.
-- `thanks`, `got it`, `cool`: continue if an active unblocked task exists; if waiting for review/approval, state the exact decision needed.
+- `thanks`, `got it`, `cool`: continue if an active unblocked task exists; if waiting for an escalation decision, state the exact decision needed.
 - Direct factual questions should be answered first. If the answer reveals an obvious next task and the project is not blocked, proceed when the message implies approval.
 - `I approve`, `approved`, `approve everything`, or equivalent approval after a list of proposed safe actions authorizes the whole listed set unless the user narrows the approval. Execute every approved unblocked action instead of doing one item and asking again.
 
 Only stop after a short reply when:
 
-- a milestone is waiting for user review/approval;
+- a real user decision is required under the escalation rules;
 - the next action is destructive, costly, external, security-sensitive, or irreversible;
 - required credentials/access are missing;
 - the user explicitly says pause/stop/wait;
@@ -64,7 +64,9 @@ Do not end completion reports with vague handoffs such as:
 
 If the next owner is obvious, assign it. If the next task is obvious, create it. If the next action is planning, create the planning work order and make it the next task.
 
-If the project is waiting for subjective user review but still has safe operational cleanup, README/git baseline, version-doc, or QA evidence work remaining, do that operational work first. `Ready for review` should mean the company has already completed the safe internal work it can do.
+Do not convert internal uncertainty into user review by default. If the next issue is product taste, quality, architecture, wording, or prioritization and the charter gives enough signal, route it to the responsible internal role and decide. Ask the user only when the decision changes strategy, scope, cost, credentials, release posture, destructive actions, or a stated user preference cannot be inferred.
+
+If the project is near a milestone, complete safe operational cleanup, README/git baseline, version-doc, QA evidence, and internal critique first. Then either mark the milestone internally accepted and continue to the next work order, or escalate a concrete `Decision needed:` only when progress genuinely depends on the user.
 
 ## Interruptions And Side Quests
 
@@ -77,7 +79,7 @@ Protocol:
    - `clarification`: answer directly without changing task state;
    - `defect`: route to owner/QA, fix if feasible, verify;
    - `side quest`: create a small work order if more than a trivial answer;
-   - `scope change`: escalate if it changes milestone direction, research method, cost, release quality, or user approval state.
+   - `scope change`: escalate if it changes milestone direction, research method, cost, release quality, or external escalation state.
 3. Preserve the interrupted task in `current-state.md`.
 4. If interruption becomes work, record parent/interrupted task in task board or work order.
 5. After handling it, state whether the main flow resumes, remains paused, or now has a new next task.

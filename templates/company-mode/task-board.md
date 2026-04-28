@@ -6,7 +6,8 @@
 - `active`: currently being worked
 - `blocked`: cannot proceed without something specific
 - `review`: output exists and needs another role/check
-- `ready-for-user-review`: internally ready, waiting for user approval
+- `internally-accepted`: accepted by internal role review and ready to continue
+- `waiting-user-decision`: blocked by a real user escalation decision
 - `done`: accepted into project state
 - `superseded`: replaced by newer task or decision
 

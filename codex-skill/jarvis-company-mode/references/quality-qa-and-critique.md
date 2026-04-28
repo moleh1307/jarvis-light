@@ -14,10 +14,10 @@ Default expectations:
 - Roles identify weak parts and create improvement work orders without waiting for the user.
 - Roles critique the order itself when following it would produce weaker work.
 - Founder reshapes plan, scope, team, or approach when evidence says the current path is wrong.
-- "Done" means verified and ready for the next gate, not simply written.
-- Milestones become `ready-for-user-review` until the user accepts them.
+- "Done" means verified and ready for the next internal or external gate, not simply written.
+- Milestones are internally accepted by the company when the responsible roles, QA, and Founder/Chief of Staff agree the charter criteria are met.
 
-Founder must not mark a milestone as finally accepted, closed, or paused just because internal checks pass. Final stop/acceptance requires user approval or explicit stop instruction.
+Founder must not mark the whole project as finally closed or stop the company just because internal checks pass. Internal milestone acceptance is allowed; final stop/closure, public release, or owner-level product acceptance requires user approval or explicit stop/release instruction.
 
 ## Tool-Aware QA Gate
 
@@ -32,9 +32,17 @@ For user-facing apps, websites, documents, decks, images, or packaged artifacts:
 - Documents/decks/PDFs: render/open enough pages to confirm artifact is not corrupt and layout/content are credible.
 - Do not ask the user to perform basic QA that tools can perform.
 
-`Ready for review` is allowed only after internal tool-based QA passes or a concrete blocker explains why it could not be completed. User review is for subjective/product judgment, acceptance, or direction changes.
+User review is not a routine milestone gate. After internal tool-based QA and critique pass, the company should normally mark the milestone internally accepted and continue to the next useful task.
 
-Before asking for review, complete safe cleanup and packaging hygiene that the team itself caused or can verify:
+Ask the user for review only when:
+
+- the user explicitly asked to review before continuing;
+- the company needs final stop/closure or public release acceptance;
+- the choice changes strategic product/research direction;
+- credentials, cost, destructive work, or external publication is involved;
+- subjective owner preference is truly blocking and cannot be inferred from the charter, prior feedback, or project goals.
+
+Before any external review, release, or handoff, complete safe cleanup and packaging hygiene that the team itself caused or can verify:
 
 - remove isolated agent-created QA/demo records from the review build or database;
 - rebuild/repackage after source changes;
@@ -44,32 +52,34 @@ Before asking for review, complete safe cleanup and packaging hygiene that the t
 
 Do not ask the user to approve cleanup of the team's own isolated smoke-test records. Ask only if cleanup could delete or overwrite real user data.
 
-## Internal Critique Loop
+## Internal Critique And Acceptance Loop
 
-Before a milestone is presented as ready for user review, run a short critique:
+Before a milestone is internally accepted, run a short critique:
 
 - What is the weakest part?
 - What would a top-tier version improve?
 - What non-obvious move would make this meaningfully better?
 - What are we assuming only because it is conventional?
 - What would a world-class specialist challenge?
-- What should be fixed before user review?
+- What should be fixed before internal acceptance?
 - Are there hidden verification gaps?
-- Should the next task be polish, QA, packaging, documentation, research validation, or user review?
+- Should the next task be polish, QA, packaging, documentation, research validation, or release preparation?
 
 If obvious quality gaps exist, create new work orders and continue. Do not wait for the user to say "improve UI" or "make it better" when the gap is visible.
+
+If no internal blockers remain, Founder/Chief of Staff may record `internally accepted` and immediately create or start the next milestone/work order.
 
 ## Acceptance And Stop Rule
 
 Founder may declare:
 
-- `ready-for-user-review`;
-- `internally accepted for review`;
+- `internally accepted`;
 - `no internal blockers found`.
+- `continuing to next milestone`;
 
 Founder must not declare:
 
-- final accepted;
+- final user accepted;
 - project complete;
 - company paused/closed because the milestone is done;
 

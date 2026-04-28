@@ -189,6 +189,27 @@ When the user says `continue`:
 10. Update task board, role memory, current state, and integration log.
 11. Report compactly.
 
+## No Passive Acknowledgement
+
+In an active Company Mode project, do not respond to low-content user messages with passive acknowledgement only.
+
+Treat short replies as follows:
+
+- `continue`, `go`, `next`, `do it`, `yep`, `yes`, `ok`, `okay`: continue the next unblocked task unless the current state is blocked, waiting for user approval, or the user clearly only answered a question.
+- `?`, `why`, `what now`: inspect current state and either continue the next obvious task or explain the exact blocker. Do not repeat the same status unless the status changed.
+- `thanks`, `got it`, `cool`: if there is an active unblocked next task, continue; if the project is waiting for user review/approval, stay paused and say what decision is needed.
+- Direct factual questions such as "where is the app?" should be answered first. If the answer reveals an obvious next task and the project is not blocked, say that the next `ok` / `continue` will proceed, or proceed immediately when the user's message implies approval.
+
+Default bias: when Company Mode has an active unblocked task, keep moving. The user should not need to micromanage every step with a perfectly formed `continue` command.
+
+Only stop after a short reply when:
+
+- a milestone is waiting for user review/approval,
+- the next action is destructive, costly, external, security-sensitive, or irreversible,
+- required credentials/access are missing,
+- the user explicitly says pause/stop/wait,
+- or the user's short reply answers a clarifying question but does not authorize the consequential action.
+
 ## User-Facing Role Identity
 
 Every Company Mode response to the user must start with a role header, even for short replies, bug-fix explanations, test instructions, status updates, and interruption handling.
@@ -291,6 +312,8 @@ Do not only update memory or mention the version in chat. A future user opening 
 ## User Commands
 
 - `continue`: run the next unblocked task
+- `ok`, `okay`, `yes`, `yep`, `go`, `next`, `do it`: continue the next unblocked task when Company Mode is active and not blocked
+- `?` or `what now`: inspect state; continue if the next task is obvious, otherwise state the exact blocker
 - `status`: summarize current state, active task, blockers, and next likely task
 - `show blockers`: list only blockers and required decisions
 - `adopt this project`: run Adoption Mode against the current repo/folder

@@ -2,9 +2,9 @@
 
 **A local-first operating system for Codex continuity.**
 
-Current version: `0.0.8`
+Current version: `0.0.9`
 
-Latest update: Company Mode v0.3 adds Adaptive Team Mode: the Founder can evolve the team, roles can critique weak orders, and each role can have a persistent name alongside its title.
+Latest update: Company Mode now has a no-passive-acknowledgement rule, so short replies like `ok`, `yes`, `go`, or `?` keep active projects moving when the next task is clear.
 
 JARVIS Light turns a folder of markdown files into durable assistant memory.  
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -133,7 +133,15 @@ Classify this as clarification, defect, side quest, or scope change.
 Preserve the interrupted task and tell me whether the main flow resumes afterward.
 ```
 
-### 10. Release / Version Update
+### 10. Keep Going Without Micromanaging
+
+```text
+ok
+```
+
+In an active Company Mode project, short acknowledgements such as `ok`, `yes`, `go`, `next`, or `?` should not produce passive replies. They should continue the next unblocked task or explain the exact blocker.
+
+### 11. Release / Version Update
 
 ```text
 Jarvis, use JARVIS and JARVIS Company Mode.

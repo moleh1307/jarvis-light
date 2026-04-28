@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.9 - 2026-04-28
+
+- Added Company Mode no-passive-acknowledgement rule.
+- Short replies such as `ok`, `yes`, `go`, `next`, and `?` now route to continuation or exact blocker handling when an active unblocked task exists.
+- Clarified that users should not need to micromanage every step with a perfectly formed `continue` command.
+
 ## 0.0.8 - 2026-04-28
 
 - Added Company Mode v0.3 Adaptive Team Mode.

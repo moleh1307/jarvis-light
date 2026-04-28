@@ -62,5 +62,6 @@ When should the role stop and ask instead of proceeding?
 - Commit:
 - PR:
 - Version:
+- Version docs updated:
 - Blockers:
 - Next:

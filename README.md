@@ -2,6 +2,10 @@
 
 **A local-first operating system for Codex continuity.**
 
+Current version: `0.0.7`
+
+Latest update: Company Mode now requires visible version documentation whenever an internal/project version changes. It also includes role identity, interruption handling, and workspace-default rules from recent field tests.
+
 JARVIS Light turns a folder of markdown files into durable assistant memory.  
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
 

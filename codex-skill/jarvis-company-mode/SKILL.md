@@ -216,6 +216,19 @@ git commit --author="JARVIS Frontend Engineer <your-verified-email@example.com>"
 
 For substantial work, prefer PRs. Record role owner, reviewer role, task ID, scope, verification, visual evidence when relevant, and version impact.
 
+## Version Visibility
+
+If a role changes the internal project version, release version, package/app version, public template version, or workflow version, the change must also be visible in project-facing documentation in the same task or commit.
+
+Default documentation targets:
+
+- `README.md` for the current visible version and a short "what changed" note when the repo has no changelog.
+- `CHANGELOG.md` when the project has or should have change history.
+- `VERSION` or package metadata such as `package.json` / `pyproject.toml` when the project already uses a machine-readable version.
+- `company/current-state.md` and the relevant work order for internal Company Mode state.
+
+Do not only update memory or mention the version in chat. A future user opening the repo should be able to see the current version and understand what changed without reading JARVIS memory.
+
 ## User Commands
 
 - `continue`: run the next unblocked task

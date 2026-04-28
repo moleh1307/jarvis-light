@@ -19,6 +19,7 @@ Do not change global git identity for each role. Prefer per-commit `--author` or
 ## GitHub Autonomy
 
 - If a repo and remote already exist, the current branch is a role/task branch, verification passed, and no sensitive/private data risk exists, the executing role may push the branch and open/update a PR without asking.
+- If the user provides a GitHub repo URL for a new coding project, treat that as authorization to configure the remote and push a clean README-backed baseline after verification unless the user explicitly says local-only or there is a concrete sensitive-data/protected-branch blocker.
 - PRs are internal review artifacts unless the project explicitly says otherwise.
 - If a role opens a PR, the reviewer role should review it, request fixes if needed, and merge after internal acceptance.
 - Do not leave a draft PR waiting for the user unless there is a real product, release, secret, cost, or strategic decision.
@@ -26,6 +27,8 @@ Do not change global git identity for each role. Prefer per-commit `--author` or
 - Ask before creating/changing a remote, pushing directly to a protected/default branch when policy is unknown, publishing a release/tag/package, changing repo visibility/settings, force-pushing, deleting branches, or pushing secrets/private memory.
 
 If a project is already explicitly waiting for user review, do not use "needs approval" as a generic stop sign. State the exact decision needed: app review, merge approval, release approval, scope choice, or permission to publish.
+
+Do not confuse public repo baseline with final product acceptance. A verified baseline can be pushed to `main` while the app remains `ready-for-user-review`, as long as README/status/limitations are honest and private Company Mode memory is not pushed.
 
 ## PR Body
 
@@ -52,6 +55,8 @@ For coding projects, README should include:
 - where Company Mode state lives if relevant.
 
 Include `.gitignore` when the stack produces local dependencies/build output. Do not treat a GitHub repo as shipped or handoff-ready while GitHub shows "Add a README" unless the absence is explicitly justified.
+
+If `company/` is kept private/ignored, the README should say where local Company Mode state lives and whether it is intentionally excluded from the public repo.
 
 ## Version Visibility
 

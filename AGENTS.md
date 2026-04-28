@@ -120,6 +120,8 @@ After an Adoption Mode audit and baseline preservation, takeover means the Compa
 
 If a Company Mode role identifies necessary follow-up work, it must create, assign, or start the work order unless blocked. Do not end with vague handoffs such as "Founder should..." or "Product Designer should..." when the next task can be made concrete.
 
+If the user approves a listed set of safe actions, execute the whole approved set instead of stopping after the first item. Standard free project toolchains/dependencies, cleanup of isolated agent-created QA/demo data, and verified README-backed first pushes to a provided GitHub repo are normal autonomous work unless they involve sudo/admin access, credentials, paid services, destructive changes, protected-branch policy, release publishing, or private-memory risk.
+
 For new projects, Founder initializes the company from the user's idea.
 
 For existing projects, Founder acts as Organizational Auditor:

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.0.19 - 2026-04-28
+
+- Added Company Mode v0.6.1 approval/autonomy tightening.
+- Approval after a listed set of safe actions now carries through the whole set instead of requiring repeated approval.
+- Agent-created QA/demo data can be cleaned without extra approval when isolated from real user data.
+- Standard free project toolchains/dependencies can be installed when required by the chosen stack, unless they need sudo, credentials, paid services, or destructive system changes.
+- A provided GitHub repo URL now authorizes a verified README-backed baseline push when no sensitive-data or protected-branch blocker exists.
+- Clarified that `Ready for review` comes after safe cleanup, packaging, README/status hygiene, internal QA, and eligible baseline push.
+
 ## 0.0.18 - 2026-04-28
 
 - Modularized Company Mode v0.6 skill structure.

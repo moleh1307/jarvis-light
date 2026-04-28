@@ -34,6 +34,16 @@ For user-facing apps, websites, documents, decks, images, or packaged artifacts:
 
 `Ready for review` is allowed only after internal tool-based QA passes or a concrete blocker explains why it could not be completed. User review is for subjective/product judgment, acceptance, or direction changes.
 
+Before asking for review, complete safe cleanup and packaging hygiene that the team itself caused or can verify:
+
+- remove isolated agent-created QA/demo records from the review build or database;
+- rebuild/repackage after source changes;
+- verify the exact app/bundle/export the user will open;
+- update README/status/limitations so the repo is understandable;
+- push the verified baseline when a GitHub repo is configured and no sensitive/protected/release blocker exists.
+
+Do not ask the user to approve cleanup of the team's own isolated smoke-test records. Ask only if cleanup could delete or overwrite real user data.
+
 ## Internal Critique Loop
 
 Before a milestone is presented as ready for user review, run a short critique:

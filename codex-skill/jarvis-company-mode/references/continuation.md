@@ -28,6 +28,7 @@ Treat short replies as commands when Company Mode is active:
 - `?`, `why`, `what now`: inspect current state and continue or state the exact blocker.
 - `thanks`, `got it`, `cool`: continue if an active unblocked task exists; if waiting for review/approval, state the exact decision needed.
 - Direct factual questions should be answered first. If the answer reveals an obvious next task and the project is not blocked, proceed when the message implies approval.
+- `I approve`, `approved`, `approve everything`, or equivalent approval after a list of proposed safe actions authorizes the whole listed set unless the user narrows the approval. Execute every approved unblocked action instead of doing one item and asking again.
 
 Only stop after a short reply when:
 
@@ -36,6 +37,10 @@ Only stop after a short reply when:
 - required credentials/access are missing;
 - the user explicitly says pause/stop/wait;
 - the short reply answers a clarifying question but does not authorize the consequential action.
+
+If approval unblocks a task, resume through the blocked task's owner role, not the role that happened to ask the question. Example: approval to install a desktop toolchain for a desktop build should route to Desktop Engineer or App Architect, not Founder.
+
+Do not treat agent-created QA/demo data as user data. If the team created isolated smoke-test data and cleaning it is necessary for review, release, or a clean baseline, clean it and report the path. Ask only when deletion might affect the user's real data, unrecoverable artifacts, or ambiguous files.
 
 ## Next-Task Ownership
 
@@ -58,6 +63,8 @@ Do not end completion reports with vague handoffs such as:
 - "The team may want to..."
 
 If the next owner is obvious, assign it. If the next task is obvious, create it. If the next action is planning, create the planning work order and make it the next task.
+
+If the project is waiting for subjective user review but still has safe operational cleanup, README/git baseline, version-doc, or QA evidence work remaining, do that operational work first. `Ready for review` should mean the company has already completed the safe internal work it can do.
 
 ## Interruptions And Side Quests
 

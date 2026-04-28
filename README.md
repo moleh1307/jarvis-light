@@ -2,9 +2,9 @@
 
 **A local-first operating system for Codex continuity.**
 
-Current version: `0.0.18`
+Current version: `0.0.19`
 
-Latest update: Company Mode v0.6 modularizes the skill into a concise executable `SKILL.md` plus focused reference files.
+Latest update: Company Mode v0.6.1 tightens approval carry-forward, safe QA cleanup, standard toolchain installs, and first GitHub baseline pushes.
 
 JARVIS Light turns a folder of markdown files into durable assistant memory.  
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -76,7 +76,11 @@ Follow the latest workflow rules from now on, especially:
 - reusable workflow friction should become a feedback candidate
 - after adoption audit and baseline preservation, takeover means the company owns the project outcome
 - if a role identifies necessary follow-up work, it must create/assign/start the work order unless blocked
+- if I approve a listed set of safe actions, execute the whole approved set instead of asking again item by item
+- standard free project toolchains/dependencies can be installed when required by the chosen stack unless they require sudo, credentials, paid services, or destructive system changes
+- clean isolated agent-created QA/demo data without asking when needed for review/release; ask only before touching real user data
 - verified role/task branch pushes and PR updates can proceed without asking when the remote exists and no sensitive/release risk is present
+- when I provide a GitHub repo URL for a coding project, configure it and push a verified README-backed baseline unless there is a concrete blocker
 - after internal acceptance, merge safe role/task branches and push main when project policy allows
 - ask before protected/default branch changes when policy is unknown, publishing releases/tags/packages, changing remotes/settings, force-pushing, deleting branches, or risking secrets/private memory
 - every completion should state verification, blockers, and one explicit next-action label:
@@ -477,13 +481,13 @@ For coding projects, the workflow also supports:
 - PR handoffs
 - version changes after reliable milestones
 
-If the remote already exists, verification passed, and the current branch is a role/task branch, agents may push the branch and open/update a PR without asking first. After internal acceptance, the reviewer role should merge the role/task branch and push `main` when project policy allows. They should still ask before protected/default branch changes when policy is unknown, publishing releases/tags/packages, changing remotes/settings, force-pushing, deleting branches, or pushing anything that may contain private data.
+If the remote already exists, verification passed, and the current branch is a role/task branch, agents may push the branch and open/update a PR without asking first. If the user provides a GitHub repo URL for a new coding project, that is authorization to configure the remote and push a clean README-backed baseline after verification unless the user explicitly says local-only or there is a concrete sensitive-data/protected-branch blocker. After internal acceptance, the reviewer role should merge the role/task branch and push `main` when project policy allows. They should still ask before protected/default branch changes when policy is unknown, publishing releases/tags/packages, changing remotes/settings, force-pushing, deleting branches, or pushing anything that may contain private data.
 
 For normal autonomous Company Mode projects, PRs are internal review artifacts. If a role opens a PR, the reviewer role should review it, request fixes if needed, then merge it after internal acceptance. Do not leave a draft PR waiting for the user unless there is a real product, release, secret, cost, or strategic decision.
 
 Before a GitHub repo is treated as shipped or handoff-ready, it needs a `README.md`. For coding projects, README should explain what the project is, current status, setup/run/build/test instructions, known limitations, and where Company Mode state lives if relevant.
 
-For user-facing work, the company should use available tools for internal QA before asking the user. Use Computer Use, browser testing, screenshots, renderers, test scripts, package launch commands, or file inspection where relevant. `Ready for review` is for subjective/product judgment after internal QA, not for catching basic issues like blank screens, broken flows, missing README files, or unverified persistence.
+For user-facing work, the company should use available tools for internal QA before asking the user. Use Computer Use, browser testing, screenshots, renderers, test scripts, package launch commands, or file inspection where relevant. `Ready for review` is for subjective/product judgment after internal QA, not for catching basic issues like blank screens, broken flows, missing README files, unverified persistence, stale packages, or agent-created QA/demo records left in the review artifact.
 
 Completion reports should use explicit next-action language:
 

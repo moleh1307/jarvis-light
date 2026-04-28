@@ -2,9 +2,9 @@
 
 **A local-first operating system for Codex continuity.**
 
-Current version: `0.0.11`
+Current version: `0.0.12`
 
-Latest update: Company Mode v0.4 adds Selective Innovation Mode: users can force deep brainstorming, and roles can self-invoke it when a task deserves serious ideation.
+Latest update: Company Mode v0.5 adds a JARVIS R&D Feedback Loop so real project friction can become triaged workflow improvements instead of getting lost in chat.
 
 JARVIS Light turns a folder of markdown files into durable assistant memory.  
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -180,7 +180,22 @@ Do not implement a risky or irreversible idea without creating a proposal or ask
 
 Roles may also self-invoke Innovation Mode when the work is ambiguous, strategically important, creatively underdeveloped, expensive to reverse, or likely to become generic without deeper thinking.
 
-### 13. Release / Version Update
+### 13. Report Workflow Feedback
+
+Use this when a real project exposes a reusable JARVIS / Company Mode improvement.
+
+```text
+Jarvis, use JARVIS and JARVIS Company Mode.
+
+Feedback for the workflow:
+...
+
+Record this as a feedback candidate.
+Classify whether it is project-local or should be routed to JARVIS R&D.
+Do not turn it into a standing rule until it is triaged.
+```
+
+### 14. Release / Version Update
 
 ```text
 Jarvis, use JARVIS and JARVIS Company Mode.
@@ -226,6 +241,7 @@ The optional serious-project layer:
 - assertive role critique
 - optional role names
 - selective innovation mode
+- workflow feedback loop
 - GitHub / PR workflow guidance
 - adoption mode for existing projects
 
@@ -416,6 +432,8 @@ Founder and Chief of Staff can evolve the team as the project changes: hire new 
 
 Roles can also use Selective Innovation Mode. This is deeper than the normal out-of-box pass. It can be forced by the user or self-invoked by a role when a task deserves serious ideation. The role must state why it invoked the mode, compare meaningfully different options, critique them, and choose the best practical path.
 
+Company Mode also supports a feedback loop for improving the workflow itself. When a project exposes reusable friction, a behavior defect, a missing rule, or a useful emergent pattern, the team can file a compact feedback candidate. A JARVIS R&D / maintainer team can then triage it as `reject`, `document-only`, `patch-skill`, `update-template`, `add-eval-scenario`, or `public-release`. Feedback candidates are not rules until promoted.
+
 For coding projects, the workflow also supports:
 
 - role/task branches
@@ -461,6 +479,7 @@ git commit --author="JARVIS Frontend Engineer <your-verified-email@example.com>"
     ├── company-mode/
     │   ├── adoption-audit.md
     │   ├── current-state.md
+    │   ├── feedback-report.md
     │   ├── integration-log.md
     │   ├── project-charter.md
     │   ├── role-charter.md

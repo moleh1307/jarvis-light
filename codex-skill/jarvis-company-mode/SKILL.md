@@ -7,7 +7,7 @@ description: "Role-based project workflow for JARVIS Light. Use when Codex shoul
 
 Company Mode is an optional JARVIS Light layer for serious projects that benefit from specialist roles.
 
-It does not create true background agents. It makes one Codex agent operate through durable role contracts, queues, memories, and review gates stored in markdown.
+It does not create true background agents. It makes one Codex agent operate through durable role contracts, queues, memories, review gates, and feedback loops stored in markdown.
 
 ## Use When
 
@@ -38,6 +38,7 @@ Company Mode provides:
 - assertive role autonomy: roles challenge weak assumptions, critique orders, and propose better paths within scope
 - optional role names alongside role titles for persistent project identity
 - Selective Innovation Mode: users can force deep brainstorming, and roles can self-invoke it when the work deserves serious ideation
+- JARVIS R&D Feedback Loop: project teams can report workflow friction, behavior defects, missing rules, or useful emergent patterns back to a JARVIS workflow-maintenance team for triage
 
 Company Mode does not provide:
 
@@ -180,6 +181,41 @@ The role should implement the chosen path only when it is within scope and not c
 
 Innovation Mode should create novel but useful options, not random feature spam. Favor ideas that improve the project goal, current milestone, user value, or long-term leverage.
 
+## JARVIS R&D Feedback Loop
+
+Company Mode can improve through real usage. Projects reveal workflow friction, maintainers turn repeated or high-impact friction into better rules/templates/skills, and future projects benefit from the upgrade.
+
+Project teams may create feedback when they observe:
+
+- a behavior defect, such as passive acknowledgement, missing role identity, poor continuation, or bad routing
+- workflow friction that repeatedly slows the user down
+- a missing role, rule, template field, or review gate
+- a quality gap that Company Mode should have caught earlier
+- an emergent pattern that improved execution and should be reused
+- a candidate eval scenario from a real project interaction
+
+Use feedback reports sparingly. Do not file feedback for every inconvenience, one-off taste preference, or task-specific bug that belongs only to the current project.
+
+Feedback flow:
+
+1. The project role records a compact feedback report in the project `company/` folder or the current work order.
+2. Chief of Staff labels it as `feedback-candidate`, not a new rule.
+3. If the feedback affects the JARVIS workflow itself, route it to the maintainer/R&D project.
+4. The maintainer/R&D team triages it as one of: `reject`, `document-only`, `patch-skill`, `update-template`, `add-eval-scenario`, or `public-release`.
+5. Only promoted feedback changes installed skills, public templates, README, or version numbers.
+
+Feedback reports should answer:
+
+- What happened?
+- Where did it happen?
+- Why did the workflow fail or succeed?
+- Is this one-off, repeated, or high-impact?
+- What change is proposed?
+- What risk does the proposed change introduce?
+- How should the change be verified?
+
+Do not silently self-modify the workflow from a single project observation unless the user explicitly asks or the issue is a high-impact failure. Prefer a small feedback report first.
+
 ## Workspace Location Policy
 
 Founder must choose the project workspace deliberately. Do not silently create normal user projects inside the JARVIS vault just because the current shell is in the vault.
@@ -240,8 +276,9 @@ When the user says `continue`:
 7. Decide whether Selective Innovation Mode is needed. Invoke it when the task deserves deep ideation; otherwise run a compact out-of-box pass.
 8. Verify the output.
 9. Create improvement work orders if quality gaps remain.
-10. Update task board, role memory, current state, and integration log.
-11. Report compactly.
+10. If the task reveals reusable workflow friction or a behavior defect, file a compact feedback candidate instead of burying it in chat.
+11. Update task board, role memory, current state, and integration log.
+12. Report compactly.
 
 ## No Passive Acknowledgement
 
@@ -371,6 +408,7 @@ Do not only update memory or mention the version in chat. A future user opening 
 - `status`: summarize current state, active task, blockers, and next likely task
 - `show blockers`: list only blockers and required decisions
 - `adopt this project`: run Adoption Mode against the current repo/folder
+- `feedback`: record or triage workflow feedback. In a normal project, create a feedback candidate; inside the maintainer/R&D project, triage it for possible skill/template/doc/version changes.
 - `audit first`: inspect and create `adoption-audit.md` before creating/changing role/task files
 - `switch to <role>`: enter a specific role if it exists
 - `open pr`: push the role/task branch and open a PR when repo/remote are ready

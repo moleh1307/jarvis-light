@@ -63,6 +63,12 @@ What has been accepted into project state recently?
 - Verification gaps:
 - User approval needed:
 
+## Workflow Feedback
+
+- Open feedback candidates:
+- Routed to JARVIS R&D / maintainer project:
+- Rejected / project-local only:
+
 ## Git / Version State
 
 For coding projects:

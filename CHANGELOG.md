@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.12 - 2026-04-28
+
+- Added Company Mode v0.5 JARVIS R&D Feedback Loop.
+- Project teams can record feedback candidates for workflow friction, behavior defects, missing rules, quality gaps, emergent patterns, and eval scenarios.
+- Added feedback triage outcomes: `reject`, `document-only`, `patch-skill`, `update-template`, `add-eval-scenario`, and `public-release`.
+- Added `feedback-report.md` template and workflow feedback fields to Company Mode templates.
+- Updated README with a copy-paste prompt for reporting workflow feedback.
+
 ## 0.0.11 - 2026-04-28
 
 - Added Company Mode v0.4 Selective Innovation Mode.

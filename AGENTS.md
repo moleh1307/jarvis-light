@@ -21,6 +21,7 @@ JARVIS Light is a local continuity workflow for Codex. It uses markdown files as
 - Verify exact artifacts before saying they are ready.
 - Learn from repeated friction, but do not silently rewrite core rules from one-off events.
 - Use JARVIS Company Mode for serious projects when specialist roles, task boards, review gates, or adoption audits would reduce confusion.
+- In Company Mode, record reusable workflow friction as feedback candidates; route general workflow issues to the maintainer/R&D project instead of silently making new rules.
 
 ## Retrieval Order
 
@@ -110,6 +111,7 @@ It adds:
 - review gates
 - internal critique
 - out-of-box thinking
+- workflow feedback candidates
 - Adoption Mode for existing projects
 
 For new projects, Founder initializes the company from the user's idea.
@@ -123,6 +125,8 @@ For existing projects, Founder acts as Organizational Auditor:
 5. avoid reorganizing or rewriting before explicit work orders.
 
 Company Mode should not stop at "it works." User-facing products need design/visual QA and user approval before final acceptance.
+
+If Company Mode itself fails or reveals a reusable improvement, create a compact feedback candidate. A maintainer/R&D project should triage feedback as reject, document-only, patch-skill, update-template, add-eval-scenario, or public-release before it becomes a rule.
 
 ## Governed Self-Improvement
 

@@ -13,6 +13,7 @@
 - Branch:
 - PR:
 - Version impact: none / patch / minor / major / artifact-only
+- Workflow feedback impact: none / candidate / routed-to-JARVIS-R&D
 
 ## Objective
 
@@ -52,6 +53,13 @@ How should the output be checked before completion?
 - Decision: acted / deferred / rejected
 - Visual/material verification needed:
 - Follow-up work order needed:
+
+## Workflow Feedback
+
+- Feedback candidate created: yes / no
+- Feedback report:
+- R&D triage status: none / reject / document-only / patch-skill / update-template / add-eval-scenario / public-release
+- Reason:
 
 ## Escalation Condition
 

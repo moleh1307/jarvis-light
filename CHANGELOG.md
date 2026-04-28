@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.14 - 2026-04-28
+
+- Added Company Mode v0.5.2 GitHub autonomy clarification.
+- Verified role/task branch pushes and PR creation can proceed without asking when the remote exists and no sensitive/release risk is present.
+- Added explicit next-action language: `Next task`, `Blocked`, `Decision needed`, or `Ready for review`.
+- Clarified that `next likely task` should only appear when there is genuine uncertainty.
+
 ## 0.0.13 - 2026-04-28
 
 - Added Company Mode v0.5.1 canonical role identity registry.

@@ -40,6 +40,8 @@ Company Mode provides:
 - optional role names alongside role titles, file-backed by `company/team-roster.md` for persistent project identity
 - Selective Innovation Mode: users can force deep brainstorming, and roles can self-invoke it when the work deserves serious ideation
 - JARVIS R&D Feedback Loop: project teams can report workflow friction, behavior defects, missing rules, or useful emergent patterns back to a JARVIS workflow-maintenance team for triage
+- explicit GitHub autonomy rules: verified role/task branches can be pushed without asking when the remote exists and no sensitive/release risk is present
+- explicit next-action language: use `Next task`, `Blocked`, or `Decision needed`; do not hide ownership behind vague "likely" wording
 
 Company Mode does not provide:
 
@@ -300,7 +302,16 @@ When the user says `continue`:
 10. Create improvement work orders if quality gaps remain.
 11. If the task reveals reusable workflow friction or a behavior defect, file a compact feedback candidate instead of burying it in chat.
 12. Update task board, role memory, current state, and integration log.
-13. Report compactly.
+13. Report compactly with the explicit next action.
+
+Use precise next-action language:
+
+- `Next task:` when the company can continue without user input.
+- `Blocked:` when work cannot continue until a concrete blocker is removed.
+- `Decision needed:` when the user must choose between consequential options.
+- `Ready for review:` when a milestone/artifact is waiting for user review.
+
+Avoid `next likely task` unless there is genuine uncertainty and no role can responsibly choose yet. If the next action is uncertain, state why and either create a planning task or ask the minimum needed question.
 
 ## No Passive Acknowledgement
 
@@ -415,6 +426,12 @@ git commit --author="JARVIS Frontend Engineer <your-verified-email@example.com>"
 
 For substantial work, prefer PRs. Record role owner, reviewer role, task ID, scope, verification, visual evidence when relevant, and version impact.
 
+GitHub autonomy rule:
+
+- If a repo and remote already exist, the current branch is a role/task branch, verification passed, and no sensitive/private data risk is present, the executing role may push the branch and open/update a PR without asking first.
+- Ask before creating or changing a remote, pushing directly to `main` or a protected/default branch, merging a PR, publishing a release/tag/package, changing repository visibility/settings, force-pushing, deleting branches, or pushing anything that may contain secrets/private memory.
+- If a project is already explicitly waiting for user review, do not use "needs approval" as a generic stop sign. State the exact decision needed: app review, merge approval, release approval, scope choice, or permission to publish.
+
 ## Version Visibility
 
 If a role changes the internal project version, release version, package/app version, public template version, or workflow version, the change must also be visible in project-facing documentation in the same task or commit.
@@ -433,7 +450,7 @@ Do not only update memory or mention the version in chat. A future user opening 
 - `continue`: run the next unblocked task
 - `ok`, `okay`, `yes`, `yep`, `go`, `next`, `do it`: continue the next unblocked task when Company Mode is active and not blocked
 - `?` or `what now`: inspect state; continue if the next task is obvious, otherwise state the exact blocker
-- `status`: summarize current state, active task, blockers, and next likely task
+- `status`: summarize current state, active task, blockers, and exact next action
 - `show blockers`: list only blockers and required decisions
 - `adopt this project`: run Adoption Mode against the current repo/folder
 - `feedback`: record or triage workflow feedback. In a normal project, create a feedback candidate; inside the maintainer/R&D project, triage it for possible skill/template/doc/version changes.

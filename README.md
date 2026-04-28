@@ -2,9 +2,9 @@
 
 **A local-first operating system for Codex continuity.**
 
-Current version: `0.0.13`
+Current version: `0.0.14`
 
-Latest update: Company Mode v0.5.1 adds a canonical `team-roster.md` so role names are file-backed and cannot drift across long chats.
+Latest update: Company Mode v0.5.2 clarifies GitHub autonomy and requires explicit next-action language instead of vague "likely" wording.
 
 JARVIS Light turns a folder of markdown files into durable assistant memory.  
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -241,6 +241,8 @@ The optional serious-project layer:
 - assertive role critique
 - optional role names
 - team roster for canonical role identity
+- GitHub autonomy rules for role/task branches
+- explicit next-action language
 - selective innovation mode
 - workflow feedback loop
 - GitHub / PR workflow guidance
@@ -443,6 +445,15 @@ For coding projects, the workflow also supports:
 - role-authored commits
 - PR handoffs
 - version changes after reliable milestones
+
+If the remote already exists, verification passed, and the current branch is a role/task branch, agents may push the branch and open/update a PR without asking first. They should still ask before pushing directly to `main`, merging, publishing releases/tags/packages, changing remotes/settings, force-pushing, deleting branches, or pushing anything that may contain private data.
+
+Completion reports should use explicit next-action language:
+
+- `Next task:` for unblocked continuation
+- `Blocked:` for concrete blockers
+- `Decision needed:` for consequential user choices
+- `Ready for review:` for artifacts awaiting user review
 
 Example commit author:
 

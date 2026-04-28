@@ -2,9 +2,9 @@
 
 **A local-first operating system for Codex continuity.**
 
-Current version: `0.0.17`
+Current version: `0.0.18`
 
-Latest update: Company Mode v0.5.5 adds Adoption Takeover Authority and Next-Task Ownership so agents stop acting like guests after audit.
+Latest update: Company Mode v0.6 modularizes the skill into a concise executable `SKILL.md` plus focused reference files.
 
 JARVIS Light turns a folder of markdown files into durable assistant memory.  
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -274,6 +274,7 @@ The optional serious-project layer:
 - workflow feedback loop
 - GitHub / PR workflow guidance
 - adoption mode for existing projects
+- modular skill references so agents load only the detailed procedure they need
 
 This is for projects where one undifferentiated agent would likely mix design, backend, frontend, QA, research, writing, and release work into one blurry pile.
 
@@ -508,7 +509,15 @@ git commit --author="JARVIS Frontend Engineer <your-verified-email@example.com>"
 │   ├── jarvis/
 │   │   └── SKILL.md
 │   └── jarvis-company-mode/
-│       └── SKILL.md
+│       ├── SKILL.md
+│       └── references/
+│           ├── adoption-takeover.md
+│           ├── continuation.md
+│           ├── github-release-versioning.md
+│           ├── greenfield.md
+│           ├── innovation-feedback.md
+│           ├── quality-qa-and-critique.md
+│           └── roles-and-roster.md
 ├── handoffs/
 │   └── README.md
 ├── logs/

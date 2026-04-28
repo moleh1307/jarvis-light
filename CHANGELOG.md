@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.18 - 2026-04-28
+
+- Modularized Company Mode v0.6 skill structure.
+- Shrank the executable `SKILL.md` into a concise index/non-negotiable layer.
+- Added focused reference files for greenfield setup, adoption/takeover, continuation, roles/roster, quality/QA, GitHub/release/versioning, and innovation/feedback.
+- Preserved installed/public structure parity while keeping public wording generic.
+
 ## 0.0.17 - 2026-04-28
 
 - Added Company Mode v0.5.5 Adoption Takeover Authority.

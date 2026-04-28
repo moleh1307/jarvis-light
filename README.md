@@ -2,9 +2,9 @@
 
 **A local-first operating system for Codex continuity.**
 
-Current version: `0.0.15`
+Current version: `0.0.16`
 
-Latest update: Company Mode v0.5.3 clarifies Founder-led discovery: the Founder asks all material questions first, then decides the team and first work orders.
+Latest update: Company Mode v0.5.4 adds autonomous shipping, repo readiness, and tool-aware QA gates for user-facing work.
 
 JARVIS Light turns a folder of markdown files into durable assistant memory.  
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -262,6 +262,9 @@ The optional serious-project layer:
 - team roster for canonical role identity
 - GitHub autonomy rules for role/task branches
 - explicit next-action language
+- tool-aware QA before user review
+- autonomous internal PR/merge behavior
+- repo readiness gate with README requirement
 - selective innovation mode
 - workflow feedback loop
 - GitHub / PR workflow guidance
@@ -467,6 +470,12 @@ For coding projects, the workflow also supports:
 - version changes after reliable milestones
 
 If the remote already exists, verification passed, and the current branch is a role/task branch, agents may push the branch and open/update a PR without asking first. They should still ask before pushing directly to `main`, merging, publishing releases/tags/packages, changing remotes/settings, force-pushing, deleting branches, or pushing anything that may contain private data.
+
+For normal autonomous Company Mode projects, PRs are internal review artifacts. If a role opens a PR, the reviewer role should review it, request fixes if needed, then merge it after internal acceptance. Do not leave a draft PR waiting for the user unless there is a real product, release, secret, cost, or strategic decision.
+
+Before a GitHub repo is treated as shipped or handoff-ready, it needs a `README.md`. For coding projects, README should explain what the project is, current status, setup/run/build/test instructions, known limitations, and where Company Mode state lives if relevant.
+
+For user-facing work, the company should use available tools for internal QA before asking the user. Use Computer Use, browser testing, screenshots, renderers, test scripts, package launch commands, or file inspection where relevant. `Ready for review` is for subjective/product judgment after internal QA, not for catching basic issues like blank screens, broken flows, missing README files, or unverified persistence.
 
 Completion reports should use explicit next-action language:
 

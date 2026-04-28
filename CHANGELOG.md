@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.16 - 2026-04-28
+
+- Added Company Mode v0.5.4 autonomous shipping and tool-aware QA policy.
+- User-facing artifacts must be internally tested with available tools before asking for user review.
+- PRs are internal review artifacts by default; after internal acceptance, merge/push instead of waiting for user approval.
+- Added repo readiness gate: GitHub handoff repos need a `README.md` with setup/run/build/test/status information.
+
 ## 0.0.15 - 2026-04-28
 
 - Added Company Mode v0.5.3 Founder-led discovery clarification.

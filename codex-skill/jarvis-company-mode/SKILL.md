@@ -43,6 +43,9 @@ Company Mode provides:
 - explicit GitHub autonomy rules: verified role/task branches can be pushed without asking when the remote exists and no sensitive/release risk is present
 - explicit next-action language: use `Next task`, `Blocked`, or `Decision needed`; do not hide ownership behind vague "likely" wording
 - Founder-led discovery before team design: Founder asks all material questions needed to understand the project before deciding roles, company depth, and first work orders
+- tool-aware QA gate: user-facing artifacts must be tested with available tools before asking the user to review
+- autonomous shipping gate: internal PRs/branches are review artifacts for the agent company, not user-approval traps
+- repo readiness gate: GitHub repos must include basic handoff docs such as `README.md` before being treated as shipped
 
 Company Mode does not provide:
 
@@ -323,6 +326,21 @@ Use precise next-action language:
 
 Avoid `next likely task` unless there is genuine uncertainty and no role can responsibly choose yet. If the next action is uncertain, state why and either create a planning task or ask the minimum needed question.
 
+## Tool-Aware QA Gate
+
+If the agent has a tool that can verify the work, it must use that tool before involving the user.
+
+For user-facing apps, websites, documents, decks, images, or packaged artifacts:
+
+- QA must test the actual artifact, not only source files or build scripts.
+- Use available tools such as Computer Use, browser testing, screenshots, renderers, test scripts, package launch commands, or file inspection.
+- For apps, launch the packaged app when feasible, inspect the visible UI, exercise core flows, quit/reopen when persistence matters, and record evidence.
+- For websites, inspect the rendered page, key responsive states, navigation, forms/interactions, and console/build errors when feasible.
+- For documents/decks/PDFs, render/open enough pages to confirm the artifact is not corrupt and layout/content are credible.
+- Do not ask the user to perform basic QA that the available tools can perform.
+
+`Ready for review` is allowed only after internal tool-based QA passes or after a concrete blocker explains why tool-based QA could not be completed. User review is for subjective/product judgment, acceptance, or direction changes, not for catching obvious missing README files, blank screens, broken buttons, unlaunched apps, or unverified persistence.
+
 ## No Passive Acknowledgement
 
 In an active Company Mode project, do not respond to low-content user messages with passive acknowledgement only.
@@ -439,8 +457,17 @@ For substantial work, prefer PRs. Record role owner, reviewer role, task ID, sco
 GitHub autonomy rule:
 
 - If a repo and remote already exist, the current branch is a role/task branch, verification passed, and no sensitive/private data risk is present, the executing role may push the branch and open/update a PR without asking first.
-- Ask before creating or changing a remote, pushing directly to `main` or a protected/default branch, merging a PR, publishing a release/tag/package, changing repository visibility/settings, force-pushing, deleting branches, or pushing anything that may contain secrets/private memory.
+- PRs are internal review artifacts unless the project explicitly says otherwise. If a role opens a PR, the reviewer role should review it, request fixes if needed, and merge after internal acceptance. Do not leave a draft PR waiting for the user unless there is a real product, release, secret, cost, or strategic decision.
+- After internal acceptance, merge the role/task branch to `main` and push `main` when the project policy allows it and no protected-branch/destructive/sensitive risk exists.
+- Ask before creating or changing a remote, pushing directly to a protected/default branch when protection or project policy is unknown, publishing a release/tag/package, changing repository visibility/settings, force-pushing, deleting branches, or pushing anything that may contain secrets/private memory.
 - If a project is already explicitly waiting for user review, do not use "needs approval" as a generic stop sign. State the exact decision needed: app review, merge approval, release approval, scope choice, or permission to publish.
+
+Repo readiness gate:
+
+- Before first GitHub push intended as a project handoff, the repo must include a `README.md`.
+- For coding projects, the README should include what the project is, current status, setup/run/build/test instructions, known limitations, and where Company Mode state lives if relevant.
+- Include `.gitignore` when the stack produces local dependencies/build output.
+- Do not treat a GitHub repo as shipped or handoff-ready while GitHub displays "Add a README" unless the absence of README is an explicit, justified temporary state.
 
 ## Version Visibility
 

@@ -2,9 +2,9 @@
 
 **A local-first operating system for Codex continuity.**
 
-Current version: `0.0.23`
+Current version: `0.0.24`
 
-Latest update: Company Mode v0.7.1 adds Response Preflight / Header Guard so active Company Mode and workflow R&D replies do not lose their role identity.
+Latest update: Company Mode v0.8 adds Adaptive Project-Shape Inference, confidence lanes, adversarial review triggers, optional strategy/evidence artifacts, and queue re-ranking after discoveries.
 
 JARVIS Light turns a folder of markdown files into durable assistant memory.  
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -80,6 +80,11 @@ Follow the latest workflow rules from now on, especially:
 - internally accept milestones after role review and QA, then continue to the next useful task
 - craft-critical user-facing work must classify craft criticality, activate design leadership, run reference intelligence, write an art direction brief, compare divergent concepts, and pass screenshot-based Design QA before major implementation
 - if UI/visual work is rejected as generic, ugly, AI-looking, template-like, or not best-in-field, re-enter Creative Preproduction instead of restyling incrementally or asking me for taste by default
+- before creating or reshaping a serious project, Founder runs Project-Shape Inference: infer what kind of work this is, what makes success hard, what evidence matters, what roles/artifacts are needed, and which verification/adversarial gates are justified
+- do not use fixed project-type recipes; choose roles/artifacts from the actual project shape
+- use confidence lanes for consequential claims/results: verified, working-assumption, speculative, needs-audit, rejected
+- trigger adversarial review for major proof claims, design directions, method choices, architecture decisions, data results, release candidates, or public claims
+- after meaningful discoveries, Chief of Staff should check whether the bottleneck changed and re-rank the queue instead of blindly following old work orders
 - after adoption audit and baseline preservation, takeover means the company owns the project outcome
 - if a role identifies necessary follow-up work, it must create/assign/start the work order unless blocked
 - if I approve a listed set of safe actions, execute the whole approved set instead of asking again item by item
@@ -425,12 +430,14 @@ Use this when starting from an idea.
 The Founder asks all material questions needed to understand the project, then creates:
 
 - project charter
+- project-shape inference
 - team roster
 - current state
 - task board
 - role charters
 - role memories
 - first work orders
+- optional strategy/evidence/adversarial-review artifacts when useful
 
 Then you can mostly say:
 
@@ -476,6 +483,21 @@ Roles should:
 - internally accept normal milestones and keep moving
 - ask the user only for final stop/closure, public release, credentials/cost/destructive actions, strategic direction changes, or explicitly requested user review
 
+### Adaptive Project-Shape Inference
+
+Before designing the team or first work orders, Founder should infer the project's shape:
+
+- what kind of work this is
+- what makes success hard
+- what failure would look like
+- what evidence/artifacts matter
+- what roles and disciplines are needed
+- what confidence lanes are needed
+- what verification or adversarial review gates are justified
+- whether a strategy map, evidence ledger, attack tree, claims map, design calibration, or similar artifact would help
+
+This is not a recipe system. A research problem, app, data project, writing project, and strategy project may all get different structures, but only because the specific problem demands it.
+
 Founder and Chief of Staff can evolve the team as the project changes: hire new roles, merge redundant roles, retire completed roles, or add temporary specialists. Each role may also keep a short name alongside its title, such as:
 
 ```text
@@ -508,6 +530,16 @@ For user-facing work, the company should use available tools for internal QA and
 Project-scoped dev/test dependencies and official stack plugins are normal autonomous work when they are needed for the accepted stack or QA plan. Examples include Vitest, Playwright test packages and browser assets, Tauri dialog/plugin additions, local lint/build tools, and official framework plugins. Ask only for sudo/global installs, credentials, paid services, telemetry/cloud runtime behavior, destructive changes, unusual system-level impact, or strategic stack changes.
 
 Reports should preserve role boundaries. A single-role task reports as that role. Cross-functional implementation/QA/product summaries should report as Chief of Staff after reading the relevant work orders and role memories. If several consecutive tasks only add QA or infrastructure, Founder or Chief of Staff should run a product-judgment check before creating another verification task.
+
+For serious projects, use confidence lanes proportionally:
+
+- `verified`
+- `working-assumption`
+- `speculative`
+- `needs-audit`
+- `rejected`
+
+Consequential internal results should trigger adversarial review or an explicit decision not to review. The review should try to break the result before it becomes stable project truth. After meaningful discoveries, Chief of Staff should ask whether the bottleneck changed and re-rank the queue if needed.
 
 ### Creative Preproduction And Taste Gate
 
@@ -544,7 +576,9 @@ git commit --author="JARVIS Frontend Engineer <your-verified-email@example.com>"
 │       ├── SKILL.md
 │       └── references/
 │           ├── adoption-takeover.md
+│           ├── adaptive-operating-patterns.md
 │           ├── continuation.md
+│           ├── creative-preproduction.md
 │           ├── github-release-versioning.md
 │           ├── greenfield.md
 │           ├── innovation-feedback.md
@@ -571,12 +605,15 @@ git commit --author="JARVIS Frontend Engineer <your-verified-email@example.com>"
 └── templates/
     ├── company-mode/
     │   ├── adoption-audit.md
+    │   ├── adversarial-review.md
     │   ├── current-state.md
+    │   ├── evidence-ledger.md
     │   ├── feedback-report.md
     │   ├── integration-log.md
     │   ├── project-charter.md
     │   ├── role-charter.md
     │   ├── role-memory.md
+    │   ├── strategy-map.md
     │   ├── task-board.md
     │   ├── team-roster.md
     │   └── work-order.md
@@ -605,8 +642,9 @@ git commit --author="JARVIS Frontend Engineer <your-verified-email@example.com>"
 3. Optional: install Company Mode:
 
    ```bash
-   mkdir -p ~/.codex/skills/jarvis-company-mode
-   cp codex-skill/jarvis-company-mode/SKILL.md ~/.codex/skills/jarvis-company-mode/SKILL.md
+   rm -rf ~/.codex/skills/jarvis-company-mode
+   mkdir -p ~/.codex/skills
+   cp -R codex-skill/jarvis-company-mode ~/.codex/skills/jarvis-company-mode
    ```
 
 4. Start Codex from the vault folder.

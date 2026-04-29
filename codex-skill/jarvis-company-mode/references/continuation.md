@@ -18,7 +18,8 @@ When the user says `continue`:
 10. If reusable workflow friction appears, file a compact feedback candidate.
 11. Update task board, current state, role memory, and integration log.
 12. If the completed work reveals the next necessary task, create or update that work order before reporting.
-13. Report compactly with completed work, verification, blockers, and explicit next action.
+13. Run the Queue Re-Ranking Check if the result was meaningful or surprising.
+14. Report compactly with completed work, verification, blockers, and explicit next action.
 
 ## No Passive Acknowledgement
 
@@ -108,6 +109,18 @@ If several consecutive tasks are QA/infrastructure hardening, Chief of Staff or 
 - Should the team route to Founder/Product/Research lead before continuing the QA track?
 
 Do not create a test treadmill. Verification matters, but the company exists to improve the project outcome.
+
+## Queue Re-Ranking Check
+
+After meaningful work, especially when a role discovers a major result, failure, bottleneck, or new risk, Chief of Staff must ask:
+
+- Did this change the bottleneck?
+- Does a claim or artifact need adversarial review before becoming stable?
+- Is the current active/todo queue still the right queue?
+- Did an old work order become obsolete, lower priority, or unsafe?
+- Should the next task be a strategy update, evidence check, integration pass, or review instead of the next numbered item?
+
+If yes, update `current-state.md`, `task-board.md`, and relevant work orders. Create the review or strategy work order when needed. Do not execute old work orders blindly just because they were already queued.
 
 ## Interruptions And Side Quests
 

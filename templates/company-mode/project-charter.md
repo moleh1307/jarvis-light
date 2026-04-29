@@ -9,6 +9,18 @@
 - Company Mode status: active / review / internally-accepted / waiting-user-decision / paused / closed
 - Craft criticality: utility-only / polished product / craft-critical / signature product / not applicable
 
+## Project-Shape Inference
+
+- Project shape:
+- What makes success hard:
+- Main failure modes:
+- Evidence/artifacts that matter:
+- Needed roles/disciplines:
+- Confidence lanes needed: none / light / strict
+- Verification/adversarial gates:
+- Strategy map or evidence ledger needed: no / yes, because
+- What should not be overbuilt:
+
 ## Goal
 
 What are we trying to build or discover?
@@ -43,6 +55,13 @@ For user-facing or presentation-sensitive work:
 - Anti-reference / must-not-feel-like:
 - Required design roles:
 - Design QA requirement:
+
+## Confidence / Evidence Policy
+
+- Default confidence lanes:
+- What counts as verified:
+- What can be speculative:
+- What must receive adversarial review:
 
 ## Success Criteria
 

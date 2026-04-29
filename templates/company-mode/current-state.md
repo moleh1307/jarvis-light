@@ -7,13 +7,15 @@
 - Latest status:
 - Workspace classification:
 - Craft criticality:
+- Project shape:
+- Confidence policy:
 - Coordinator role:
 - Executing role:
 - Active task:
 - Interrupted / parent task:
 - Review state: active / review / internally-accepted / waiting-user-decision / paused
 - Blockers:
-- Next likely task:
+- Next task:
 - Last updated:
 
 ## Canonical Artifacts
@@ -22,6 +24,9 @@
 - Team roster:
 - Task board:
 - Integration log:
+- Strategy map / attack tree:
+- Evidence ledger:
+- Adversarial review log:
 - Repo/workspace:
 - Main outputs:
 
@@ -62,6 +67,9 @@ What has been accepted into project state recently?
 - Weakest current area:
 - Next quality improvement:
 - Best out-of-box opportunity:
+- Current bottleneck:
+- Queue re-ranking needed:
+- Claims/results needing audit:
 - Creative direction status:
 - Design QA status:
 - Verification gaps:

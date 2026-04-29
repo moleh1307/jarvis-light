@@ -19,8 +19,9 @@ Use `[Role: Founder / Organizational Auditor]`.
 3. Create `company/adoption-audit.md`.
 4. Separate `User-stated`, `Observed in repo`, `Tool result`, `Agent inference`, and `Unknown / needs confirmation`.
 5. Infer roles from the real project rather than a generic template.
-6. Create the Company Mode layer around the existing structure, including `team-roster.md`.
-7. Do not rewrite, reorganize, rename, or migrate before audit and explicit work orders.
+6. Run post-audit Project-Shape Inference: what kind of work this actually is, what makes success hard, what artifacts matter, what confidence lanes and adversarial gates are needed, and what should not be overbuilt.
+7. Create the Company Mode layer around the existing structure, including `team-roster.md`.
+8. Do not rewrite, reorganize, rename, or migrate before audit and explicit work orders.
 
 The audit should answer:
 
@@ -31,6 +32,7 @@ The audit should answer:
 - What tests, validation, or reproducibility mechanisms exist?
 - What are the major risks and unknowns?
 - What roles does this project actually need?
+- What confidence lanes, strategy maps, evidence ledgers, or adversarial reviews would improve continuation?
 - What should the company not touch yet?
 - What are the first high-leverage work orders?
 

@@ -37,6 +37,18 @@ Consequential gaps or assumptions that should not be treated as fact.
 - Current maturity:
 - Primary users/audience:
 
+## Project-Shape Inference
+
+- Project shape:
+- What makes success hard:
+- Main failure modes:
+- Evidence/artifacts that matter:
+- Needed roles/disciplines:
+- Confidence lanes needed: none / light / strict
+- Verification/adversarial gates:
+- Strategy map or evidence ledger needed: no / yes, because
+- What should not be overbuilt:
+
 ## Existing Structure
 
 - Main folders:

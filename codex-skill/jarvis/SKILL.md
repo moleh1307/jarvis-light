@@ -88,7 +88,7 @@ Do not create learning entries for tiny tasks or one-off preferences. Do not let
 
 ## Company Mode Add-On
 
-When a project is too large for one undifferentiated agent mode, use Company Mode. It keeps normal JARVIS Light memory rules but adds project-local role files under `company/`, including Founder, Chief of Staff, specialist charters, role memories, team roster, task board, work orders, review gates, workflow feedback, and integration log.
+When a project is too large for one undifferentiated agent mode, use Company Mode. It keeps normal JARVIS Light memory rules but adds project-local role files under `company/`, including Founder, Chief of Staff, specialist charters, role memories, team roster, task board, work orders, review gates, adaptive project-shape inference, workflow feedback, and integration log.
 
 In active Company Mode projects, interpret `continue` as: Chief of Staff reads durable state, selects the next unblocked task, enters the assigned role, executes within scope, verifies, updates memory, and reports compactly.
 
@@ -99,6 +99,8 @@ When Company Mode exposes reusable workflow friction or a behavior defect, recor
 Role names in Company Mode are optional and must come from `company/team-roster.md`; if no name is defined, use the role title only.
 
 When Company Mode is active, or when discussing Company Mode / workflow R&D itself, use the Company Mode Response Preflight before every user-facing reply: the first line must be the roster-backed role header. Do not force role headers in ordinary non-Company JARVIS chats.
+
+For serious Company Mode projects, Founder should infer the project's shape before designing the workflow. The team should choose roles, artifacts, confidence lanes, adversarial review gates, and strategy maps from the actual problem rather than from fixed project-type recipes.
 
 ## Choose The Right Note
 

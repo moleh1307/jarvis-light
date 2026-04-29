@@ -15,6 +15,9 @@
 - Version impact: none / patch / minor / major / artifact-only
 - Workflow feedback impact: none / candidate / routed-to-JARVIS-R&D
 - Craft criticality: utility-only / polished product / craft-critical / signature product / not applicable
+- Confidence lane: verified / working-assumption / speculative / needs-audit / rejected / not applicable
+- Adversarial review: not needed / consider / required / completed
+- Queue impact: none / may re-rank / re-ranked
 
 ## Objective
 
@@ -60,6 +63,15 @@ How should the output be checked before completion?
 - Decision: acted / deferred / rejected
 - Visual/material verification needed:
 - Follow-up work order needed:
+
+## Confidence / Adversarial Review
+
+- Claim/result confidence:
+- What would break this:
+- Review trigger:
+- Reviewer role:
+- Review result:
+- Queue re-ranking needed:
 
 ## Workflow Feedback
 

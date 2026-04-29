@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.0.24 - 2026-04-29
+
+- Added Company Mode v0.8 Adaptive Project-Shape Inference.
+- Founder now infers project shape before workflow design: what makes success hard, what evidence matters, what roles/artifacts are needed, and which verification gates are justified.
+- Added confidence lanes for consequential claims/results: `verified`, `working-assumption`, `speculative`, `needs-audit`, and `rejected`.
+- Added adversarial review trigger for proof claims, major design directions, method choices, architecture decisions, data results, release candidates, and public claims.
+- Added queue re-ranking guidance so Chief of Staff updates the next work when discoveries change the bottleneck.
+- Added optional templates for `strategy-map.md`, `evidence-ledger.md`, and `adversarial-review.md`.
+
 ## 0.0.23 - 2026-04-29
 
 - Added Company Mode v0.7.1 Response Preflight / Header Guard.

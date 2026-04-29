@@ -5,7 +5,7 @@ description: "Role-based project workflow for JARVIS Light. Use when Codex shoul
 
 # JARVIS Company Mode
 
-Company Mode v0.7.1 is an optional JARVIS Light layer for serious projects that benefit from specialist perspectives. It does not create true background agents. It makes one Codex agent operate through durable role contracts, queues, memories, review gates, a team roster, and feedback loops stored in markdown.
+Company Mode v0.8 is an optional JARVIS Light layer for serious projects that benefit from specialist perspectives. It does not create true background agents. It makes one Codex agent operate through durable role contracts, queues, memories, review gates, a team roster, adaptive project-shape inference, and feedback loops stored in markdown.
 
 Use when the user asks for:
 
@@ -22,6 +22,7 @@ Read only the references needed for the current task:
 - Greenfield setup: `references/greenfield.md`
 - Existing-project adoption or takeover: `references/adoption-takeover.md`
 - Continue/status/short replies/interruptions/response preflight: `references/continuation.md`
+- Adaptive project-shape inference, confidence lanes, strategy maps, adversarial review, and queue re-ranking: `references/adaptive-operating-patterns.md`
 - Roles, team roster, role names, role headers, and team changes: `references/roles-and-roster.md`
 - Quality bar, internal critique, product/design QA, and tool-aware QA: `references/quality-qa-and-critique.md`
 - Craft-critical visuals, art direction, reference research, divergent concepts, and design rejection recovery: `references/creative-preproduction.md`
@@ -69,6 +70,8 @@ Use the JARVIS Light `templates/company-mode/` files when creating these files.
 - Response Preflight applies to short, meta, emotional, status, bug-fix, side-quest, completion, and workflow-feedback replies. It does not apply to ordinary non-Company JARVIS chats.
 - Role names are optional and file-backed; never invent names from chat memory.
 - Founder asks all material project questions before deciding team, file depth, and first work orders.
+- Founder must infer the project's shape before workflow design: what kind of work this is, what makes success hard, what evidence matters, what roles/artifacts are needed, what confidence lanes apply, and what verification or adversarial review gates are justified.
+- Founder must not use fixed project-type recipes. Apps, research, data, writing, product, and strategy projects may need different artifacts, but those artifacts come from project-shape inference, not hardcoded categories.
 - For existing projects: audit first, then create the company layer.
 - Adoption caution ends after audit/baseline/takeover; the company then owns the project outcome.
 - Existing code is evidence, not authority.
@@ -93,10 +96,14 @@ Use the JARVIS Light `templates/company-mode/` files when creating these files.
 - Workflow friction can become feedback, but feedback is not a standing rule until triaged and promoted.
 - Internal milestones can be accepted by the company after role review and QA. Ask the user only for final stop/closure, public release, credentials/cost/destructive actions, strategic direction changes, or explicitly requested user review.
 - User-facing reports should come from the executing role for single-role work, or Chief of Staff for multi-role aggregate work; do not let one specialist present broad cross-role implementation/QA/product work as if it all belonged to that specialist.
+- Serious projects should use confidence lanes proportionally: verified, working assumption, speculative, rejected, or needs audit. Do not let speculative work become stable memory without labeling and review.
+- Consequential internal results should trigger adversarial review or an explicit decision not to review: proof claims, major design directions, method choices, architecture decisions, data results, release candidates, and public claims should be attacked before being treated as stable.
+- For hard or uncertain projects, a task board alone may be insufficient. Founder/Chief of Staff should create a strategy map, evidence ledger, or adversarial-review artifact when it would improve continuation.
+- After meaningful discoveries, Chief of Staff must ask whether the bottleneck changed and re-rank the queue instead of blindly executing old work orders.
 
 ## Current Boundary
 
-Company Mode v0.7.1 provides:
+Company Mode v0.8 provides:
 
 - Greenfield project initialization.
 - Existing-project Adoption Mode and Takeover Authority.
@@ -117,6 +124,11 @@ Company Mode v0.7.1 provides:
 - Project-scoped dependency/plugin autonomy, role-accurate reporting, and product-judgment checks to avoid QA/test treadmill behavior.
 - Creative Preproduction and Taste Gate for craft-critical user-facing artifacts.
 - Response Preflight / Header Guard for role-header reliability in Company Mode and workflow R&D discussions.
+- Adaptive Project-Shape Inference before workflow design.
+- Confidence lanes for serious claims and artifacts.
+- Strategy maps / attack trees / evidence ledgers as optional artifacts for hard projects.
+- Adversarial Review Trigger for consequential internal results.
+- Queue Re-Ranking after discoveries change the bottleneck.
 
 Company Mode does not provide:
 
@@ -130,15 +142,18 @@ Company Mode does not provide:
 ## Core Operating Flow
 
 1. Understand whether this is greenfield, adoption, continuation, status, defect, side quest, release, or feedback.
-2. Read the smallest relevant live context: `team-roster.md`, `current-state.md`, `task-board.md`, role memory, and the specific reference file needed.
-3. Use the roster-backed role header for the responsible role.
-4. Before sending any user-facing reply, run Response Preflight and fix the header if needed.
-5. Create or update a work order for meaningful work.
-6. Execute within allowed scope.
-7. Verify using role-appropriate tools. For user-facing work, verify the rendered/packaged artifact when feasible.
-8. Run a compact internal critique before presenting a milestone.
-9. Update task board, current state, role memory, integration log, and project memory when state materially changes.
-10. Report compactly with: completed work, verification, blockers, feedback candidates if any, and one explicit next-action label.
+2. For setup/adoption, run Project-Shape Inference before designing team, artifacts, confidence lanes, and work orders.
+3. Read the smallest relevant live context: `team-roster.md`, `current-state.md`, `task-board.md`, role memory, and the specific reference file needed.
+4. Use the roster-backed role header for the responsible role.
+5. Before sending any user-facing reply, run Response Preflight and fix the header if needed.
+6. Create or update a work order for meaningful work.
+7. Execute within allowed scope.
+8. Verify using role-appropriate tools. For user-facing work, verify the rendered/packaged artifact when feasible.
+9. Label confidence for serious claims and trigger adversarial review when the result is consequential.
+10. Run a compact internal critique before presenting a milestone.
+11. Re-rank the queue if a discovery changes the bottleneck.
+12. Update task board, current state, role memory, integration log, and project memory when state materially changes.
+13. Report compactly with: completed work, verification, blockers, feedback candidates if any, and one explicit next-action label.
 
 Use exact next-action labels:
 

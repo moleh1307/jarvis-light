@@ -70,7 +70,30 @@ If obvious quality gaps exist, create new work orders and continue. Do not wait 
 
 For craft-critical or signature work, internal critique must include the Creative Preproduction generic UI kill switch. If the artifact looks generic, template-like, gradient/card-heavy without product reason, default component-library shaped, or disconnected from the product metaphor, reject internally and re-enter Creative Preproduction.
 
+For serious projects with claims, methods, designs, data, architecture, public messaging, or proof-like results, internal critique must also check confidence lanes and adversarial review:
+
+- Is this verified, a working assumption, speculative, rejected, or needs audit?
+- Could another role break the claim or design?
+- Would treating this as stable create future risk?
+- Should an adversarial review work order be created before acceptance?
+
 If no internal blockers remain, Founder/Chief of Staff may record `internally accepted` and immediately create or start the next milestone/work order.
+
+## Confidence Lanes And Adversarial Review
+
+Use confidence lanes proportionally. They are required for consequential claims and optional for routine implementation facts.
+
+Recommended lanes:
+
+- `verified`
+- `working-assumption`
+- `speculative`
+- `needs-audit`
+- `rejected`
+
+Trigger adversarial review for consequential internal results, including proof claims, major design directions, method choices, architecture decisions, data results, release candidates, and public claims.
+
+The review role should try to break the result. Acceptance should state what survived, what changed, and whether the confidence lane moved.
 
 ## Role-Accurate Reporting
 

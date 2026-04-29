@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.21 - 2026-04-29
+
+- Added Company Mode v0.6.3 dependency/tooling autonomy clarification.
+- Project-scoped free dev/test dependencies, official stack plugins, and normal test assets can proceed without user approval when required by the accepted stack or QA plan.
+- Approval for a dependency/tooling class now carries forward through the current task chain; agents should not ask again for exact package-manager commands after approval.
+- Added role-accurate reporting: single-role work reports as the executing role; cross-functional summaries report as Chief of Staff.
+- Added product-judgment checks to avoid a QA/test treadmill after several consecutive infrastructure or verification tasks.
+
 ## 0.0.20 - 2026-04-28
 
 - Added Company Mode v0.6.2 internal acceptance model.

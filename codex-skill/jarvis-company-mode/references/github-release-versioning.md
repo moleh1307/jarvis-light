@@ -30,6 +30,8 @@ If a project is already explicitly waiting for the user because an escalation ru
 
 Do not confuse public repo baseline with final product acceptance. A verified baseline can be pushed to `main` while the app remains internally active or internally accepted, as long as README/status/limitations are honest and private Company Mode memory is not pushed.
 
+Project-scoped GitHub/QA dependencies such as test runners, browser testing packages, and official framework plugins are normal coding-project work. Do not turn them into GitHub/release approval gates unless they introduce external services, secrets, paid usage, telemetry/cloud runtime behavior, protected-branch risk, or unusual system-level impact.
+
 ## PR Body
 
 PRs should include:

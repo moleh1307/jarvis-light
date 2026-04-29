@@ -5,7 +5,7 @@ description: "Role-based project workflow for JARVIS Light. Use when Codex shoul
 
 # JARVIS Company Mode
 
-Company Mode v0.6.2 is an optional JARVIS Light layer for serious projects that benefit from specialist perspectives. It does not create true background agents. It makes one Codex agent operate through durable role contracts, queues, memories, review gates, a team roster, and feedback loops stored in markdown.
+Company Mode v0.6.3 is an optional JARVIS Light layer for serious projects that benefit from specialist perspectives. It does not create true background agents. It makes one Codex agent operate through durable role contracts, queues, memories, review gates, a team roster, and feedback loops stored in markdown.
 
 Use when the user asks for:
 
@@ -81,14 +81,17 @@ Use the JARVIS Light `templates/company-mode/` files when creating these files.
 - If the user approves a listed set of safe actions, execute the whole approved set instead of completing only the first item and asking again.
 - Agent-created QA/demo data may be cleaned up without extra approval when it is clearly isolated from user data and the cleanup is needed for review or release.
 - Standard free project toolchain/dependency installation may proceed when it is required by the chosen stack and does not need sudo, paid services, credentials, or destructive system changes.
+- Project-scoped free dev/test dependencies and official stack plugins are autonomous by default, including normal test browser assets, when they are needed for the accepted stack and do not require sudo/global install, credentials, paid services, telemetry/cloud enablement, destructive changes, or unusual system-level impact.
+- User approval for a dependency/tooling class carries forward for the task chain; do not ask for repeated command-level confirmation after the user has approved the class or said not to ask again.
 - When a GitHub repo is provided for a coding project, push a verified README-backed baseline after internal QA unless there is a concrete sensitive-data, protected-branch, release, or policy blocker.
 - Version changes must update visible project docs in the same task or commit.
 - Workflow friction can become feedback, but feedback is not a standing rule until triaged and promoted.
 - Internal milestones can be accepted by the company after role review and QA. Ask the user only for final stop/closure, public release, credentials/cost/destructive actions, strategic direction changes, or explicitly requested user review.
+- User-facing reports should come from the executing role for single-role work, or Chief of Staff for multi-role aggregate work; do not let one specialist present broad cross-role implementation/QA/product work as if it all belonged to that specialist.
 
 ## Current Boundary
 
-Company Mode v0.6.2 provides:
+Company Mode v0.6.3 provides:
 
 - Greenfield project initialization.
 - Existing-project Adoption Mode and Takeover Authority.
@@ -106,6 +109,7 @@ Company Mode v0.6.2 provides:
 - GitHub/versioning conventions for coding projects.
 - Approval carry-forward, QA-data cleanup autonomy, standard toolchain install autonomy, and first-baseline push guidance.
 - Internal milestone acceptance without routine user review gates.
+- Project-scoped dependency/plugin autonomy, role-accurate reporting, and product-judgment checks to avoid QA/test treadmill behavior.
 
 Company Mode does not provide:
 
@@ -151,7 +155,7 @@ Ask the user before:
 - adding background automation, a new public repo, or changing core vault structure;
 - pushing anything that may contain private memory.
 
-Do not escalate for routine verified role/task branch pushes, internal PR updates, normal refactors within scope, README/changelog updates, creating obvious next work orders, cleaning agent-created QA/demo data, or installing standard free project toolchains/dependencies that do not require sudo, credentials, paid services, or destructive system changes.
+Do not escalate for routine verified role/task branch pushes, internal PR updates, normal refactors within scope, README/changelog updates, creating obvious next work orders, cleaning agent-created QA/demo data, installing project-scoped free dev/test dependencies, installing official stack plugins, or downloading normal test assets when they do not require sudo/global install, credentials, paid services, telemetry/cloud enablement, destructive changes, or unusual system-level impact.
 
 ## User Commands
 

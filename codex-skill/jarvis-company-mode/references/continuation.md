@@ -29,6 +29,7 @@ Treat short replies as commands when Company Mode is active:
 - `thanks`, `got it`, `cool`: continue if an active unblocked task exists; if waiting for an escalation decision, state the exact decision needed.
 - Direct factual questions should be answered first. If the answer reveals an obvious next task and the project is not blocked, proceed when the message implies approval.
 - `I approve`, `approved`, `approve everything`, or equivalent approval after a list of proposed safe actions authorizes the whole listed set unless the user narrows the approval. Execute every approved unblocked action instead of doing one item and asking again.
+- If the user says "send it, I will approve", "confirm", "do not ask me again", or equivalent for a dependency/tooling/plugin class, treat that as class-level approval for the current task chain. Do not ask again for the exact package-manager command unless a new escalation boundary appears.
 
 Only stop after a short reply when:
 
@@ -41,6 +42,19 @@ Only stop after a short reply when:
 If approval unblocks a task, resume through the blocked task's owner role, not the role that happened to ask the question. Example: approval to install a desktop toolchain for a desktop build should route to Desktop Engineer or App Architect, not Founder.
 
 Do not treat agent-created QA/demo data as user data. If the team created isolated smoke-test data and cleaning it is necessary for review, release, or a clean baseline, clean it and report the path. Ask only when deletion might affect the user's real data, unrecoverable artifacts, or ambiguous files.
+
+## Dependency And Tooling Autonomy
+
+Install project-scoped dependencies autonomously when all of these are true:
+
+- the dependency is free and normal for the accepted stack, test strategy, or official framework/plugin path;
+- install scope is the project/repo, not global system state;
+- no sudo/admin permission, credentials, paid service, telemetry/cloud enablement, destructive action, or protected/private data exposure is involved;
+- the work order needs the dependency to meet its acceptance or QA criteria.
+
+Examples that should proceed without asking: `npm install -D vitest`, `npm install -D @playwright/test`, Playwright browser assets for project tests, `npm run tauri add dialog`, official framework plugins, local lint/test/build tools.
+
+Ask only when the dependency/tooling has unusual system-level impact, requires global install/sudo, introduces cloud/telemetry/network runtime behavior, handles secrets, is paid, is unusually large relative to local constraints, or changes the strategic stack.
 
 ## Next-Task Ownership
 
@@ -67,6 +81,14 @@ If the next owner is obvious, assign it. If the next task is obvious, create it.
 Do not convert internal uncertainty into user review by default. If the next issue is product taste, quality, architecture, wording, or prioritization and the charter gives enough signal, route it to the responsible internal role and decide. Ask the user only when the decision changes strategy, scope, cost, credentials, release posture, destructive actions, or a stated user preference cannot be inferred.
 
 If the project is near a milestone, complete safe operational cleanup, README/git baseline, version-doc, QA evidence, and internal critique first. Then either mark the milestone internally accepted and continue to the next work order, or escalate a concrete `Decision needed:` only when progress genuinely depends on the user.
+
+If several consecutive tasks are QA/infrastructure hardening, Chief of Staff or Founder should run a short product-judgment check before adding more verification work:
+
+- Is the next task improving the user's actual product/research outcome, not only the confidence machinery?
+- Is a product/design/research milestone now higher leverage than another test layer?
+- Should the team route to Founder/Product/Research lead before continuing the QA track?
+
+Do not create a test treadmill. Verification matters, but the company exists to improve the project outcome.
 
 ## Interruptions And Side Quests
 

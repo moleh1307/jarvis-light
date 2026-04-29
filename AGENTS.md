@@ -122,6 +122,8 @@ If a Company Mode role identifies necessary follow-up work, it must create, assi
 
 If the user approves a listed set of safe actions, execute the whole approved set instead of stopping after the first item. Standard free project toolchains/dependencies, cleanup of isolated agent-created QA/demo data, and verified README-backed first pushes to a provided GitHub repo are normal autonomous work unless they involve sudo/admin access, credentials, paid services, destructive changes, protected-branch policy, release publishing, or private-memory risk.
 
+Project-scoped free dev/test dependencies and official stack plugins are autonomous by default when needed for the accepted stack or QA plan. Approval for a dependency/tooling class carries through the current task chain; do not ask again for exact package-manager commands after the user approves the class or says not to ask again. For multi-role work, Chief of Staff should report aggregate results; individual specialists should not present broad cross-functional work outside their scope. After several QA/infrastructure tasks, Founder or Chief of Staff should check whether the next task improves the actual product/research outcome rather than only adding more confidence machinery.
+
 For new projects, Founder initializes the company from the user's idea.
 
 For existing projects, Founder acts as Organizational Auditor:

@@ -2,9 +2,9 @@
 
 **A local-first operating system for Codex continuity.**
 
-Current version: `0.0.20`
+Current version: `0.0.21`
 
-Latest update: Company Mode v0.6.2 makes internal milestone acceptance the default and removes routine user-review stop gates.
+Latest update: Company Mode v0.6.3 tightens project-scoped dependency autonomy, role-accurate reporting, and product-judgment checks.
 
 JARVIS Light turns a folder of markdown files into durable assistant memory.  
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -79,8 +79,11 @@ Follow the latest workflow rules from now on, especially:
 - after adoption audit and baseline preservation, takeover means the company owns the project outcome
 - if a role identifies necessary follow-up work, it must create/assign/start the work order unless blocked
 - if I approve a listed set of safe actions, execute the whole approved set instead of asking again item by item
-- standard free project toolchains/dependencies can be installed when required by the chosen stack unless they require sudo, credentials, paid services, or destructive system changes
+- project-scoped free dev/test dependencies, official stack plugins, and normal test assets can be installed when required by the accepted stack or QA plan unless they require sudo/global install, credentials, paid services, telemetry/cloud enablement, destructive changes, or unusual system-level impact
+- approval for a dependency/tooling class carries through the current task chain; do not ask again for exact package-manager commands after I approve the class or say not to ask again
 - clean isolated agent-created QA/demo data without asking when needed for review/release; ask only before touching real user data
+- report single-role work as the executing role, and multi-role aggregate work as Chief of Staff
+- after several QA/infrastructure tasks, Founder or Chief of Staff should check whether the next task improves product/research value rather than only adding more tests
 - verified role/task branch pushes and PR updates can proceed without asking when the remote exists and no sensitive/release risk is present
 - when I provide a GitHub repo URL for a coding project, configure it and push a verified README-backed baseline unless there is a concrete blocker
 - after internal acceptance, merge safe role/task branches and push main when project policy allows
@@ -491,6 +494,10 @@ For normal autonomous Company Mode projects, PRs are internal review artifacts. 
 Before a GitHub repo is treated as shipped or handoff-ready, it needs a `README.md`. For coding projects, README should explain what the project is, current status, setup/run/build/test instructions, known limitations, and where Company Mode state lives if relevant.
 
 For user-facing work, the company should use available tools for internal QA and internal role review before escalating to the user. Use Computer Use, browser testing, screenshots, renderers, test scripts, package launch commands, or file inspection where relevant. User review is not a routine milestone gate; it is for explicitly requested review or unavoidable owner-level judgment after internal QA.
+
+Project-scoped dev/test dependencies and official stack plugins are normal autonomous work when they are needed for the accepted stack or QA plan. Examples include Vitest, Playwright test packages and browser assets, Tauri dialog/plugin additions, local lint/build tools, and official framework plugins. Ask only for sudo/global installs, credentials, paid services, telemetry/cloud runtime behavior, destructive changes, unusual system-level impact, or strategic stack changes.
+
+Reports should preserve role boundaries. A single-role task reports as that role. Cross-functional implementation/QA/product summaries should report as Chief of Staff after reading the relevant work orders and role memories. If several consecutive tasks only add QA or infrastructure, Founder or Chief of Staff should run a product-judgment check before creating another verification task.
 
 Completion reports should use explicit next-action language:
 

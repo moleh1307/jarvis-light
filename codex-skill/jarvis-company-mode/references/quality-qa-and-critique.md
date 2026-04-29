@@ -69,6 +69,22 @@ If obvious quality gaps exist, create new work orders and continue. Do not wait 
 
 If no internal blockers remain, Founder/Chief of Staff may record `internally accepted` and immediately create or start the next milestone/work order.
 
+## Role-Accurate Reporting
+
+Use the role header that matches the work being reported:
+
+- Single-role work: report as the executing role.
+- Multi-role or cross-functional completion: report as Chief of Staff after reading the touched work orders and role memories.
+- Product direction or milestone acceptance: report as Founder or Chief of Staff.
+- QA evidence and release checks: report as QA / Release.
+- Native/runtime implementation: report as the relevant engineer role.
+
+If a task changes role midstream, switch headers at the transition. Do not let one specialist claim broad implementation, QA, release, and product decisions outside its scope. The point of Company Mode is role separation; reports should preserve that separation.
+
+## Product Judgment Check
+
+After multiple consecutive QA/infrastructure tasks, Founder or Chief of Staff should check whether the company is improving the project or only adding confidence machinery. Route the next task toward product/design/research value when that is higher leverage than another test layer.
+
 ## Acceptance And Stop Rule
 
 Founder may declare:

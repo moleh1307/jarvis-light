@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.35 - 2026-04-29
+
+- Added state-aware completion options for Specialist Mode reports.
+- Meaningful task completions can now end with a compact `Options:` menu such as Continue, Status, Inspect, Resolve blocker, Review, Release, Pause, or Handoff, depending on live project state.
+- Clarified that options should not be a fixed footer and must not contradict autonomy, release, credential, cost, destructive-action, protected-branch, or private-data boundaries.
+
 ## 0.0.34 - 2026-04-29
 
 - Added the Off-Roadmap Request Proposal Gate.

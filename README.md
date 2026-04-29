@@ -4,9 +4,9 @@
 
 This public template was previously named JARVIS Light. The repository path may keep that name during the migration, but the workflow now uses JARVIS OS as the umbrella name.
 
-Current version: `0.0.34`
+Current version: `0.0.35`
 
-Latest update: substantial off-roadmap requests now go through a short internal team intake and proposal before implementation/push.
+Latest update: Specialist Mode completion reports can now offer state-aware next-command options after meaningful tasks.
 
 JARVIS OS turns a folder of markdown files into durable assistant memory.
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -591,6 +591,16 @@ Completion reports should use explicit next-action language:
 - `User review requested:` only when the user explicitly asked to review or progress genuinely depends on owner judgment
 
 If a role identifies the next necessary task, it should create, assign, or start that work order before ending the turn. Do not finish with vague handoffs such as "Founder should define..." or "Product Designer should consider..." unless the report also creates the actual work order or marks a concrete blocker/decision.
+
+After meaningful Specialist Mode task completion, reports should also offer a small state-aware `Options:` menu when useful. The menu should be based on live state, not a fixed template:
+
+- `Continue:` start the exact next unblocked task
+- `Status:` show the current mode, active task, blockers, version, or repo state
+- `Inspect:` summarize changed files, artifacts, screenshots, commits, or notes
+- `Resolve blocker:` name the exact missing access, file, credential, decision, or candidate
+- `Pause:` preserve the current state without starting new work
+
+Use only the options that actually fit. Do not offer routine review when internal review is enough, and do not hide real release, cost, credential, protected-branch, destructive-action, or private-data boundaries behind a normal option.
 
 Example commit author:
 

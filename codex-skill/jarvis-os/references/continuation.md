@@ -20,7 +20,7 @@ When the user says `continue`:
 12. Update task board, current state, role memory, integration log, and operating mode if the project phase changed.
 13. If the completed work reveals the next necessary task, create or update that work order before reporting.
 14. Run the Queue Re-Ranking Check if the result was meaningful or surprising.
-15. Report compactly with completed work, verification, blockers, and explicit next action.
+15. Report compactly with completed work, verification, blockers, explicit next action, and state-aware completion options when useful.
 
 ## Operating Mode Routing
 
@@ -130,6 +130,23 @@ If several consecutive tasks are QA/infrastructure hardening, Chief of Staff or 
 - Should the team route to Founder/Product/Research lead before continuing the QA track?
 
 Do not create a test treadmill. Verification matters, but the company exists to improve the project outcome.
+
+## Completion Options Menu
+
+After meaningful Specialist Mode / Company Mode task completion, the final report should usually end with a compact `Options:` menu. This is a user-facing command surface, not a generic footer.
+
+Build the options from live state:
+
+- If an unblocked task exists, include `Continue: ...` with the exact next task ID/name and what it will do.
+- If the user asks for orientation, or the state is complex, include `Status: ...` with the exact status scope.
+- If files, artifacts, screenshots, releases, commits, or research notes changed, include `Inspect: ...` with the specific thing that can be inspected.
+- If a real blocker exists, include `Resolve blocker: ...` with the missing access, file, credential, decision, or candidate.
+- If a release, publish, destructive action, credentials/cost, protected branch, or private-data boundary is next, include `Decision needed: ...` instead of pretending it is a normal option.
+- If owner taste or judgment is explicitly requested or unavoidable, include `Review: ...` with the exact artifact/question.
+- If the project can safely stop, include `Pause: ...` with what state will be preserved.
+- If the thread is long or compacted and the project is stable, include `Fresh chat: ...` or `Handoff: ...` only when it would materially improve continuation.
+
+Keep it short: normally 2-5 options, one line each. Do not add an options menu to tiny factual answers, urgent defect updates, or cases where it would obscure the direct answer. Do not offer options that contradict autonomy rules; for example, avoid routine "review" choices when internal review is enough, and avoid "release" choices when release is blocked by credentials or policy.
 
 ## Queue Re-Ranking Check
 

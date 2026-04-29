@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.29 - 2026-04-29
+
+- Added Company Mode v0.8.4 Excellence Calibration Gate.
+- Excellence-critical work should define the reference class, top-tier bar, benchmarks/references, missing capabilities, and rejection tests before major execution or revision.
+- Clarified that calibration is domain-general: apps, research, data, writing, architecture, public docs, strategy, and other trust/quality-sensitive deliverables can all need it.
+- Updated installed/public adaptive operating, quality, creative preproduction, template, README, AGENTS, and version surfaces.
+
 ## 0.0.28 - 2026-04-29
 
 - Added Company Mode v0.8.3 Claim Review Loop.

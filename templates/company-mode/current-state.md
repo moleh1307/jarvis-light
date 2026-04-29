@@ -7,6 +7,7 @@
 - Latest status:
 - Workspace classification:
 - Craft criticality:
+- Excellence calibration status:
 - Project shape:
 - Operating mode: discovery / build / audit / polish / release / dogfood / research attack / recovery / maintenance / other
 - Confidence policy:
@@ -27,6 +28,7 @@
 - Integration log:
 - Strategy map / attack tree:
 - Evidence ledger:
+- Excellence calibration:
 - Adversarial review log:
 - Claim review log:
 - Repo/workspace:
@@ -71,6 +73,8 @@ What has been accepted into project state recently?
 - Best out-of-box opportunity:
 - Current bottleneck:
 - Queue re-ranking needed:
+- Excellence-critical work:
+- Missing capability review:
 - Claims/results needing audit:
 - Claims/results needing claim review:
 - Creative direction status:

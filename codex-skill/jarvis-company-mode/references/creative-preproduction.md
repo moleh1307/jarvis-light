@@ -2,6 +2,8 @@
 
 Use this reference for craft-critical user-facing work: apps, websites, landing pages, brands, decks, documents, visualizations, demos, and any artifact where taste, originality, trust, or visual quality materially affects success.
 
+Creative Preproduction is the visual/craft-specific form of the broader Excellence Calibration Gate. If the work is excellence-critical but not visual, use `references/adaptive-operating-patterns.md` and `references/quality-qa-and-critique.md` for calibration. If the work is visual or presentation-heavy, this reference supplies the stronger craft process.
+
 ## Craft Criticality
 
 Founder classifies every user-facing project or milestone:
@@ -40,6 +42,8 @@ Before implementing or re-implementing craft-critical visuals, the Creative Dire
 3. Extract patterns: density, layout rhythm, typography, color/material logic, controls, interaction tone, motion, empty states, artifact presentation.
 4. Name forbidden cliches: generic SaaS dashboard, card soup, decorative gradients, random pills/badges, glassmorphism, default component-library look, meaningless dark theme, oversized marketing layout, weak typography.
 5. State what will be borrowed as principles, not copied.
+
+These references also satisfy the benchmark/reference part of Excellence Calibration for visual work.
 
 Browse the web when current examples, visual trends, product references, or best-in-class artifacts matter. Use known local references only when enough relevant context is already present.
 

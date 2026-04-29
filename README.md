@@ -2,9 +2,9 @@
 
 **A local-first operating system for Codex continuity.**
 
-Current version: `0.0.28`
+Current version: `0.0.29`
 
-Latest update: Company Mode v0.8.3 adds the Claim Review Loop so important assumptions are attacked, revised, promoted, rejected, or split before downstream work depends on them.
+Latest update: Company Mode v0.8.4 adds the Excellence Calibration Gate so teams define the reference class, top-tier bar, benchmarks, missing capabilities, and rejection tests before excellence-critical work sets the quality ceiling.
 
 JARVIS Light turns a folder of markdown files into durable assistant memory.  
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -558,6 +558,21 @@ When downstream work depends on a consequential claim, use the Claim Review Loop
 6. Re-rank the queue from that outcome.
 
 After meaningful discoveries, Chief of Staff should ask whether the bottleneck changed and re-rank the queue if needed.
+
+### Excellence Calibration Gate
+
+For excellence-critical work, Company Mode should define the quality target before execution. This is not only for UI. It can apply to apps, research notes, data outputs, decks, architecture, public docs, strategy, papers, demos, and any deliverable where quality, rigor, trust, or originality defines success.
+
+Use Excellence Calibration when the team is about to set the quality ceiling for important work:
+
+1. Reference class: what field or artifact type are we competing with?
+2. Excellence bar: what would make this top-tier for that class?
+3. Benchmarks/references: what strong examples, papers, products, artifacts, or standards calibrate us?
+4. Missing capability: what would a real team hire or consult for this?
+5. Rejection tests: what would make this generic, weak, misleading, unsafe, or not worth shipping?
+6. Decision: proceed, add/activate a role, run reference research, reshape the work order, or lower scope honestly.
+
+Skip the gate for tiny bug fixes, mechanical docs updates, routine QA, small refactors, and urgent recovery work where the target is already obvious.
 
 ### Creative Preproduction And Taste Gate
 

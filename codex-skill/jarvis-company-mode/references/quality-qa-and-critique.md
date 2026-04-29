@@ -19,6 +19,23 @@ Default expectations:
 
 Founder must not mark the whole project as finally closed or stop the company just because internal checks pass. Internal milestone acceptance is allowed; final stop/closure, public release, or owner-level product acceptance requires user approval or explicit stop/release instruction.
 
+## Excellence Calibration Gate
+
+For excellence-critical work, define the quality target before execution.
+
+Use this when an artifact's quality, trust, originality, rigor, public usefulness, or strategic force materially affects success. This includes more than UI: apps, websites, research notes, data outputs, decks, documents, architecture decisions, public READMEs, papers, and workflow design can all be excellence-critical.
+
+Compact calibration:
+
+- Reference class: what field or artifact type are we competing with?
+- Excellence bar: what would make this top-tier for that class?
+- Benchmarks/references: what strong examples, papers, products, artifacts, or standards calibrate us?
+- Missing capability: what would a real team hire or consult for this?
+- Rejection tests: what would make this generic, weak, misleading, unsafe, untrusted, or not worth shipping?
+- Decision: proceed, add/activate a role, run reference research, reshape the work order, or lower scope honestly.
+
+Do not force this for small fixes or routine QA. Do force it when the team is about to set the quality ceiling for a product, research direction, public claim, data artifact, design direction, or strategic deliverable.
+
 ## Tool-Aware QA Gate
 
 If a tool can verify the work, use it before involving the user.
@@ -65,6 +82,7 @@ Before a milestone is internally accepted, run a short critique:
 - What should be fixed before internal acceptance?
 - Are there hidden verification gaps?
 - Should the next task be polish, QA, packaging, documentation, research validation, or release preparation?
+- If Excellence Calibration was required, does the artifact meet the reference class, excellence bar, and rejection tests?
 
 If obvious quality gaps exist, create new work orders and continue. Do not wait for the user to say "improve UI" or "make it better" when the gap is visible.
 

@@ -15,6 +15,7 @@
 - Version impact: none / patch / minor / major / artifact-only
 - Workflow feedback impact: none / candidate / routed-to-JARVIS-R&D
 - Craft criticality: utility-only / polished product / craft-critical / signature product / not applicable
+- Excellence calibration: not needed / required / completed
 - Confidence lane: verified / working-assumption / speculative / needs-audit / rejected / not applicable
 - Adversarial review: not needed / consider / required / completed
 - Claim review outcome: none / promoted / revised / rejected / split
@@ -52,6 +53,12 @@ How should the output be checked before completion?
 
 - Innovation Mode: forced / invoked / skipped
 - Innovation Mode reason:
+- Excellence reference class:
+- Excellence bar:
+- Benchmarks / references:
+- Missing capability:
+- Rejection tests:
+- Excellence calibration decision:
 - Creative Preproduction: not needed / compact / full
 - Reference intelligence completed:
 - Art direction brief:

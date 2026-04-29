@@ -5,7 +5,7 @@ description: "Role-based project workflow for JARVIS Light. Use when Codex shoul
 
 # JARVIS Company Mode
 
-Company Mode v0.8.3 is an optional JARVIS Light layer for serious projects that benefit from specialist perspectives. It does not create true background agents. It makes one Codex agent operate through durable role contracts, queues, memories, review gates, a team roster, adaptive project-shape inference, operating modes, workflow refresh, claim review loops, and feedback loops stored in markdown.
+Company Mode v0.8.4 is an optional JARVIS Light layer for serious projects that benefit from specialist perspectives. It does not create true background agents. It makes one Codex agent operate through durable role contracts, queues, memories, review gates, a team roster, adaptive project-shape inference, operating modes, workflow refresh, excellence calibration gates, claim review loops, and feedback loops stored in markdown.
 
 Use when the user asks for:
 
@@ -23,9 +23,9 @@ Read only the references needed for the current task:
 - Existing-project adoption or takeover: `references/adoption-takeover.md`
 - Workflow refresh for older active chats: `references/workflow-refresh.md`
 - Continue/status/short replies/interruptions/response preflight: `references/continuation.md`
-- Adaptive project-shape inference, operating mode declaration, confidence lanes, strategy maps, adversarial review, Claim Review Loop, and queue re-ranking: `references/adaptive-operating-patterns.md`
+- Adaptive project-shape inference, operating mode declaration, Excellence Calibration Gate, confidence lanes, strategy maps, adversarial review, Claim Review Loop, and queue re-ranking: `references/adaptive-operating-patterns.md`
 - Roles, team roster, role names, role headers, and team changes: `references/roles-and-roster.md`
-- Quality bar, internal critique, product/design QA, and tool-aware QA: `references/quality-qa-and-critique.md`
+- Quality bar, Excellence Calibration Gate, internal critique, product/design QA, and tool-aware QA: `references/quality-qa-and-critique.md`
 - Craft-critical visuals, art direction, reference research, divergent concepts, and design rejection recovery: `references/creative-preproduction.md`
 - GitHub, PRs, releases, versioning, and repo readiness: `references/github-release-versioning.md`
 - Selective Innovation Mode and workflow feedback: `references/innovation-feedback.md`
@@ -78,6 +78,7 @@ Use the JARVIS Light `templates/company-mode/` files when creating these files.
 - Adoption caution ends after audit/baseline/takeover; the company then owns the project outcome.
 - Existing code is evidence, not authority.
 - Roles are responsible operators, not order-taking personas; they critique weak plans and propose better paths.
+- Excellence-critical work must run Excellence Calibration before major execution or revision: define the reference class, top-tier bar, relevant benchmarks, missing capabilities, and rejection tests. This applies beyond UI to research, data, writing, architecture, public docs, strategy, and deliverables where quality or trust defines success.
 - User-facing products need design/product quality ownership and visual/material QA responsibility.
 - Craft-critical or signature user-facing work requires Creative Preproduction before major implementation: craft criticality classification, design leadership, reference intelligence, art direction, divergent concepts, and screenshot-based Design QA.
 - If user-facing work is rejected as generic, ugly, AI-looking, template-like, or not best-in-field, do not restyle incrementally or ask the user for taste by default; re-enter Creative Preproduction and produce a stronger direction internally.
@@ -106,7 +107,7 @@ Use the JARVIS Light `templates/company-mode/` files when creating these files.
 
 ## Current Boundary
 
-Company Mode v0.8.3 provides:
+Company Mode v0.8.4 provides:
 
 - Greenfield project initialization.
 - Existing-project Adoption Mode and Takeover Authority.
@@ -130,6 +131,7 @@ Company Mode v0.8.3 provides:
 - Adaptive Project-Shape Inference before workflow design.
 - Operating Mode Declaration so continuation stays aligned with the project's current phase.
 - Workflow Refresh Playbook for upgrading older active chats without copying the whole rule set into the prompt.
+- Excellence Calibration Gate for work where the quality bar must be set before execution.
 - Confidence lanes for serious claims and artifacts.
 - Strategy maps / attack trees / evidence ledgers as optional artifacts for hard projects.
 - Adversarial Review Trigger for consequential internal results.
@@ -155,12 +157,13 @@ Company Mode does not provide:
 6. Create or update a work order for meaningful work.
 7. Execute within allowed scope.
 8. Verify using role-appropriate tools. For user-facing work, verify the rendered/packaged artifact when feasible.
-9. Label confidence for serious claims and trigger adversarial review when the result is consequential.
-10. If downstream work depends on a consequential claim, run the Claim Review Loop before treating it as stable.
-11. Run a compact internal critique before presenting a milestone.
-12. Use operating mode to choose the correct default behavior, then re-rank the queue if a discovery changes the bottleneck.
-13. Update task board, current state, role memory, integration log, and project memory when state materially changes.
-14. Report compactly with: completed work, verification, blockers, feedback candidates if any, and one explicit next-action label.
+9. Run Excellence Calibration before excellence-critical work sets the quality ceiling.
+10. Label confidence for serious claims and trigger adversarial review when the result is consequential.
+11. If downstream work depends on a consequential claim, run the Claim Review Loop before treating it as stable.
+12. Run a compact internal critique before presenting a milestone.
+13. Use operating mode to choose the correct default behavior, then re-rank the queue if a discovery changes the bottleneck.
+14. Update task board, current state, role memory, integration log, and project memory when state materially changes.
+15. Report compactly with: completed work, verification, blockers, feedback candidates if any, and one explicit next-action label.
 
 Use exact next-action labels:
 

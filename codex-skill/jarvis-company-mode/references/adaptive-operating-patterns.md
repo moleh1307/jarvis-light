@@ -1,6 +1,6 @@
 # Adaptive Operating Patterns
 
-Use this reference when Company Mode must decide how to shape a project, which operating mode it is in, how much structure to create, how to label confidence, whether to run adversarial review, how to run the Claim Review Loop, and when to re-rank the queue.
+Use this reference when Company Mode must decide how to shape a project, which operating mode it is in, how much structure to create, when to run Excellence Calibration, how to label confidence, whether to run adversarial review, how to run the Claim Review Loop, and when to re-rank the queue.
 
 These are general operating patterns, not project-type recipes. Do not hardcode "math projects need X" or "apps need Y." Infer the project's needs from the user's goal, the observed project, the risk profile, and the success bar.
 
@@ -15,6 +15,7 @@ Answer proportionally:
 - What would failure look like?
 - What evidence, artifacts, or outputs matter?
 - What roles or disciplines are needed?
+- Is the work excellence-critical, and what calibration is needed before execution?
 - What should not be overbuilt?
 - What confidence lanes are needed?
 - What verification or adversarial review gates are justified?
@@ -48,6 +49,33 @@ Mode meanings:
 
 Chief of Staff should use operating mode during `continue` to choose the right reference files, role, next task type, and queue re-ranking behavior. Update the mode when the project phase changes; do not preserve a stale mode just because the previous work order used it.
 
+## Excellence Calibration Gate
+
+Use Excellence Calibration when the quality bar materially affects success and a weak target would cap the project before execution starts.
+
+Examples:
+
+- user-facing products, websites, apps, decks, documents, or demos;
+- professor/client/public-facing deliverables;
+- research notes, proof attempts, or literature maps where rigor and provenance matter;
+- data, statistical, or visualization outputs that others may trust;
+- architecture, strategy, or workflow decisions that shape later work;
+- redesigns, rebuilds, or recovery work after rejection;
+- any artifact the user asks to be best-in-field, AAA, world-class, not generic, or unusually strong.
+
+Skip for tiny bug fixes, mechanical docs updates, routine QA, small refactors, or urgent recovery work where the target is already obvious.
+
+Answer compactly before major execution or revision:
+
+1. Reference class: what field, artifact type, or standard are we competing with?
+2. Excellence bar: what would make this top-tier for that class?
+3. Benchmarks/references: what strong examples, papers, products, artifacts, or standards calibrate us?
+4. Missing capability: what would a real team hire or consult for this?
+5. Rejection tests: what would make this generic, weak, misleading, unsafe, or not worth shipping?
+6. Decision: proceed, add/activate a role, run reference research, reshape the work order, or lower scope honestly.
+
+The gate does not require a new file by default. Put the answers in the work order, project charter, art direction brief, research plan, or a dedicated calibration artifact only when the project size justifies it.
+
 ## Confidence Lanes
 
 Use confidence lanes when a project has claims, hypotheses, results, designs, data outputs, architecture decisions, or public statements that can vary in certainty.
@@ -71,6 +99,7 @@ Create optional artifacts only when useful:
 - `company/strategy-map.md`: hard, uncertain, multi-route, or long-horizon projects.
 - `company/evidence-ledger.md`: projects with sources, claims, data, methodology, legal/financial/medical risk, research claims, or public assertions.
 - `company/adversarial-review.md`: consequential results that need a hostile check before acceptance.
+- `company/excellence-calibration.md`: excellence-critical projects where the reference class, top-tier bar, benchmarks, missing capability, and rejection tests need to stay visible.
 
 Project-specific names are allowed when clearer, such as `attack-tree.md`, `claims-map.md`, `design-calibration.md`, or `release-risk-review.md`.
 
@@ -163,5 +192,6 @@ Use the lightest structure that preserves the next useful action:
 
 - Tiny task: skip Company Mode.
 - Simple Company Mode project: one-line shape inference, operating mode, normal task board, no optional artifacts.
-- Serious uncertain project: shape inference, operating mode, confidence lanes, strategy map, and adversarial review for consequential results.
+- Excellence-critical project: shape inference, operating mode, compact Excellence Calibration, then execute against that bar.
+- Serious uncertain project: shape inference, operating mode, confidence lanes, strategy map, and adversarial review or claim review for consequential results.
 - Long-horizon project: periodic compression of operating mode, current state, dead ends, live artifacts, and next attacks.

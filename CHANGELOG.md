@@ -4,7 +4,8 @@
 
 - Introduced JARVIS Specialist Mode as the future-facing name for the role-based project workflow.
 - Preserved Company Mode as a compatibility alias for existing prompts, folders, chats, and the `jarvis-company-mode` package path.
-- Updated the public README, JARVIS skill, Specialist Mode skill, and key references so both old and new invocation phrases remain clear.
+- Shifted public README framing toward JARVIS OS while noting that the repository path may keep the older JARVIS Light name during migration.
+- Updated the public README, AGENTS instructions, JARVIS skill, Specialist Mode skill, and key references so both old and new invocation phrases remain clear.
 
 ## 0.0.30 - 2026-04-29
 

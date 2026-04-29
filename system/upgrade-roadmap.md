@@ -1,6 +1,6 @@
 # Upgrade Roadmap
 
-JARVIS Light should stay small until real usage proves the need for more.
+JARVIS OS should stay small until real usage proves the need for more.
 
 ## Implemented In This Template
 
@@ -12,7 +12,7 @@ JARVIS Light should stay small until real usage proves the need for more.
 - Artifact hygiene and verification
 - Large project note scaling guidance
 - Governed self-improvement through learning log, failure patterns, and proposals
-- Company Mode for serious projects
+- Specialist Mode / Company Mode for serious projects
 - Adoption Mode for existing projects
 - Role-based task boards, work orders, review gates, and out-of-box critique
 

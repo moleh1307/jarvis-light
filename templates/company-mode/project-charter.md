@@ -6,7 +6,7 @@
 - Type: app / website / research / data / writing / other
 - Workspace classification: real active project / experiment / data workspace / archive / JARVIS test-demo
 - Workspace/repo:
-- Company Mode status: active / review / internally-accepted / waiting-user-decision / paused / closed
+- Specialist Mode status: active / review / internally-accepted / waiting-user-decision / paused / closed
 - Craft criticality: utility-only / polished product / craft-critical / signature product / not applicable
 
 ## Project-Shape Inference

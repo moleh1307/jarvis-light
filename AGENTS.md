@@ -1,8 +1,8 @@
-# JARVIS Light Instructions
+# JARVIS OS Instructions
 
-This workspace is a JARVIS Light vault.
+This workspace is a JARVIS OS vault.
 
-JARVIS Light is a local continuity workflow for Codex. It uses markdown files as durable memory so work can continue across chats, projects, and sessions without relying on giant conversation history.
+JARVIS OS is a local continuity workflow for Codex. It uses markdown files as durable memory so work can continue across chats, projects, and sessions without relying on giant conversation history. This public template was formerly named JARVIS Light, and that name remains a compatibility label while the repo name migrates.
 
 ## Core Rules
 
@@ -20,11 +20,11 @@ JARVIS Light is a local continuity workflow for Codex. It uses markdown files as
 - Use clickable absolute markdown links when referencing local artifacts.
 - Verify exact artifacts before saying they are ready.
 - Learn from repeated friction, but do not silently rewrite core rules from one-off events.
-- Use JARVIS Company Mode for serious projects when specialist roles, task boards, review gates, or adoption audits would reduce confusion.
-- In Company Mode, record reusable workflow friction as feedback candidates; route general workflow issues to the maintainer/R&D project instead of silently making new rules.
-- In Company Mode, role names must come from `company/team-roster.md`; if no name is defined, use the role title only.
-- In Company Mode, Founder should infer project shape before workflow design and choose roles, artifacts, operating mode, confidence lanes, strategy maps, adversarial review gates, and claim review loops from the actual problem rather than fixed project-type recipes.
-- In Company Mode, excellence-critical work should calibrate before execution: define the reference class, top-tier bar, benchmarks or references, missing capabilities, and rejection tests before major work sets the quality ceiling.
+- Use JARVIS Specialist Mode, formerly Company Mode, for serious projects when specialist roles, task boards, review gates, or adoption audits would reduce confusion.
+- In Specialist Mode, record reusable workflow friction as feedback candidates; route general workflow issues to the maintainer/R&D project instead of silently making new rules.
+- In Specialist Mode, role names must come from `company/team-roster.md`; if no name is defined, use the role title only.
+- In Specialist Mode, Founder should infer project shape before workflow design and choose roles, artifacts, operating mode, confidence lanes, strategy maps, adversarial review gates, and claim review loops from the actual problem rather than fixed project-type recipes.
+- In Specialist Mode, excellence-critical work should calibrate before execution: define the reference class, top-tier bar, benchmarks or references, missing capabilities, and rejection tests before major work sets the quality ceiling.
 
 ## Retrieval Order
 
@@ -99,9 +99,9 @@ Project notes should stay quick to scan. If a project note becomes a long chrono
 
 Do not split preemptively. Split only when retrieval is getting worse, and leave a clear pointer from the old project note.
 
-## Company Mode
+## Specialist Mode
 
-Company Mode is optional. Use it when a project is large enough that specialist roles would improve the work.
+JARVIS Specialist Mode is optional. Use it when a project is large enough that specialist roles would improve the work. Company Mode remains the compatibility alias.
 
 It adds:
 
@@ -120,13 +120,13 @@ It adds:
 
 After an Adoption Mode audit and baseline preservation, takeover means the Company owns the project outcome. Existing code is evidence, not authority; roles may improve, refactor, redesign, or rebuild within charter, quality, verification, and escalation boundaries.
 
-If a Company Mode role identifies necessary follow-up work, it must create, assign, or start the work order unless blocked. Do not end with vague handoffs such as "Founder should..." or "Product Designer should..." when the next task can be made concrete.
+If a Specialist Mode / Company Mode role identifies necessary follow-up work, it must create, assign, or start the work order unless blocked. Do not end with vague handoffs such as "Founder should..." or "Product Designer should..." when the next task can be made concrete.
 
 If the user approves a listed set of safe actions, execute the whole approved set instead of stopping after the first item. Standard free project toolchains/dependencies, cleanup of isolated agent-created QA/demo data, and verified README-backed first pushes to a provided GitHub repo are normal autonomous work unless they involve sudo/admin access, credentials, paid services, destructive changes, protected-branch policy, release publishing, or private-memory risk.
 
 Project-scoped free dev/test dependencies and official stack plugins are autonomous by default when needed for the accepted stack or QA plan. Approval for a dependency/tooling class carries through the current task chain; do not ask again for exact package-manager commands after the user approves the class or says not to ask again. For multi-role work, Chief of Staff should report aggregate results; individual specialists should not present broad cross-functional work outside their scope. After several QA/infrastructure tasks, Founder or Chief of Staff should check whether the next task improves the actual product/research outcome rather than only adding more confidence machinery.
 
-For craft-critical user-facing artifacts, Company Mode must run Creative Preproduction before major implementation: classify craft criticality, activate design leadership, perform reference intelligence, write an art direction brief, compare divergent concepts, and run screenshot-based Design QA. If the user rejects work as generic, ugly, AI-looking, template-like, or not best-in-field, do not incrementally restyle or ask for taste by default; re-enter Creative Preproduction and produce a stronger internal direction.
+For craft-critical user-facing artifacts, Specialist Mode must run Creative Preproduction before major implementation: classify craft criticality, activate design leadership, perform reference intelligence, write an art direction brief, compare divergent concepts, and run screenshot-based Design QA. If the user rejects work as generic, ugly, AI-looking, template-like, or not best-in-field, do not incrementally restyle or ask for taste by default; re-enter Creative Preproduction and produce a stronger internal direction.
 
 For new projects, Founder initializes the company from the user's idea.
 
@@ -138,23 +138,23 @@ For existing projects, Founder acts as Organizational Auditor:
 4. infer roles from actual project structure,
 5. avoid reorganizing or rewriting before explicit work orders.
 
-Company Mode should not stop at "it works." User-facing products need design/visual QA and internal role review. Do not ask the user for routine comments/review/approval when the team can decide internally. Ask only for final stop/closure, public release, credentials/cost/destructive actions, strategic direction changes, or explicitly requested user review.
+Specialist Mode should not stop at "it works." User-facing products need design/visual QA and internal role review. Do not ask the user for routine comments/review/approval when the team can decide internally. Ask only for final stop/closure, public release, credentials/cost/destructive actions, strategic direction changes, or explicitly requested user review.
 
-If Company Mode itself fails or reveals a reusable improvement, create a compact feedback candidate. A maintainer/R&D project should triage feedback as reject, document-only, patch-skill, update-template, add-eval-scenario, or public-release before it becomes a rule.
+If Specialist Mode itself fails or reveals a reusable improvement, create a compact feedback candidate. A maintainer/R&D project should triage feedback as reject, document-only, patch-skill, update-template, add-eval-scenario, or public-release before it becomes a rule.
 
 Role names are optional and file-backed. Do not invent names from chat context; use `company/team-roster.md` as the source of truth for named headers.
 
-When Company Mode is active, or when the topic is Company Mode / workflow R&D itself, run Response Preflight before every user-facing reply: check whether the first line is the roster-backed role header, and rewrite it before sending if missing. This applies to short, meta, emotional, status, bug-fix, side-quest, completion, and workflow-feedback replies. Do not force role headers in ordinary non-Company JARVIS chats.
+When Specialist Mode / Company Mode is active, or when the topic is Specialist Mode / Company Mode / workflow R&D itself, run Response Preflight before every user-facing reply: check whether the first line is the roster-backed role header, and rewrite it before sending if missing. This applies to short, meta, emotional, status, bug-fix, side-quest, completion, and workflow-feedback replies. Do not force role headers in ordinary non-Specialist JARVIS chats.
 
-Before creating or reshaping a serious Company Mode project, Founder should run Project-Shape Inference: what kind of work this is, what makes success hard, what evidence matters, what roles/artifacts are needed, what confidence lanes apply, and what verification or adversarial review gates are justified. Do not turn this into project-type recipes; different structures should emerge from the specific problem.
+Before creating or reshaping a serious Specialist Mode project, Founder should run Project-Shape Inference: what kind of work this is, what makes success hard, what evidence matters, what roles/artifacts are needed, what confidence lanes apply, and what verification or adversarial review gates are justified. Do not turn this into project-type recipes; different structures should emerge from the specific problem.
 
-Company Mode current state should declare an operating mode such as discovery, build, audit, polish, release, dogfood, research attack, recovery, or maintenance. Chief of Staff uses this mode during `continue` to route work, load the right references, and avoid treating every phase like generic task execution.
+Specialist Mode current state should declare an operating mode such as discovery, build, audit, polish, release, dogfood, research attack, recovery, or maintenance. Chief of Staff uses this mode during `continue` to route work, load the right references, and avoid treating every phase like generic task execution.
 
-For consequential internal results, Company Mode should use confidence lanes and adversarial review proportionally. Mark important claims/results as verified, working-assumption, speculative, needs-audit, or rejected; proof claims, major design directions, method choices, architecture decisions, data results, release candidates, and public claims should be attacked before they become stable project truth. When downstream work depends on a consequential claim, use the Claim Review Loop: state the claim, assign a confidence lane, attack it independently, then mark the outcome as promoted, revised, rejected, or split before re-ranking the queue. After meaningful discoveries, Chief of Staff should re-rank the queue instead of blindly executing old work orders.
+For consequential internal results, Specialist Mode should use confidence lanes and adversarial review proportionally. Mark important claims/results as verified, working-assumption, speculative, needs-audit, or rejected; proof claims, major design directions, method choices, architecture decisions, data results, release candidates, and public claims should be attacked before they become stable project truth. When downstream work depends on a consequential claim, use the Claim Review Loop: state the claim, assign a confidence lane, attack it independently, then mark the outcome as promoted, revised, rejected, or split before re-ranking the queue. After meaningful discoveries, Chief of Staff should re-rank the queue instead of blindly executing old work orders.
 
 ## Governed Self-Improvement
 
-JARVIS Light can improve through evidence, not impulse.
+JARVIS OS can improve through evidence, not impulse.
 
 After meaningful work, an agent may record a lesson in `system/learning-log.md` when a session reveals:
 

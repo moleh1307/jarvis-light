@@ -1,6 +1,6 @@
 # Adoption Audit
 
-Use this template when adopting an existing project into Company Mode.
+Use this template when adopting an existing project into JARVIS Specialist Mode. `Company Mode` remains a compatibility alias.
 
 ## Metadata
 

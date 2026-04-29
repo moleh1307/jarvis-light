@@ -1,6 +1,6 @@
 # Team Roster
 
-This file is the canonical source for Company Mode role identity.
+This file is the canonical source for JARVIS Specialist Mode role identity. `Company Mode` remains a compatibility alias.
 
 Do not invent role names in chat. If a role has no name here, use only the role title in user-facing headers.
 

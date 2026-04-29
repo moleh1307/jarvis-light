@@ -1,12 +1,14 @@
-# JARVIS Light
+# JARVIS OS
 
 **A local-first operating system for Codex continuity.**
+
+This public template was previously named JARVIS Light. The repository path may keep that name during the migration, but the workflow now uses JARVIS OS as the umbrella name.
 
 Current version: `0.0.31`
 
 Latest update: JARVIS Specialist Mode is now the future-facing name for the role-based project workflow. Company Mode remains a compatibility alias, and the public template still preserves the existing `jarvis-company-mode` package path.
 
-JARVIS Light turns a folder of markdown files into durable assistant memory.  
+JARVIS OS turns a folder of markdown files into durable assistant memory.
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
 
 It is inspired by the same continuity problem that Chronicle-style memory tries to solve, but it is intentionally different:
@@ -18,12 +20,12 @@ It is inspired by the same continuity problem that Chronicle-style memory tries 
 - no transcript dumping
 - no expensive automatic capture loop
 
-JARVIS Light is **not a Chronicle replacement**.  
+JARVIS OS is **not a Chronicle replacement**.
 It is the lightweight/manual mode: local markdown, explicit retrieval, compact memory, and agent discipline.
 
 ## The One-Sentence Version
 
-JARVIS Light makes Codex behave less like a fresh chat and more like an organized teammate that can read the project state, do the work, and leave the next session in a better position.
+JARVIS OS makes Codex behave less like a fresh chat and more like an organized teammate that can read the project state, do the work, and leave the next session in a better position.
 
 ## Copy-Paste Starts
 
@@ -235,7 +237,7 @@ Do not publish a release or stop the company without my approval.
 
 ## What Is Inside
 
-JARVIS Light has two layers.
+JARVIS OS has two layers.
 
 ### 1. JARVIS Memory
 
@@ -294,9 +296,9 @@ Long Codex chats eventually become awkward:
 - repeated explanations
 - lost project state
 - unclear latest artifact
-- agents saying “done” without enough durable trace
+- agents saying "done" without enough durable trace
 
-JARVIS Light changes the center of gravity:
+JARVIS OS changes the center of gravity:
 
 ```text
 Chat = temporary working surface
@@ -307,7 +309,7 @@ When the chat gets too long, you create a handoff and start fresh.
 
 ## What It Is
 
-JARVIS Light is:
+JARVIS OS is:
 
 - a local markdown vault
 - a Codex skill
@@ -316,7 +318,7 @@ JARVIS Light is:
 - readable, editable, inspectable, private by default
 - useful for coding, research, writing, planning, and long-running projects
 
-JARVIS Light is not:
+JARVIS OS is not:
 
 - a new chat app
 - a model replacement

@@ -1,13 +1,13 @@
 ---
 name: jarvis-company-mode
-description: "Role-based project workflow for JARVIS Light through JARVIS Specialist Mode, formerly Company Mode. Use when Codex should run a serious project through Founder, Chief of Staff, specialist roles, task boards, work orders, review gates, adoption audits for existing projects, and compact continue/status commands."
+description: "Role-based project workflow for JARVIS OS through JARVIS Specialist Mode, formerly Company Mode. Use when Codex should run a serious project through Founder, Chief of Staff, specialist roles, task boards, work orders, review gates, adoption audits for existing projects, and compact continue/status commands."
 ---
 
 # JARVIS Specialist Mode
 
 JARVIS Specialist Mode is the successor name for JARVIS Company Mode. `Company Mode` remains a supported compatibility alias because existing chats, prompts, project folders, and the package name still use it.
 
-Specialist Mode / Company Mode v0.8.5 is an optional JARVIS Light layer for serious projects that benefit from specialist perspectives. It does not create true background agents. It makes one Codex agent operate through durable role contracts, queues, memories, review gates, a team roster, adaptive project-shape inference, operating modes, workflow refresh, excellence calibration gates, claim review loops, feedback loops, outcome contracts, retrieval budgets, and stop rules stored in markdown.
+Specialist Mode / Company Mode v0.8.5 is an optional JARVIS OS layer for serious projects that benefit from specialist perspectives. It does not create true background agents. It makes one Codex agent operate through durable role contracts, queues, memories, review gates, a team roster, adaptive project-shape inference, operating modes, workflow refresh, excellence calibration gates, claim review loops, feedback loops, outcome contracts, retrieval budgets, and stop rules stored in markdown.
 
 Use when the user asks for:
 
@@ -95,7 +95,7 @@ company/
     <task-id>.md
 ```
 
-Use the JARVIS Light `templates/company-mode/` files when creating these files.
+Use the JARVIS OS `templates/company-mode/` files when creating these files.
 
 ## Non-Negotiable Rules
 
@@ -248,7 +248,7 @@ Installed and public versions should stay structurally aligned. The public skill
 
 ## JARVIS Compatibility
 
-Specialist Mode / Company Mode must preserve normal JARVIS Light discipline:
+Specialist Mode / Company Mode must preserve normal JARVIS OS discipline:
 
 - markdown is source of truth;
 - ask on consequential ambiguity;

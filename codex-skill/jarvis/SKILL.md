@@ -3,9 +3,9 @@ name: jarvis
 description: "Persistent local-first operating protocol for Codex using a markdown vault for continuity across chats, projects, coding, research, and planning. Use when Codex should retrieve relevant markdown context before acting, ask on consequential ambiguity, perform the task, and update project/session/handoff notes when durable state changes."
 ---
 
-# JARVIS Light
+# JARVIS OS
 
-JARVIS Light is a local, markdown-first operating mode for Codex. Treat the vault as durable memory and the current chat as a temporary working surface.
+JARVIS OS is a local, markdown-first operating mode for Codex. Treat the vault as durable memory and the current chat as a temporary working surface. This public template was formerly named JARVIS Light; the old name remains a compatibility label.
 
 ## Outcome Contract
 
@@ -121,7 +121,7 @@ Do not create learning entries for tiny tasks or one-off preferences. Do not let
 
 ## Specialist Mode Add-On
 
-When a project is too large for one undifferentiated agent mode, use JARVIS Specialist Mode. It keeps normal JARVIS Light memory rules but adds project-local role files under `company/`, including Founder, Chief of Staff, specialist charters, role memories, team roster, task board, work orders, review gates, adaptive project-shape inference, operating mode, workflow feedback, and integration log. `Company Mode` remains valid for older prompts, folders, and chats.
+When a project is too large for one undifferentiated agent mode, use JARVIS Specialist Mode. It keeps normal JARVIS OS memory rules but adds project-local role files under `company/`, including Founder, Chief of Staff, specialist charters, role memories, team roster, task board, work orders, review gates, adaptive project-shape inference, operating mode, workflow feedback, and integration log. `Company Mode` remains valid for older prompts, folders, and chats.
 
 In active Specialist Mode / Company Mode projects, interpret `continue` as: Chief of Staff reads durable state, selects the next unblocked task, enters the assigned role, executes within scope, verifies, updates memory, and reports compactly.
 

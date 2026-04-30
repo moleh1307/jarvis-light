@@ -14,6 +14,8 @@
 - PR:
 - Version impact: none / patch / minor / major / artifact-only
 - Workflow feedback impact: none / candidate / routed-to-JARVIS-R&D
+- Capability surface: not needed / required / declared / blocked
+- Approval lane: autonomous / confirmation-needed / blocked / not applicable
 - Craft criticality: utility-only / polished product / craft-critical / signature product / not applicable
 - Excellence calibration: not needed / required / completed
 - Confidence lane: verified / working-assumption / speculative / needs-audit / rejected / not applicable
@@ -36,6 +38,16 @@ What should be accomplished?
 ## Do Not Touch
 
 -
+
+## Capability Surface
+
+- Available capabilities:
+- Required capabilities:
+- Missing / uncertain capabilities:
+- Risk boundary:
+- Approval lane:
+- Verification path:
+- Blocker if missing:
 
 ## Expected Output
 

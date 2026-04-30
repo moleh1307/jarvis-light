@@ -4,9 +4,9 @@
 
 This public template was previously named JARVIS Light. The repository path may keep that name during the migration, but the workflow now uses JARVIS OS as the umbrella name.
 
-Current version: `0.0.40`
+Current version: `0.0.41`
 
-Latest update: JARVIS OS now includes a Reference Router so agents choose the smallest relevant workflow references before deep Specialist Mode work.
+Latest update: JARVIS OS now includes Capability Surface Declaration so tool-dependent teams declare available tools, approval boundaries, and verification paths before asking for avoidable manual work.
 
 JARVIS OS turns a folder of markdown files into durable assistant memory.
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -260,6 +260,7 @@ The optional serious-project layer:
 - Founder / Project Architect
 - Chief of Staff
 - specialist roles
+- capability surface declaration
 - task board
 - work orders
 - role memories

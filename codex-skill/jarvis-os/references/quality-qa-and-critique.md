@@ -40,6 +40,8 @@ Do not force this for small fixes or routine QA. Do force it when the team is ab
 
 If a tool can verify the work, use it before involving the user.
 
+For tool-dependent work, load `references/capability-surface.md` and declare the available capabilities, approval lane, and verification path before treating manual user review as necessary.
+
 For user-facing apps, websites, documents, decks, images, or packaged artifacts:
 
 - QA tests the actual artifact, not only source files or build scripts.
@@ -49,6 +51,7 @@ For user-facing apps, websites, documents, decks, images, or packaged artifacts:
 - Websites: inspect rendered page, key responsive states, navigation, forms/interactions, and console/build errors when feasible.
 - Documents/decks/PDFs: render/open enough pages to confirm artifact is not corrupt and layout/content are credible.
 - Do not ask the user to perform basic QA that tools can perform.
+- If the team cannot use a needed tool, mark the specific capability as missing or blocked instead of replacing QA with vague user review.
 
 User review is not a routine milestone gate. After internal tool-based QA and critique pass, the company should normally mark the milestone internally accepted and continue to the next useful task.
 

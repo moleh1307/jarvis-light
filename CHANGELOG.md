@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.41 - 2026-04-30
+
+- Added Capability Surface Declaration for tool-dependent Specialist Mode work.
+- Teams now have a compact way to declare available capabilities, required capabilities, missing/risky tools, approval lane, and verification path before execution or closeout.
+- Updated templates so work orders and current state can record capability surfaces without turning every task into a runtime inventory.
+
 ## 0.0.40 - 2026-04-30
 
 - Added the Reference Router for JARVIS OS.

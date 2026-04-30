@@ -10,6 +10,9 @@
 - Excellence calibration status:
 - Project shape:
 - Operating mode: discovery / build / audit / polish / release / dogfood / research attack / recovery / maintenance / other
+- Capability surface: undeclared / declared / needs-update / blocked / not needed
+- Required capabilities:
+- Risk / approval lane: autonomous / confirmation-needed / blocked / not applicable
 - Confidence policy:
 - Coordinator role:
 - Executing role:
@@ -28,6 +31,7 @@
 - Integration log:
 - Strategy map / attack tree:
 - Evidence ledger:
+- Capability surface:
 - Excellence calibration:
 - Adversarial review log:
 - Claim review log:

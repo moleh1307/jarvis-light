@@ -21,6 +21,7 @@ The router keeps `SKILL.md` short while making reference selection explicit. It 
 | `continue`, `go`, `next`, short approval, status, blocker, interruption | `continuation.md` | `adaptive-operating-patterns.md` for queue re-ranking or claim review |
 | New serious project or unclear project shape | `greenfield.md` | `adaptive-operating-patterns.md`, `roles-and-roster.md`, domain-specific quality references |
 | Existing repo/project takeover | `adoption-takeover.md` | `github-release-versioning.md`, `quality-qa-and-critique.md` |
+| Tool-dependent work, plugin/tool use, local app/browser/imagegen/GitHub/deploy/email capability, or verification boundary | `capability-surface.md` | `quality-qa-and-critique.md`, `github-release-versioning.md`, domain reference |
 | Role headers, role names, team changes, roster drift | `roles-and-roster.md` | `continuation.md` for response preflight |
 | Research, data, proof, architecture, strategy, or consequential claims | `adaptive-operating-patterns.md` | `quality-qa-and-critique.md` |
 | Excellence-critical non-visual output | `adaptive-operating-patterns.md` | `quality-qa-and-critique.md`, `innovation-feedback.md` |
@@ -56,6 +57,7 @@ If the task becomes consequential, public-facing, long-running, or role-governed
 ## Conflict Rules
 
 - If a task is both public-facing and visual, start with `public-artifacts.md` for audience/trust/privacy, then use `creative-preproduction.md` or `visual-concept-pipeline.md` for craft.
+- If a task is tool-dependent or verification-heavy, load `capability-surface.md` early enough to declare available tools, approval lane, and verification path before execution or closeout.
 - If a task is both release-related and implementation-related, start with the implementation reference, then run `github-release-versioning.md` before reporting readiness.
 - If a task is both research/proof and public-facing, use `adaptive-operating-patterns.md` for confidence lanes before public wording.
 - If the user asks for a workflow change while a project is active, use `innovation-feedback.md` and `continuation.md` so the side quest is proposed or tracked without losing the active task.

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.39 - 2026-04-30
+
+- Added the Visual Concept Pipeline for craft-critical UI and visual product work.
+- Teams can now generate or choose a concrete visual target, freeze it as the spec, implement against it, and compare rendered screenshots back to the concept.
+- Clarified that generated UI concepts are design inputs, not product truth; real data, accessibility, responsiveness, and domain correctness can justify intentional deviations.
+
 ## 0.0.38 - 2026-04-30
 
 - Added Stop-the-Line Review for Specialist Mode.

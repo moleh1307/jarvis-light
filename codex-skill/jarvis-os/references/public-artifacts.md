@@ -63,6 +63,8 @@ Verification: render desktop/mobile, check public data, inspect links/deployment
 
 Escalate to full Creative Preproduction when the artifact is craft-critical, signature-level, high-stakes, repeatedly rejected, or the user asks for best-in-field / AAA / world-class quality.
 
+For small public sites where a concrete visual target would prevent generic output, use a lightweight Visual Concept Pipeline: create or choose one concept, freeze the direction, implement it, then compare desktop/mobile screenshots against the target. Do not use generated concepts as a source for invented personal facts, captions, credentials, or claims.
+
 ## Personal And Public Data Boundary
 
 Treat personal photos, contact details, documents, addresses, IDs, private memories, and application material as public-data boundaries.

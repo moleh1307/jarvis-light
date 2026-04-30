@@ -26,6 +26,7 @@ JARVIS OS is a local continuity workflow for Codex. It uses markdown files as du
 - In Specialist Mode, Founder should infer project shape before workflow design and choose roles, artifacts, operating mode, confidence lanes, strategy maps, adversarial review gates, and claim review loops from the actual problem rather than fixed project-type recipes.
 - In Specialist Mode, excellence-critical work should calibrate before execution: define the reference class, top-tier bar, benchmarks or references, missing capabilities, and rejection tests before major work sets the quality ceiling.
 - In Specialist Mode, use Stop-the-Line Review when normal execution would likely continue wrong framing, generic quality, weak evidence, stale state, or misleading readiness.
+- In Specialist Mode, craft-critical UI may use a Visual Concept Pipeline: freeze a concrete design target, implement against it, then compare rendered screenshots back to the target.
 - For small public-facing artifacts, frame audience, decision/job, tone/trust, avoid-list, missing material info, named external references, and local-vs-production deployment state before calling the artifact ready.
 
 ## Retrieval Order
@@ -147,6 +148,8 @@ If the user approves a listed set of safe actions, execute the whole approved se
 Project-scoped free dev/test dependencies and official stack plugins are autonomous by default when needed for the accepted stack or QA plan. Approval for a dependency/tooling class carries through the current task chain; do not ask again for exact package-manager commands after the user approves the class or says not to ask again. For multi-role work, Chief of Staff should report aggregate results; individual specialists should not present broad cross-functional work outside their scope. After several QA/infrastructure tasks, Founder or Chief of Staff should check whether the next task improves the actual product/research outcome rather than only adding more confidence machinery.
 
 For craft-critical user-facing artifacts, Specialist Mode must run Creative Preproduction before major implementation: classify craft criticality, activate design leadership, perform reference intelligence, write an art direction brief, compare divergent concepts, and run screenshot-based Design QA. If the user rejects work as generic, ugly, AI-looking, template-like, or not best-in-field, do not incrementally restyle or ask for taste by default; re-enter Creative Preproduction and produce a stronger internal direction.
+
+For craft-critical UI or visual product work, Specialist Mode may use a Visual Concept Pipeline: create or choose a concrete visual target, freeze it as the implementation spec, implement against it, then compare rendered screenshots back to the concept. Generated concepts are design inputs, not product truth; verify real data, accessibility, responsiveness, and domain correctness.
 
 Specialist Mode should run Stop-the-Line Review when normal execution would likely produce wrong, generic, misleading, stale, or low-quality work. Stop, name the trigger, run compact internal critique, then fix now, create a corrective work order, switch operating mode, run claim review, or escalate only if a real boundary requires it.
 

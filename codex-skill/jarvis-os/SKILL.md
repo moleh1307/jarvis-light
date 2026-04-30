@@ -58,6 +58,8 @@ For new-project initialization, use progressive Founder discovery: ask a small f
 
 For small public-facing artifacts, use `references/public-artifacts.md`: frame the real audience and decision, handle named external references instead of silently skipping them, calibrate tone/taste lightly, respect public-data boundaries, and distinguish local changes from deployed production state.
 
+For craft-critical UI or visual product work, use `references/visual-concept-pipeline.md` when a concrete visual target would improve implementation: create or choose a concept, freeze it as the spec, implement from it, then compare rendered screenshots against it.
+
 In Specialist Mode, use Stop-the-Line Review when normal execution would likely produce wrong, generic, misleading, stale, or low-quality work. Stop, name the trigger, run a compact internal critique, then fix now, create a corrective work order, switch mode, run claim review, or escalate only if a real boundary requires it.
 
 For substantial off-roadmap requests inside Specialist Mode or JARVIS R&D, run a short internal intake and propose the update before patching/pushing unless the user explicitly asks for immediate low-risk execution.
@@ -164,6 +166,7 @@ Load Specialist Mode details progressively from this skill's `references/` folde
 - Roles, team roster, role names, role headers, and team changes: `references/roles-and-roster.md`
 - Quality bar, internal critique, product/design QA, and tool-aware QA: `references/quality-qa-and-critique.md`
 - Craft-critical visuals, art direction, reference research, divergent concepts, and design rejection recovery: `references/creative-preproduction.md`
+- Visual concept to implementation workflow, including generated UI concepts and side-by-side screenshot comparison: `references/visual-concept-pipeline.md`
 - Small public-facing artifacts, audience/tone/trust framing, external references, and deployment closeout: `references/public-artifacts.md`
 - GitHub, PRs, releases, versioning, and repo readiness: `references/github-release-versioning.md`
 - Selective Innovation Mode and workflow feedback: `references/innovation-feedback.md`

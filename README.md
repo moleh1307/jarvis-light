@@ -4,9 +4,9 @@
 
 This public template was previously named JARVIS Light. The repository path may keep that name during the migration, but the workflow now uses JARVIS OS as the umbrella name.
 
-Current version: `0.0.38`
+Current version: `0.0.39`
 
-Latest update: Specialist Mode now has Stop-the-Line Review so teams interrupt bad momentum before accepting wrong, generic, misleading, stale, or low-quality work.
+Latest update: craft-critical UI can now use a Visual Concept Pipeline: create or choose a concrete visual target, implement against it, then compare rendered screenshots back to the concept.
 
 JARVIS OS turns a folder of markdown files into durable assistant memory.
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -14,7 +14,7 @@ It helps Codex work across long chats, fresh chats, projects, research, codebase
 It is inspired by the same continuity problem that Chronicle-style memory tries to solve, but it is intentionally different:
 
 - no background screen capture
-- no screenshots
+- no automatic background screenshots
 - no always-on memory agent
 - no hidden database requirement
 - no transcript dumping
@@ -599,6 +599,22 @@ For craft-critical user-facing artifacts, Specialist Mode should not build first
 Before implementation, the team should gather best-in-class references and anti-references, write an art direction brief, compare divergent concepts, and choose a direction internally. Design QA should reject screenshots that look generic, template-like, card-heavy without product reason, decorative-gradient-driven, default component-library shaped, or disconnected from the product metaphor.
 
 If the user rejects visual quality as generic, ugly, AI-looking, template-like, or not best-in-field, the team should not simply tweak CSS or ask for taste. It should re-enter Creative Preproduction, strengthen the art direction, generate divergent concepts, and run screenshot-based Design QA again.
+
+### Visual Concept Pipeline
+
+For craft-critical UI or visual product work, JARVIS can create or choose a concrete visual target before implementation. This can be a generated UI concept, user-provided screenshot, hand sketch, reference app screenshot, existing style frame, or high-fidelity mockup.
+
+The pipeline is:
+
+1. define the audience, job, product truth, craft criticality, rejection tests, and required states;
+2. create or gather one or more visual concepts;
+3. freeze the selected concept as the implementation target;
+4. implement from the target as a visual spec, not vague inspiration;
+5. render the actual app/site/artifact and compare screenshots back to the concept;
+6. record intentional deviations for real data, accessibility, responsiveness, domain correctness, privacy, or platform conventions;
+7. trigger Stop-the-Line Review if the implementation drifts into generic UI or loses the concept's intent.
+
+Generated concepts are design inputs, not product truth. Do not trust generated text, data, logos, maps, charts, personal facts, or domain claims without verification.
 
 ### Small Public-Facing Artifacts
 

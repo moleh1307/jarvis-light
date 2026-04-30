@@ -6,6 +6,8 @@ Creative Preproduction is the visual/craft-specific form of the broader Excellen
 
 For smaller public-facing artifacts where full Specialist Mode or full Creative Preproduction would be too heavy, use `references/public-artifacts.md` first. Escalate back here when the work is craft-critical, signature-level, repeatedly rejected, or explicitly expected to be best-in-field.
 
+When a craft-critical UI needs a concrete target before implementation, use `references/visual-concept-pipeline.md`: create or choose a visual concept, freeze it as the spec, implement against it, then compare rendered screenshots back to the target.
+
 ## Craft Criticality
 
 Founder classifies every user-facing project or milestone:
@@ -65,6 +67,8 @@ Before code, produce a short art direction brief:
 
 The brief must be concrete enough for Design QA to reject weak screenshots.
 
+If the art direction is still too abstract to implement faithfully, trigger the Visual Concept Pipeline before code. A selected concept image, screenshot, or mockup can serve as the concrete design target.
+
 ## Divergent Concepts
 
 For craft-critical or rejected work, produce at least three divergent concepts before implementation:
@@ -117,6 +121,8 @@ For UI/visual work, verify with screenshots before internal acceptance:
 - empty state;
 - modal/export/detail state when relevant;
 - before/after comparison for redesign work.
+
+When a frozen concept exists, Design QA must also compare the implementation screenshot against the concept and record intentional deviations.
 
 Design QA scores:
 

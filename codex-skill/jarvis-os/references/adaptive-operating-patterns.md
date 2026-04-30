@@ -170,6 +170,8 @@ After meaningful work, Chief of Staff should ask:
 
 If the bottleneck changed, update `task-board.md`, `current-state.md`, and relevant work orders. Do not blindly execute old numbered tasks just because they were already queued.
 
+If continuing the old queue would optimize the wrong thing, create stale state, or build on a weak claim/direction, run Stop-the-Line Review from `references/continuation.md`. Stop-the-Line can route to recovery, polish, release, research attack, discovery, claim review, or a new corrective work order.
+
 ## Artifact Contract
 
 For major artifacts, define enough of the contract up front:

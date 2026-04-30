@@ -25,6 +25,8 @@ Before building or substantially revising a small public artifact, run a compact
 
 If the answers are obvious from the prompt and context, infer them and proceed. If not, ask the smallest useful question batch, usually 2-3 direct questions. Do not dump a long questionnaire for a small artifact.
 
+Wrong audience, wrong decision/job, or a page that starts turning into a criteria dump, gimmick showcase, or generic portfolio is a Stop-the-Line trigger. Reframe before adding more UI or copy.
+
 ## External References
 
 If the user gives a URL, skill, design reference, repo, doc, screenshot, or named external resource and says to check, use, follow, or consider it:
@@ -35,6 +37,8 @@ If the user gives a URL, skill, design reference, repo, doc, screenshot, or name
 - if access fails, say so explicitly and state the fallback path.
 
 Silent skipping of a named reference is a defect.
+
+If a named reference was skipped and the artifact work has already started, stop and inspect the reference or report the access failure before calling the artifact ready.
 
 ## Lightweight Craft Calibration
 

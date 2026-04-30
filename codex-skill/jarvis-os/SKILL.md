@@ -58,6 +58,8 @@ For new-project initialization, use progressive Founder discovery: ask a small f
 
 For small public-facing artifacts, use `references/public-artifacts.md`: frame the real audience and decision, handle named external references instead of silently skipping them, calibrate tone/taste lightly, respect public-data boundaries, and distinguish local changes from deployed production state.
 
+In Specialist Mode, use Stop-the-Line Review when normal execution would likely produce wrong, generic, misleading, stale, or low-quality work. Stop, name the trigger, run a compact internal critique, then fix now, create a corrective work order, switch mode, run claim review, or escalate only if a real boundary requires it.
+
 For substantial off-roadmap requests inside Specialist Mode or JARVIS R&D, run a short internal intake and propose the update before patching/pushing unless the user explicitly asks for immediate low-risk execution.
 
 Before meaningful Specialist Mode completion reports, run a quick Closeout Integrity Check so state files, work orders, docs/version/git/artifact claims, blockers, and completion options do not contradict each other.

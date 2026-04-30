@@ -105,6 +105,8 @@ Design QA must reject internally if screenshots look:
 
 If the kill switch triggers, do not restyle incrementally and do not ask the user for taste. Re-enter Creative Preproduction.
 
+The generic UI kill switch is a Stop-the-Line trigger. Record the trigger and strongest critique, then either fix the direction inside the current work order or create a corrective design work order before more implementation.
+
 ## Screenshot-Based Design QA
 
 For UI/visual work, verify with screenshots before internal acceptance:

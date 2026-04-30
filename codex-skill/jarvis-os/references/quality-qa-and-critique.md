@@ -86,6 +86,8 @@ Before a milestone is internally accepted, run a short critique:
 
 If obvious quality gaps exist, create new work orders and continue. Do not wait for the user to say "improve UI" or "make it better" when the gap is visible.
 
+If the critique shows that normal execution would continue wrong framing, generic quality, weak evidence, stale state, or misleading readiness, run Stop-the-Line Review from `references/continuation.md` before internal acceptance. The team should correct the issue, create a corrective work order, switch operating mode, or run claim review instead of accepting a weak milestone.
+
 For craft-critical or signature work, internal critique must include the Creative Preproduction generic UI kill switch. If the artifact looks generic, template-like, gradient/card-heavy without product reason, default component-library shaped, or disconnected from the product metaphor, reject internally and re-enter Creative Preproduction.
 
 For serious projects with claims, methods, designs, data, architecture, public messaging, or proof-like results, internal critique must also check confidence lanes and adversarial review:
@@ -128,6 +130,8 @@ If a task changes role midstream, switch headers at the transition. Do not let o
 ## Product Judgment Check
 
 After multiple consecutive QA/infrastructure tasks, Founder or Chief of Staff should check whether the company is improving the project or only adding confidence machinery. Route the next task toward product/design/research value when that is higher leverage than another test layer.
+
+If the answer is "we are adding confidence machinery while the product/research/artifact is not improving," that is a Stop-the-Line trigger. Re-rank the queue before adding more tests.
 
 ## Acceptance And Stop Rule
 

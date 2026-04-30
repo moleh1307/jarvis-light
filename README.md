@@ -4,9 +4,9 @@
 
 This public template was previously named JARVIS Light. The repository path may keep that name during the migration, but the workflow now uses JARVIS OS as the umbrella name.
 
-Current version: `0.0.37`
+Current version: `0.0.38`
 
-Latest update: small public-facing artifacts now get lightweight audience/purpose/taste framing, named external references must be handled, and deployed artifacts must distinguish local changes from production.
+Latest update: Specialist Mode now has Stop-the-Line Review so teams interrupt bad momentum before accepting wrong, generic, misleading, stale, or low-quality work.
 
 JARVIS OS turns a folder of markdown files into durable assistant memory.
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -574,6 +574,23 @@ Use Excellence Calibration when the team is about to set the quality ceiling for
 6. Decision: proceed, add/activate a role, run reference research, reshape the work order, or lower scope honestly.
 
 Skip the gate for tiny bug fixes, mechanical docs updates, routine QA, small refactors, and urgent recovery work where the target is already obvious.
+
+### Stop-the-Line Review
+
+Use Stop-the-Line Review when normal Specialist Mode execution would likely continue bad momentum. It is an internal interrupt, not a routine user-review request.
+
+Common triggers:
+
+- wrong audience, purpose, or project framing;
+- functional but generic, weak, or off-purpose output;
+- skipped evidence, named references, or source provenance;
+- consequential claims, design directions, methods, architecture, or readiness assumptions treated as stable too early;
+- README, status, version, deployment, or artifact reality conflicting with reported state;
+- repeated superficial fixes after the same failure;
+- missing role, capability, reference class, or tool for the work;
+- an old queue optimizing the wrong thing after a discovery or failure.
+
+Default outcomes are: fix now, create a corrective work order, switch operating mode, run claim review, or escalate only when a real boundary requires it.
 
 ### Creative Preproduction And Taste Gate
 

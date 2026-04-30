@@ -15,13 +15,14 @@ When the user says `continue`:
 7. Execute within the task's allowed scope.
 8. Decide whether Selective Innovation Mode is needed.
 9. Verify role-appropriately. For user-facing apps/sites/docs, verify the actual rendered or packaged artifact when feasible.
-10. If obvious quality gaps remain, create or execute the next improvement task instead of stopping.
-11. If reusable workflow friction appears, file a compact feedback candidate.
-12. Update task board, current state, role memory, integration log, and operating mode if the project phase changed.
-13. If the completed work reveals the next necessary task, create or update that work order before reporting.
-14. Run the Queue Re-Ranking Check if the result was meaningful or surprising.
-15. Run the Closeout Integrity Check for meaningful completions.
-16. Report compactly with completed work, verification, blockers, explicit next action, and state-aware completion options when useful.
+10. Run Stop-the-Line Review if continuing normally would produce wrong, generic, misleading, stale, or low-quality work.
+11. If obvious quality gaps remain, create or execute the next improvement task instead of stopping.
+12. If reusable workflow friction appears, file a compact feedback candidate.
+13. Update task board, current state, role memory, integration log, and operating mode if the project phase changed.
+14. If the completed work reveals the next necessary task, create or update that work order before reporting.
+15. Run the Queue Re-Ranking Check if the result was meaningful or surprising.
+16. Run the Closeout Integrity Check for meaningful completions.
+17. Report compactly with completed work, verification, blockers, explicit next action, and state-aware completion options when useful.
 
 ## Operating Mode Routing
 
@@ -131,6 +132,42 @@ If several consecutive tasks are QA/infrastructure hardening, Chief of Staff or 
 - Should the team route to Founder/Product/Research lead before continuing the QA track?
 
 Do not create a test treadmill. Verification matters, but the company exists to improve the project outcome.
+
+## Stop-the-Line Review
+
+Use Stop-the-Line Review when normal execution would likely continue bad momentum. It is a compact internal interrupt, not a request for routine user review.
+
+Triggers include:
+
+- wrong audience, purpose, or project framing;
+- functional but generic, weak, or off-purpose output;
+- required evidence, named external reference, or source provenance was skipped;
+- a consequential claim, design direction, method, architecture, or release/readiness assumption is being treated as stable without enough support;
+- README/status/version/deployment/artifact reality conflicts with reported state;
+- the same fix failed twice or the team is looping on superficial patches;
+- the work needs a capability, role, reference class, or tool that the current path lacks;
+- the active queue is optimizing the wrong thing after a new discovery or failure.
+
+Use this compact format internally:
+
+```text
+Stop-the-Line Trigger:
+- What triggered it:
+- Why continuing is risky:
+- Strongest critique:
+- Best corrective move:
+- Outcome: fix now / create work order / switch mode / run claim review / decision needed
+```
+
+Default outcomes:
+
+- `fix now`: when the correction is safe, scoped, and inside the current work order.
+- `create work order`: when correction is necessary but should be separately tracked.
+- `switch mode`: when the project needs recovery, polish, release, research attack, or discovery instead of the current mode.
+- `run claim review`: when downstream work depends on a consequential claim or direction.
+- `decision needed`: only when the correction crosses strategy, cost, credentials, destructive work, private data, public release, protected branch, or unavoidable owner-judgment boundaries.
+
+After Stop-the-Line Review, update current state/task board if the mode, active task, blocker, or next task changed. Do not use Stop-the-Line as an excuse to stop progress when the team can correct the issue internally.
 
 ## Completion Options Menu
 

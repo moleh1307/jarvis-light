@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.38 - 2026-04-30
+
+- Added Stop-the-Line Review for Specialist Mode.
+- Teams should interrupt normal execution when continuing would produce wrong, generic, misleading, stale, or low-quality work.
+- Stop-the-Line can fix now, create a corrective work order, switch operating mode, run claim review, or escalate only when a real boundary requires it.
+
 ## 0.0.37 - 2026-04-30
 
 - Added Lightweight Public Artifact Framing for small public-facing artifacts.

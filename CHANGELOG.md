@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.62 - 2026-05-01
+
+- Updated the Quick Start clone example for the public repository rename from `jarvis-light` to `JarvisOS`.
+- Kept the installed skill package name as `jarvis-os`.
+
 ## 0.0.61 - 2026-05-01
 
 - Added R&D Stack Compression Check to the R&D Idea Loop.

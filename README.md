@@ -769,7 +769,7 @@ git commit --author="JARVIS Frontend Engineer <your-verified-email@example.com>"
 1. Copy this repository to a local folder:
 
    ```bash
-   git clone https://github.com/<you>/jarvis-light.git ~/JARVIS
+   git clone https://github.com/<you>/JarvisOS.git ~/JARVIS
    cd ~/JARVIS
    ```
 

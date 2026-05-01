@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.67 - 2026-05-01
+
+- Updated the GitHub Pages docs workflow to use Node 24.
+- Kept the deployed Docusaurus docs site and public metadata current after enabling GitHub Pages.
+
 ## 0.0.66 - 2026-05-01
 
 - Added a Docusaurus documentation site under `website/`.

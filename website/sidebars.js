@@ -1,0 +1,57 @@
+const sidebars = {
+  tutorialSidebar: [
+    'intro',
+    {
+      type: 'category',
+      label: 'Getting Started',
+      items: [
+        'getting-started/quick-start',
+        'getting-started/install-skill',
+        'getting-started/fresh-chat',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Core Concepts',
+      items: [
+        'concepts/mental-model',
+        'concepts/memory',
+        'concepts/handoffs',
+        'concepts/artifact-hygiene',
+        'concepts/self-improvement',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Modes',
+      items: [
+        'modes/light-mode',
+        'modes/specialist-mode',
+        'modes/adoption-mode',
+        'modes/rd-loop',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Operations',
+      items: [
+        'operations/reference-router',
+        'operations/task-lifecycle',
+        'operations/quality-gates',
+        'operations/public-artifacts',
+        'operations/release-and-github-pages',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Reference',
+      items: [
+        'reference/folder-structure',
+        'reference/prompt-library',
+        'reference/checklists',
+      ],
+    },
+  ],
+};
+
+module.exports = sidebars;

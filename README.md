@@ -4,10 +4,10 @@
 
 # JARVIS OS
 
-[![Docs](https://img.shields.io/badge/docs-markdown-111111?style=for-the-badge)](#prompts)
+[![Docs](https://img.shields.io/badge/docs-docusaurus-111111?style=for-the-badge)](website/)
 [![Codex](https://img.shields.io/badge/codex-skill-111111?style=for-the-badge)](codex-skill/jarvis-os)
 [![Local First](https://img.shields.io/badge/memory-local_first-111111?style=for-the-badge)](#how-it-works)
-[![Version](https://img.shields.io/badge/version-0.0.65-111111?style=for-the-badge)](VERSION)
+[![Version](https://img.shields.io/badge/version-0.0.66-111111?style=for-the-badge)](VERSION)
 
 **A local-first operating system for Codex continuity.**
 
@@ -16,6 +16,16 @@ JARVIS OS makes Codex feel less like a fresh chat and more like an organized tea
 Memory files. Handoffs. Task boards. Specialist Mode. Artifact hygiene. Self-improvement logs. No hidden database. No transcript dumping.
 
 ---
+
+## Docs
+
+Full docs live in the Docusaurus site under [website/](website/).
+
+After GitHub Pages is enabled, the public docs URL is:
+
+```text
+https://moleh1307.github.io/JarvisOS/
+```
 
 ## Quick Start
 

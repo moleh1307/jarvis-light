@@ -11,3 +11,8 @@ private/
 
 # Codex/runtime artifacts
 .codex/
+
+# Documentation build artifacts
+website/node_modules/
+website/build/
+website/.docusaurus/

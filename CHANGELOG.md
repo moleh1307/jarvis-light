@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.66 - 2026-05-01
+
+- Added a Docusaurus documentation site under `website/`.
+- Added a custom JarvisOS docs landing page, structured docs navigation, full workflow documentation pages, and a GitHub Pages deployment workflow.
+- Linked the README to the docs site and bumped public metadata.
+
 ## 0.0.65 - 2026-05-01
 
 - Compressed the README opening into a shorter, sharper first screen.

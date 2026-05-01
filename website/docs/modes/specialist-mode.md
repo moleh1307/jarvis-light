@@ -1,0 +1,97 @@
+---
+title: Specialist Mode
+description: Role-based JARVIS OS workflow for serious projects.
+---
+
+# Specialist Mode
+
+Specialist Mode is the serious-project layer of JARVIS OS.
+
+It is the successor name for the older Company Mode. Company Mode remains a compatibility alias.
+
+## What It Adds
+
+Specialist Mode can add:
+
+- Founder / project-shape inference;
+- Chief of Staff routing;
+- functional specialist roles;
+- `company/current-state.md`;
+- `company/task-board.md`;
+- work orders;
+- role memories;
+- capability surface declaration;
+- review gates;
+- operating mode;
+- task lifecycle;
+- internal critique;
+- closeout integrity checks.
+
+## The Team Model
+
+In Specialist Mode, "team" usually means one Codex agent changing hats across file-backed roles.
+
+It does not automatically mean multiple runtime agents.
+
+Runtime subagents are optional helpers for explicit or clearly valuable parallel work, but they are not durable team members.
+
+## Functional Role Headers
+
+User-facing Specialist Mode replies should start with a functional role header:
+
+```text
+[Role: Chief of Staff]
+```
+
+Examples:
+
+- `[Role: Founder]`;
+- `[Role: Documentation Engineer]`;
+- `[Role: QA Engineer]`;
+- `[Role: Product Designer]`;
+- `[Role: Memory & Retrieval Engineer]`.
+
+Avoid named persona headers in active routing.
+
+## Operating Modes
+
+`company/current-state.md` should declare what the project is doing now:
+
+- discovery;
+- build;
+- audit;
+- polish;
+- release;
+- dogfood;
+- research attack;
+- recovery;
+- maintenance.
+
+Operating mode helps the Chief of Staff choose the right next action.
+
+## Minimal Specialist Layer
+
+For small-but-real projects, use only what is needed:
+
+- `company/current-state.md`;
+- `company/task-board.md`;
+- one charter or adoption audit;
+- `company/work-orders/`.
+
+Add richer artifacts only when complexity earns them.
+
+## Full Specialist Layer
+
+Use the full layer for complex projects:
+
+- team roster;
+- role memories;
+- integration log;
+- strategy map;
+- evidence ledger;
+- adversarial review;
+- claim review;
+- design QA;
+- release readiness.
+
+The goal is not bureaucracy. The goal is fewer missed obligations.

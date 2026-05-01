@@ -1,0 +1,42 @@
+---
+title: Reference Router
+description: How agents choose the right JARVIS OS reference files.
+---
+
+# Reference Router
+
+JARVIS OS is modular. Agents should not load every rule for every task.
+
+The Reference Router helps choose the smallest useful reference bundle.
+
+## Routing Questions
+
+Before deep work, ask:
+
+- Is this Light Mode or Specialist Mode?
+- Is this continuation, greenfield setup, adoption, public artifact, visual craft, QA, release, research, workflow feedback, or recovery?
+- Does the task depend on tools or permissions?
+- Does the task change durable memory?
+- Could stale memory mislead the work?
+- Which reference files are needed now?
+
+## Common Routes
+
+| Task | Reference |
+| --- | --- |
+| common task checklist | `references/task-cards.md` |
+| work order lifecycle | `references/task-lifecycle.md` |
+| memory writes or stale memory | `references/memory-discipline.md` |
+| greenfield project setup | `references/greenfield.md` |
+| existing project adoption | `references/adoption-takeover.md` |
+| public-facing artifact | `references/public-artifacts.md` |
+| visual/craft critical work | `references/creative-preproduction.md` and `references/visual-concept-pipeline.md` |
+| continuation/status/closeout | `references/continuation.md` |
+| self-improvement | `references/self-improvement-reflexes.md` |
+| R&D loop | `references/rd-idea-loop.md` |
+
+## Stop Rule
+
+Stop retrieving when the next action can be handled with useful confidence.
+
+Do not read more files just to feel exhaustive.

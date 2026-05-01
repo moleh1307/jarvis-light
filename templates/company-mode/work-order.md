@@ -5,6 +5,8 @@
 - ID:
 - Owner role:
 - Status: todo / active / blocked / review / internally-accepted / waiting-user-decision / done / superseded
+- Lifecycle state: Intake / Ready / Active / Review/Verify / Done / Blocked / Decision Needed / Superseded / Emergency
+- Risk lane: standard / normal / high-risk / emergency
 - Priority:
 - Created:
 - Depends on:
@@ -26,6 +28,10 @@
 ## Objective
 
 What should be accomplished?
+
+## Scope
+
+What is inside this task?
 
 ## Inputs
 
@@ -56,6 +62,21 @@ What should be accomplished?
 ## Acceptance Criteria
 
 -
+
+## Verification Evidence
+
+- Evidence:
+- Verification gap:
+
+## Canonical Artifact
+
+- Artifact:
+- Artifact status: canonical / diagnostic / temporary / superseded / none
+
+## Blocker / Decision Needed
+
+- Blocker:
+- Decision needed:
 
 ## Verification
 
@@ -109,6 +130,11 @@ When should the role stop and ask instead of proceeding?
 
 - Completed:
 - Changed:
+- Lifecycle state:
+- Risk lane:
+- Verification evidence:
+- Canonical artifact:
+- Closeout state:
 - Commit:
 - PR:
 - Version:

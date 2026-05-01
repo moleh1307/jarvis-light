@@ -4,9 +4,9 @@
 
 This public template was previously named JARVIS Light. The repository path may keep that name during the migration, but the workflow now uses JARVIS OS as the umbrella name.
 
-Current version: `0.0.48`
+Current version: `0.0.49`
 
-Latest update: JARVIS OS now includes compact task cards for common task types, reducing agent cognitive load before deeper reference routing.
+Latest update: JARVIS OS now includes Task Lifecycle v1 with lightweight lifecycle states, risk lanes, and done-evidence checks for safer task management.
 
 JARVIS OS turns a folder of markdown files into durable assistant memory.
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.
@@ -516,6 +516,7 @@ Examples:
 
 - older active chat refresh -> `workflow-refresh.md`
 - clear task type with too many rules to synthesize -> `task-cards.md`
+- creating, routing, reviewing, blocking, or closing a work order -> `task-lifecycle.md`
 - `continue`, blockers, interruptions, completion options -> `continuation.md`
 - new serious project -> `greenfield.md`
 - existing project takeover -> `adoption-takeover.md`
@@ -527,6 +528,8 @@ Examples:
 The rule is: route first, load only the selected references, execute, and re-route if Stop-the-Line Review or a changed bottleneck shows the initial route was wrong.
 
 Task cards are the lighter first stop when the task shape is obvious but the agent needs a compact checklist. They cover common work such as coding fixes, research outputs, public artifacts, adoption audits, fresh continuations, workflow patches, and status/closeout. They are not a replacement for deeper references; they point the agent back to the right reference when risk appears.
+
+Task Lifecycle v1 is the safety layer for meaningful work orders. It uses small lifecycle states, risk lanes, acceptance criteria, verification evidence, canonical artifacts, blockers/decisions, and closeout state so `done` means the work is actually safe to treat as finished.
 
 Founder and Chief of Staff can evolve the team as the project changes: hire new roles, merge redundant roles, retire completed roles, or add temporary specialists. Each role may also keep a short name alongside its title, such as:
 
@@ -715,6 +718,7 @@ git commit --author="JARVIS Frontend Engineer <your-verified-email@example.com>"
 │           ├── quality-qa-and-critique.md
 │           ├── reference-router.md
 │           ├── task-cards.md
+│           ├── task-lifecycle.md
 │           ├── visual-concept-pipeline.md
 │           ├── workflow-refresh.md
 │           └── roles-and-roster.md

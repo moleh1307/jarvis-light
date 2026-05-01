@@ -11,6 +11,17 @@
 - `done`: accepted into project state
 - `superseded`: replaced by newer task or decision
 
+Lifecycle mapping:
+
+- `todo`: Intake / Ready
+- `active`: Active
+- `review`: Review/Verify
+- `internally-accepted`: Review/Verify or Done depending on closeout
+- `blocked`: Blocked
+- `waiting-user-decision`: Decision Needed
+- `done`: Done
+- `superseded`: Superseded
+
 ## Active
 
 | ID | Owner | Task | Status | Priority | Depends On | Notes |

@@ -15,12 +15,12 @@ Task cards are compact execution checklists. They do not replace deeper referenc
 ## Coding Fix Card
 
 - Identify the repo, branch, changed files, and user-visible behavior before editing.
+- If a durable work order exists, confirm lifecycle state and risk lane before changing files.
 - Read the smallest relevant code path plus existing tests or local patterns.
 - Preserve unrelated user changes; do not revert dirty work you did not create.
 - Make the narrowest fix that matches the repo style.
 - Run the most relevant test, typecheck, lint, build, or smoke command available.
 - Report what changed, what passed, and any verification you could not run.
-- Update memory only if project state, blockers, decisions, or next steps changed.
 
 ## Research Output Card
 
@@ -48,9 +48,9 @@ Task cards are compact execution checklists. They do not replace deeper referenc
 - Identify repo/workspace purpose, current status, tech/data stack, and sensitive boundaries.
 - Separate observed facts from agent inferences.
 - Create the smallest useful Specialist Layer: current state, task board, charter/audit, and work orders only if needed.
+- Give new work orders a lifecycle state, risk lane, acceptance criteria, and verification expectation.
 - Record baseline commands, tests, artifacts, and known risks.
 - Choose Light Mode, Minimal Specialist Layer, or Full Specialist Layer from actual complexity.
-- End with exact next work order, blocker, or decision needed.
 
 ## Fresh Continuation Card
 
@@ -65,19 +65,20 @@ Task cards are compact execution checklists. They do not replace deeper referenc
 ## Workflow Patch Card
 
 - Name the friction, evidence, and rule gap before patching.
+- Set lifecycle state and risk lane for the workflow patch work order.
 - Decide whether this is private-only, installed-skill, public-template, template, or eval work.
 - Patch the canonical installed skill first when standing behavior changes.
 - Mirror public sanitized changes only when the behavior belongs in the reusable template.
 - Update version/changelog/README when public behavior changes.
 - Verify installed/public reachability with text search and run public leak/diff checks.
-- Close state: work order, task board, current state, project memory, handoff, and public commit if applicable.
+- Close state with verification evidence, canonical artifact, work order, task board, current state, project memory, handoff, and public commit if applicable.
 
 ## Status Or Closeout Card
 
 - Run the stale dashboard or equivalent state check when drift risk is non-trivial.
-- Confirm current-state, task board, active work order, handoff, and blockers agree.
+- Confirm current-state, task board, active work order lifecycle state, handoff, and blockers agree.
 - If version/git changed, confirm README/CHANGELOG/VERSION and latest commit/status.
 - If artifacts changed, verify exact paths and label canonical, diagnostic, temporary, or superseded.
 - Do not report old blockers or old active tasks as current truth.
+- Do not mark lifecycle-aware tasks Done without verification evidence or a recorded reason.
 - Include state-aware options when meaningful.
-- If the next task is obvious and approved, create or start it instead of ending with vague advice.

@@ -19,7 +19,7 @@ When the user says `continue`:
 11. Run Stop-the-Line Review if continuing normally would produce wrong, generic, misleading, stale, or low-quality work.
 12. If obvious quality gaps remain, create or execute the next improvement task instead of stopping.
 13. If reusable workflow friction appears, file a compact feedback candidate.
-14. Update task board, current state, role memory, integration log, and operating mode if the project phase changed.
+14. Update task board, current state, role memory, integration log, lifecycle state, risk lane, and operating mode if the project phase changed.
 15. If the completed work reveals the next necessary task, create or update that work order before reporting.
 16. Run the Queue Re-Ranking Check if the result was meaningful or surprising.
 17. Run the Closeout Integrity Check for meaningful completions.
@@ -113,6 +113,7 @@ Specialist Mode / Company Mode should operate the project, not describe how some
 When any role identifies necessary follow-up work, it must do one of these before ending the turn:
 
 - create a new work order and mark it `todo` or `active`;
+- set lifecycle state and risk lane when the work order is meaningful;
 - assign the task to the correct role and route it through Chief of Staff;
 - start the task immediately if it is unblocked and within scope;
 - mark `Decision needed:` with the exact consequential choice the user must make;
@@ -225,6 +226,8 @@ Check proportionally:
 
 - `company/current-state.md` matches `company/task-board.md`, including active task, blocker, operating mode, and next task.
 - The active work order status matches the report: active, done, blocked, review, internally accepted, or waiting-user-decision.
+- Lifecycle-aware work orders have matching lifecycle state, risk lane, verification evidence, canonical artifact, and closeout state.
+- `Done` is not reported unless acceptance criteria are met and verification evidence is recorded, or the missing verification is explicitly explained.
 - If version changed, visible docs and package/version surfaces agree, such as README, CHANGELOG, VERSION, package metadata, release notes, or app version.
 - If git/GitHub changed, branch, status, remote, commit, PR, tag, or release claims match tool results.
 - If artifacts changed, referenced files exist, are canonical or labeled correctly, and were verified by the relevant check.

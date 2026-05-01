@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.49 - 2026-05-01
+
+- Added `references/task-lifecycle.md` with Task Lifecycle v1.
+- Added lifecycle states, risk lanes, board-status mapping, and done-evidence rules.
+- Updated work-order and task-board templates with lifecycle fields.
+- Routed lifecycle checks from the skill, Reference Router, Continuation, and Task Cards.
+
 ## 0.0.48 - 2026-05-01
 
 - Added `references/task-cards.md` with compact execution checklists for common task types.

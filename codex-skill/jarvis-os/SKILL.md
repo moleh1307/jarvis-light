@@ -67,6 +67,8 @@ Before loading deeper JARVIS OS references, choose the smallest reference set th
 
 When the task type is already clear but execution still risks cognitive overload, use `references/task-cards.md` for a compact checklist before deeper references. Task cards are optional execution aids for common task types; skip them for trivial work and route deeper when risk appears.
 
+When creating, routing, reviewing, or closing Specialist Mode work orders, use `references/task-lifecycle.md` to keep task state, risk lane, acceptance criteria, verification evidence, canonical artifact, and closeout state aligned. Do not use it for trivial Core work where no durable task exists.
+
 Reference routing should answer:
 
 - Is this Core or Specialist Mode?
@@ -197,6 +199,7 @@ Load Specialist Mode details progressively from this skill's `references/` folde
 
 - Reference routing: `references/reference-router.md`
 - Compact task-type checklists: `references/task-cards.md`
+- Task lifecycle, risk lanes, and done evidence: `references/task-lifecycle.md`
 - Capability surface, tool permissions, and verification routing: `references/capability-surface.md`
 - Memory routing, lifecycle lanes, freshness checks, and note splitting: `references/memory-discipline.md`
 - Greenfield setup: `references/greenfield.md`

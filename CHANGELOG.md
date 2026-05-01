@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.60 - 2026-05-01
+
+- Added Regression Rehearsal for active eval seeds.
+- Updated R&D Idea Loop and Task Cards so one relevant eval seed can be manually checked before pure ideation when no stronger evidence candidate is obvious.
+- Updated eval-seed templates with rehearsal result fields.
+
 ## 0.0.59 - 2026-05-01
 
 - Added Reflex Eval Seeds for consequential promoted learning.

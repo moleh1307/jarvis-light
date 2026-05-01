@@ -42,6 +42,13 @@ When should this seed be tried or reviewed again?
 
 -
 
+## Rehearsal Result
+
+- Last rehearsed:
+- Result: pass / fail / skip / needs update
+- Evidence:
+- Follow-up:
+
 ## Notes
 
 -

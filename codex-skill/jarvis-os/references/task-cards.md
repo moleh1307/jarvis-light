@@ -78,6 +78,7 @@ Task cards are compact execution checklists. They do not replace deeper referenc
 
 - Start with exactly one proposed idea unless the user explicitly asked for a broad brainstorm.
 - Check the Friction Inbox, Reflex candidates, and recent Learning Pulses first; if evidence is thin or stale, apply Learning Pulse Cadence before pure ideation.
+- If active eval seeds exist and no stronger evidence candidate is obvious, run one Regression Rehearsal seed and record pass/fail/skip.
 - Record why the idea is non-obvious, useful, feasible, and safe enough to discuss.
 - Run compact team discussion through the smallest relevant roles.
 - Decide accepted, rejected, or revise; record the reason in an idea card when durable.
@@ -105,6 +106,16 @@ Task cards are compact execution checklists. They do not replace deeper referenc
 - If the signal is strong, route to the R&D Idea Loop, work order, template update, eval, or memory cleanup.
 - When a signal is promoted into consequential standing behavior, create or link one tiny eval seed unless acceptance criteria already cover it.
 - Compress or archive candidates that do not recur.
+
+## Regression Rehearsal Card
+
+- Use only when active eval seeds exist and the loop is about to ideate without a stronger evidence candidate.
+- Select one relevant seed, not the whole seed folder.
+- Run the seed manually: compare the current behavior against the pass/fail signals.
+- Record result as pass, fail, skip, or needs update.
+- If it fails, route the result into the R&D Idea Loop or a corrective work order.
+- If it passes, continue ideation without turning the rehearsal into a status report.
+- Do not imply background or automated eval execution.
 
 ## Learning Pulse Card
 

@@ -63,6 +63,8 @@ Before pure ideation, check whether the Friction Inbox, Reflex candidates, or a 
 
 Use Learning Pulse Cadence when evidence is thin or stale: if three R&D idea loops completed since the last pulse, or if there is no fresh unpromoted Friction/Reflex signal before ideation, run a compact Learning Pulse first. Skip it when a recent pulse is still current or a strong unpromoted candidate is already obvious.
 
+Use Regression Rehearsal when active eval seeds exist and no stronger evidence candidate is already obvious. Run at most one tiny eval seed before pure ideation, record pass/fail/skip, and use the result as evidence for the next idea only if it reveals a real regression or gap. This is manual review, not an automated eval harness.
+
 ## Sunset Clause
 
 For meaningful workflow features, define a future review trigger before implementation begins.
@@ -146,4 +148,5 @@ Do not preserve long rejection debates. Preserve the insight that should prevent
 - Do not let the ideation role override evidence, safety, or user direction.
 - Do not treat "creative" as permission to ignore verification.
 - Do not let Idea Closeout Explanation become generic filler; omit obvious repetition and explain only the useful design logic.
+- Do not run every eval seed on every loop; Regression Rehearsal uses one relevant seed or skips when stronger evidence already exists.
 - Do not return to ideation until the accepted feature is refreshed and dogfooded, unless a real blocker appears.

@@ -71,6 +71,8 @@ When creating, routing, reviewing, or closing Specialist Mode work orders, use `
 
 When a Specialist Mode team is explicitly running continuous improvement, product R&D, workflow R&D, or an idea-by-idea loop, use `references/rd-idea-loop.md`. Keep one idea in focus, discuss it with the smallest useful role set, convert accepted ideas into short task lists, implement, refresh the project or skill, and dogfood the new behavior before returning to ideation.
 
+When meaningful work reveals reusable behavior signals, use `references/self-improvement-reflexes.md`. Reflexes let JARVIS notice, capture, compress, and route learning candidates without silently rewriting standing rules.
+
 Reference routing should answer:
 
 - Is this Core or Specialist Mode?
@@ -183,6 +185,8 @@ Use `system/learning-log.md` for lessons from real work. Lessons are candidates,
 Use `system/failure-patterns.md` for stable recurring failure modes and `system/proposals/` for consequential workflow changes that should be reviewed before adoption.
 
 Promotion statuses are: `candidate`, `repeated`, `promoted`, `rejected`, and `superseded`.
+
+For more active learning, use Self-Improvement Reflexes: after meaningful work, capture tiny reusable signals as candidates, route them to the right home, and promote only with evidence or approval.
 
 Do not create learning entries for tiny tasks or one-off preferences. Do not let self-improvement become ceremony.
 

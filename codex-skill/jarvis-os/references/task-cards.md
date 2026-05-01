@@ -95,6 +95,16 @@ Task cards are compact execution checklists. They do not replace deeper referenc
 - Triage as ignore, watch, idea-loop, work-order, update-template, add-eval, or public-release.
 - Prefer one good inbox item over a long list of weak observations.
 
+## Self-Improvement Reflex Card
+
+- Run only after meaningful work or clear reusable behavior signals.
+- Identify the trigger: correction, repeated mistake, state drift, useful shortcut, note bloat, rule helped, or rule noise.
+- Capture the smallest candidate in the right home: Reflex candidate, Friction Inbox, project memory, preferences, learning log, or JARVIS R&D.
+- Mark lane: observed, candidate, repeated, promoted, rejected, archived, or superseded.
+- Do not silently promote candidates into standing rules.
+- If the signal is strong, route to the R&D Idea Loop, work order, template update, eval, or memory cleanup.
+- Compress or archive candidates that do not recur.
+
 ## Status Or Closeout Card
 
 - Run the stale dashboard or equivalent state check when drift risk is non-trivial.

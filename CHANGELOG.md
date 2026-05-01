@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.55 - 2026-05-01
+
+- Added Self-Improvement Reflexes for candidate-producing learning after meaningful work.
+- Added a reflex candidate template with lanes for observed, candidate, repeated, promoted, rejected, archived, and superseded signals.
+- Routed reflexes from the skill, Reference Router, and Task Cards while preserving the rule that standing behavior is not silently rewritten.
+
 ## 0.0.54 - 2026-05-01
 
 - Added a Closeout Resume Sweep for compaction, fresh-chat continuation, interruption, and restart recovery.

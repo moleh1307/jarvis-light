@@ -20,6 +20,7 @@ The router keeps `SKILL.md` short while making reference selection explicit. It 
 | Clear task type but too many possible rules to synthesize | `task-cards.md` | the specific deeper reference named by the selected card |
 | Creating, routing, reviewing, blocking, or closing a work order | `task-lifecycle.md` | `continuation.md` for closeout integrity |
 | Continuous improvement, product R&D, workflow R&D, or idea-by-idea loop | `rd-idea-loop.md` | `innovation-feedback.md`, `task-lifecycle.md` when accepted ideas become work |
+| Reusable behavior signal, self-improvement candidate, agent learning, memory metabolism, or "alive" workflow behavior | `self-improvement-reflexes.md` | `rd-idea-loop.md` when promoted; `memory-discipline.md` when writing durable memory |
 | Older active chat needs latest workflow | `workflow-refresh.md` | `continuation.md`, `roles-and-roster.md` |
 | Durable memory write, stale memory conflict, long project note, handoff, project-note split, memory cleanup | `memory-discipline.md` | `continuation.md` for closeout or handoff |
 | `continue`, `go`, `next`, short approval, status, blocker, interruption | `continuation.md` | `adaptive-operating-patterns.md` for queue re-ranking or claim review |
@@ -56,10 +57,11 @@ If the task becomes consequential, public-facing, long-running, or role-governed
 3. Use `task-cards.md` when a compact task-type checklist is enough to start safely.
 4. Use `task-lifecycle.md` when durable work-order state, risk lane, blocker, evidence, or done status is being changed.
 5. Use `rd-idea-loop.md` when the task is explicitly running an idea loop, continuous improvement loop, product R&D loop, or workflow R&D loop.
-6. Select the smallest deeper reference bundle from the table when the card exposes higher risk or missing detail.
-7. Read only the selected references and the live project state needed for the next action.
-8. Execute or propose according to the selected route.
-9. If the route was wrong, run Stop-the-Line Review and switch route.
+6. Use `self-improvement-reflexes.md` when the task is about active learning, candidate capture, memory metabolism, or making JARVIS feel more alive without silent rule mutation.
+7. Select the smallest deeper reference bundle from the table when the card exposes higher risk or missing detail.
+8. Read only the selected references and the live project state needed for the next action.
+9. Execute or propose according to the selected route.
+10. If the route was wrong, run Stop-the-Line Review and switch route.
 
 ## Conflict Rules
 

@@ -21,7 +21,9 @@ Use `[Role: Founder / Organizational Auditor]`.
 5. Infer roles from the real project rather than a generic template.
 6. Run post-audit Project-Shape Inference: what kind of work this actually is, what makes success hard, what artifacts matter, what confidence lanes and adversarial gates are needed, and what should not be overbuilt.
 7. Choose the initial operating mode for `company/current-state.md`; adoption usually starts as `audit`, then moves to `recovery`, `build`, `polish`, `release`, or another fitting mode after the audit/baseline.
-8. Create the Specialist Mode / Company Mode layer around the existing structure, including `team-roster.md`.
+8. Create the Specialist Mode / Company Mode layer around the existing structure at the smallest useful depth:
+   - Minimal Specialist Layer for small or focused adoptions: `company/current-state.md`, `company/task-board.md`, one `project-charter.md` or `adoption-audit.md`, and `company/work-orders/`.
+   - Full Specialist Layer for complex or long-running projects: add `team-roster.md`, role charters/memories, integration log, strategy/evidence/review artifacts, and richer QA gates as needed.
 9. Do not rewrite, reorganize, rename, or migrate before audit and explicit work orders.
 
 The audit should answer:
@@ -33,6 +35,7 @@ The audit should answer:
 - What tests, validation, or reproducibility mechanisms exist?
 - What are the major risks and unknowns?
 - What roles does this project actually need?
+- What is the lightest Specialist Mode layer that preserves the next useful action?
 - What confidence lanes, strategy maps, evidence ledgers, or adversarial reviews would improve continuation?
 - What should the company not touch yet?
 - What are the first high-leverage work orders?

@@ -46,13 +46,20 @@ Before finishing meaningful work, the outcome should satisfy:
 
 Default to JARVIS Core when the user asks for a normal single-agent task: answer a question, edit a file, continue one project, create an artifact, inspect memory, or do ordinary coding/research help.
 
+JARVIS Core is the default Light Mode. In Light Mode, keep the workflow intentionally small:
+
+- read only the directly relevant memory or files, and skip vault retrieval entirely for trivial self-contained work;
+- do not create a `company/` layer, work order, role roster, session note, handoff, or options menu unless durable state actually changes;
+- do the task, verify any meaningful output, and update the smallest correct memory only when it will help future continuation;
+- do not use Specialist Mode ceremony just because `jarvis-os` is active.
+
 Activate Specialist Mode when the work benefits from durable role separation or project governance:
 
 - the user asks for Specialist Mode, Company Mode, an agent team, an agent army, a company, a studio, or a research team;
 - the task is a serious greenfield project, existing-project adoption, product/app/site build, research program, data/quant project, release, or long-running workflow;
 - the project needs Founder/Chief-of-Staff routing, work orders, role memories, QA gates, internal review, or autonomous `continue` behavior.
 
-If the user gives a serious project but does not name a mode, infer the appropriate mode from the project shape. Ask only when the mode choice would materially change risk, scope, cost, or file layout.
+If the user gives a serious project but does not name a mode, infer the appropriate mode from the project shape. Ask only when the mode choice would materially change risk, scope, cost, or file layout. When unsure between Light Mode and Specialist Mode, start in Light Mode and escalate only when role separation, persistent state, review gates, or project governance would clearly reduce risk or confusion.
 
 ## Route References Before Deep Work
 
@@ -175,7 +182,12 @@ Do not create learning entries for tiny tasks or one-off preferences. Do not let
 
 ## Specialist Mode Add-On
 
-When a project is too large for one undifferentiated agent mode, use JARVIS Specialist Mode. It keeps normal JARVIS OS memory rules but adds project-local role files under `company/`, including Founder, Chief of Staff, specialist charters, role memories, team roster, task board, work orders, review gates, adaptive project-shape inference, operating mode, workflow feedback, and integration log. `Company Mode` remains valid for older prompts, folders, and chats.
+When a project is too large for one undifferentiated agent mode, use JARVIS Specialist Mode. It keeps normal JARVIS OS memory rules but adds project-local role files under `company/`. Scale that layer to the project:
+
+- Minimal Specialist Layer: for small-but-real projects or focused adoptions, create only the files needed to preserve current state and next action, usually `company/current-state.md`, `company/task-board.md`, one charter or adoption audit, and `company/work-orders/`.
+- Full Specialist Layer: for complex, long-running, high-risk, public, or multi-role projects, add team roster, role charters/memories, integration log, strategy/evidence/review artifacts, quality gates, and richer work orders as needed.
+
+Do not create full Specialist Mode machinery when a minimal layer would preserve continuity. `Company Mode` remains valid for older prompts, folders, and chats.
 
 In Specialist Mode, "team" means the current Codex agent sequentially inhabits file-backed roles using roster-backed headers, role memories, task boards, and work orders. Do not spawn runtime subagents merely because the user says "team," "discuss with your team," "ask the team," or similar. Runtime subagents are optional temporary helpers for explicit or clearly valuable parallel investigation; they are not durable team members and their IDs should not be saved as canonical team memory.
 

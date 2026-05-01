@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.46 - 2026-05-01
+
+- Added explicit JARVIS Core / Light Mode guidance for small work.
+- Added Minimal Specialist Layer guidance for small-but-real projects and focused adoptions.
+- Clarified that Specialist Mode should scale to the project instead of always creating full role/memory/integration machinery.
+- Corrected the README visible version line.
+
 ## 0.0.45 - 2026-05-01
 
 - Added the Vague Improvement Loop Gate as a focused Stop-the-Line extension.

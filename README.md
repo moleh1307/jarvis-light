@@ -4,9 +4,9 @@
 
 This public template was previously named JARVIS Light. The repository path may keep that name during the migration, but the workflow now uses JARVIS OS as the umbrella name.
 
-Current version: `0.0.43`
+Current version: `0.0.46`
 
-Latest update: Closeout Integrity Check now explicitly verifies state-aware completion options, so meaningful Specialist Mode reports should end with useful next commands or a clear reason options are not useful.
+Latest update: JARVIS Core / Light Mode is now explicit for small work, and Specialist Mode can use a Minimal Specialist Layer for small-but-real projects or focused adoptions.
 
 JARVIS OS turns a folder of markdown files into durable assistant memory.
 It helps Codex work across long chats, fresh chats, projects, research, codebases, and handoffs without pretending the chat history itself is the source of truth.

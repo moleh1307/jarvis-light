@@ -126,7 +126,7 @@ Do not split preemptively. Split only when retrieval is getting worse, and leave
 
 ## Specialist Mode
 
-JARVIS Specialist Mode is optional. Use it when a project is large enough that specialist roles would improve the work. Company Mode remains the compatibility alias.
+JARVIS Specialist Mode is optional. Use it when a project is large enough that specialist roles would improve the work. Company Mode remains the compatibility alias. For small work, stay in JARVIS Core / Light Mode: retrieve only directly relevant context, skip `company/` files and work orders, do the task, verify meaningful outputs, and update memory only if durable state changed.
 
 It adds:
 
@@ -142,6 +142,15 @@ It adds:
 - out-of-box thinking
 - workflow feedback candidates
 - Adoption Mode for existing projects
+
+Specialist Mode also scales down. For small-but-real projects or focused adoptions, use a Minimal Specialist Layer:
+
+- `company/current-state.md`
+- `company/task-board.md`
+- one `company/project-charter.md` or `company/adoption-audit.md`
+- `company/work-orders/`
+
+Add `team-roster.md`, role memories, integration log, strategy/evidence/review artifacts, and richer QA gates only when the project complexity earns them.
 
 After an Adoption Mode audit and baseline preservation, takeover means the Company owns the project outcome. Existing code is evidence, not authority; roles may improve, refactor, redesign, or rebuild within charter, quality, verification, and escalation boundaries.
 

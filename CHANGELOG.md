@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.51 - 2026-05-01
+
+- Added a Subtraction Gate to the R&D Idea Loop.
+- Accepted ideas now state what they simplify, remove, replace, or make less necessary.
+- Updated idea-card templates and task cards so added complexity must be explicitly justified.
+
 ## 0.0.50 - 2026-05-01
 
 - Added `references/rd-idea-loop.md` for continuous improvement, product R&D, workflow R&D, and idea-by-idea loops.

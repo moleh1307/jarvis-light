@@ -79,6 +79,7 @@ Task cards are compact execution checklists. They do not replace deeper referenc
 - Record why the idea is non-obvious, useful, feasible, and safe enough to discuss.
 - Run compact team discussion through the smallest relevant roles.
 - Decide accepted, rejected, or revise; record the reason in an idea card when durable.
+- Run the Subtraction Gate: what does this simplify, remove, replace, or make less necessary?
 - Convert accepted ideas into one work order or a short one-to-five task list.
 - Define verification and dogfood evidence before implementation.
 - After implementation, refresh the project or skill, record where the new behavior was used, then return to ideation.

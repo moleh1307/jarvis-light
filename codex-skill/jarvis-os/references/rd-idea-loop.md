@@ -27,9 +27,23 @@ A strong idea should be:
 - practical enough to implement in the current tool and memory environment;
 - small enough to become one to five tasks;
 - useful enough that the team will actually dogfood it;
+- sharp enough to simplify, replace, remove, or make something less necessary, unless added complexity is explicitly justified;
 - safe for public/private boundaries if it affects reusable templates.
 
 Reject or revise ideas that require pretending background work happens without an automation, leaking private memory, adding ceremony without payoff, or depending on tools that are unavailable.
+
+## Subtraction Gate
+
+Before accepting an idea, answer:
+
+- What does this simplify?
+- What does this remove?
+- What does this replace?
+- What does this make less necessary?
+
+If the honest answer is "nothing," the team may still accept the idea, but the idea card must explain why the added complexity is worth it.
+
+The goal is net workflow sharpness. Continuous R&D should make the system more capable without only making it larger.
 
 ## Team Discussion
 
@@ -48,6 +62,7 @@ Record the decision in an idea card when the idea is accepted, rejected for a du
 For accepted ideas:
 
 - create or update an idea card;
+- complete the Subtraction Gate before final acceptance;
 - create one work order when the implementation is single-scope;
 - create a short task list when the idea naturally splits into two to five tasks;
 - mark lifecycle state and risk lane for meaningful work orders;
@@ -81,4 +96,3 @@ Do not preserve long rejection debates. Preserve the insight that should prevent
 - Do not let the ideation role override evidence, safety, or user direction.
 - Do not treat "creative" as permission to ignore verification.
 - Do not return to ideation until the accepted feature is refreshed and dogfooded, unless a real blocker appears.
-

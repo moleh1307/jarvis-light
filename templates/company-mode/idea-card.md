@@ -31,6 +31,14 @@
 - Reason:
 - Rejection reason, if rejected:
 
+## Subtraction Gate
+
+- Simplifies:
+- Removes:
+- Replaces:
+- Makes less necessary:
+- Added complexity justified because:
+
 ## Task List
 
 - [ ]
@@ -52,4 +60,3 @@
 - Refreshed in JARVIS OS:
 - Public/private impact:
 - Next idea loop ready: yes / no
-

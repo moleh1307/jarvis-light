@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.63 - 2026-05-01
+
+- Added the JarvisOS banner image to the README.
+- Updated the README header status to reflect the current public repository name and version.
+
 ## 0.0.62 - 2026-05-01
 
 - Updated the Quick Start clone example for the public repository rename from `jarvis-light` to `JarvisOS`.
